@@ -1,0 +1,1465 @@
+2014-06-21 15:04:17,742 p=3538 u=patrick |   
+2014-06-21 15:04:17,742 p=3538 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 15:04:17,742 p=3538 u=patrick |   
+2014-06-21 15:04:17,757 p=3538 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 15:04:17,758 p=3538 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 15:04:30,916 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:04:30,924 p=3538 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 15:04:36,894 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:04:36,895 p=3538 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 15:04:41,362 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:04:41,369 p=3538 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 15:04:45,808 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:04:45,815 p=3538 u=patrick |  TASK: [install python-dev to get Python.h] ************************************ 
+2014-06-21 15:04:50,341 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:04:50,346 p=3538 u=patrick |  TASK: [install ipython pip packages] ****************************************** 
+2014-06-21 15:04:54,744 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 15:04:59,009 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 15:05:03,206 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 15:05:07,416 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 15:05:11,652 p=3538 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 15:05:22,953 p=3538 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib) => {"cmd": "/usr/bin/pip install matplotlib", "failed": true, "item": "matplotlib"}
+2014-06-21 15:05:22,962 p=3538 u=patrick |  msg: stdout: Downloading/unpacking matplotlib
+  Running setup.py (path:/tmp/pip_build_root/matplotlib/setup.py) egg_info for package matplotlib
+    ============================================================================
+    Edit setup.cfg to change the build options
+    
+    BUILDING MATPLOTLIB
+                matplotlib: yes [1.3.1]
+                    python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+                            4.8.2]]
+                  platform: yes [linux2]
+    
+    REQUIRED DEPENDENCIES AND EXTENSIONS
+                     numpy: yes [version 1.8.1]
+                  dateutil: yes [using dateutil version 2.2]
+                   tornado: yes [using tornado version 3.2.2]
+                 pyparsing: yes [pyparsing was not found. It is required for
+                            mathtext support. pip/easy_install may attempt to
+                            install it after matplotlib.]
+                     pycxx: yes [Couldn't import.  Using local copy.]
+                    libagg: yes [pkg-config information for 'libagg' could not
+                            be found. Using local copy.]
+                  freetype: no  [pkg-config information for 'freetype2' could
+                            not be found.]
+                       png: yes [pkg-config information for 'libpng' could not
+                            be found. Using unknown version.]
+    
+    OPTIONAL SUBPACKAGES
+               sample_data: yes [installing]
+                  toolkits: yes [installing]
+                     tests: yes [using nose version 1.3.3]
+    
+    OPTIONAL BACKEND EXTENSIONS
+                    macosx: no  [Mac OS-X only]
+                    qt4agg: no  [PyQt4 not found]
+                   gtk3agg: no  [Requires pygobject to be installed.]
+                 gtk3cairo: no  [Requires cairo to be installed.]
+                    gtkagg: no  [Requires pygtk]
+                     tkagg: no  [TKAgg requires Tkinter.]
+                     wxagg: no  [requires wxPython]
+                       gtk: no  [Requires pygtk]
+                       agg: yes [installing]
+                     cairo: no  [cairo not found]
+                 windowing: no  [Microsoft Windows only]
+    
+    OPTIONAL LATEX DEPENDENCIES
+                    dvipng: no
+               ghostscript: no
+                     latex: no
+                   pdftops: no
+    
+    ============================================================================
+                            * The following required packages can not be built:
+                            * freetype
+    Complete output from command python setup.py egg_info:
+    ============================================================================
+
+Edit setup.cfg to change the build options
+
+
+
+BUILDING MATPLOTLIB
+
+            matplotlib: yes [1.3.1]
+
+                python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+
+                        4.8.2]]
+
+              platform: yes [linux2]
+
+
+
+REQUIRED DEPENDENCIES AND EXTENSIONS
+
+                 numpy: yes [version 1.8.1]
+
+              dateutil: yes [using dateutil version 2.2]
+
+               tornado: yes [using tornado version 3.2.2]
+
+             pyparsing: yes [pyparsing was not found. It is required for
+
+                        mathtext support. pip/easy_install may attempt to
+
+                        install it after matplotlib.]
+
+                 pycxx: yes [Couldn't import.  Using local copy.]
+
+                libagg: yes [pkg-config information for 'libagg' could not
+
+                        be found. Using local copy.]
+
+              freetype: no  [pkg-config information for 'freetype2' could
+
+                        not be found.]
+
+                   png: yes [pkg-config information for 'libpng' could not
+
+                        be found. Using unknown version.]
+
+
+
+OPTIONAL SUBPACKAGES
+
+           sample_data: yes [installing]
+
+              toolkits: yes [installing]
+
+                 tests: yes [using nose version 1.3.3]
+
+
+
+OPTIONAL BACKEND EXTENSIONS
+
+                macosx: no  [Mac OS-X only]
+
+                qt4agg: no  [PyQt4 not found]
+
+               gtk3agg: no  [Requires pygobject to be installed.]
+
+             gtk3cairo: no  [Requires cairo to be installed.]
+
+                gtkagg: no  [Requires pygtk]
+
+                 tkagg: no  [TKAgg requires Tkinter.]
+
+                 wxagg: no  [requires wxPython]
+
+                   gtk: no  [Requires pygtk]
+
+                   agg: yes [installing]
+
+                 cairo: no  [cairo not found]
+
+             windowing: no  [Microsoft Windows only]
+
+
+
+OPTIONAL LATEX DEPENDENCIES
+
+                dvipng: no
+
+           ghostscript: no
+
+                 latex: no
+
+               pdftops: no
+
+
+
+============================================================================
+
+                        * The following required packages can not be built:
+
+                        * freetype
+
+----------------------------------------
+Cleaning up...
+Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/matplotlib
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:05:22,963 p=3538 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 15:05:22,964 p=3538 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 15:05:22,968 p=3538 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 15:05:22,973 p=3538 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=0    unreachable=0    failed=1   
+2014-06-21 15:12:23,285 p=3634 u=patrick |   
+2014-06-21 15:12:23,286 p=3634 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 15:12:23,286 p=3634 u=patrick |   
+2014-06-21 15:12:23,295 p=3634 u=patrick |  ERROR: Syntax Error while loading YAML script, site.yml
+Note: The error may actually appear before this position: line 19, column 2
+
+    sudo: yes
+ - name: install ipython pip packages 
+ ^
+2014-06-21 15:12:53,488 p=3640 u=patrick |   
+2014-06-21 15:12:53,488 p=3640 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 15:12:53,488 p=3640 u=patrick |   
+2014-06-21 15:12:53,502 p=3640 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 15:12:53,503 p=3640 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 15:13:04,688 p=3640 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:13:04,695 p=3640 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 15:13:09,878 p=3640 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:13:09,880 p=3640 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 15:13:14,277 p=3640 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:13:14,280 p=3640 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 15:13:18,667 p=3640 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:13:18,676 p=3640 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 15:13:38,131 p=3640 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev) => {"cmd": "/usr/bin/pip install python-dev", "failed": true, "item": "python-dev"}
+2014-06-21 15:13:38,134 p=3640 u=patrick |  msg: stdout: Downloading/unpacking python-dev
+  Could not find any downloads that satisfy the requirement python-dev
+Cleaning up...
+No distributions at all found for python-dev
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:13:42,348 p=3640 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=g++) => {"cmd": "/usr/bin/pip install g++", "failed": true, "item": "g++"}
+2014-06-21 15:13:42,354 p=3640 u=patrick |  msg: stdout: Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/lib/python2.7/dist-packages/pip/commands/install.py", line 257, in run
+    InstallRequirement.from_line(name, None))
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 172, in from_line
+    return cls(req, comes_from, url=url, prereleases=prereleases)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 70, in __init__
+    req = pkg_resources.Requirement.parse(req)
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 2667, in parse
+    reqs = list(parse_requirements(s))
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 2605, in parse_requirements
+    line, p, specs = scan_list(VERSION,LINE_END,line,p,(1,2),"version spec")
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 2573, in scan_list
+    raise ValueError("Expected "+item_name+" in",line,"at",line[p:])
+ValueError: ('Expected version spec in', 'g++', 'at', '++')
+
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:14:01,832 p=3640 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=libblas-dev) => {"cmd": "/usr/bin/pip install libblas-dev", "failed": true, "item": "libblas-dev"}
+2014-06-21 15:14:01,842 p=3640 u=patrick |  msg: stdout: Downloading/unpacking libblas-dev
+  Could not find any downloads that satisfy the requirement libblas-dev
+Cleaning up...
+No distributions at all found for libblas-dev
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:14:21,451 p=3640 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=liblapack-dev) => {"cmd": "/usr/bin/pip install liblapack-dev", "failed": true, "item": "liblapack-dev"}
+2014-06-21 15:14:21,455 p=3640 u=patrick |  msg: stdout: Downloading/unpacking liblapack-dev
+  Could not find any downloads that satisfy the requirement liblapack-dev
+Cleaning up...
+No distributions at all found for liblapack-dev
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:14:40,564 p=3640 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=gfortran) => {"cmd": "/usr/bin/pip install gfortran", "failed": true, "item": "gfortran"}
+2014-06-21 15:14:40,573 p=3640 u=patrick |  msg: stdout: Downloading/unpacking gfortran
+  Could not find any downloads that satisfy the requirement gfortran
+Cleaning up...
+No distributions at all found for gfortran
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:14:59,977 p=3640 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=libfreetype6-dev) => {"cmd": "/usr/bin/pip install libfreetype6-dev", "failed": true, "item": "libfreetype6-dev"}
+2014-06-21 15:14:59,978 p=3640 u=patrick |  msg: stdout: Downloading/unpacking libfreetype6-dev
+  Could not find any downloads that satisfy the requirement libfreetype6-dev
+Cleaning up...
+No distributions at all found for libfreetype6-dev
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:15:19,292 p=3640 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=libpng-dev) => {"cmd": "/usr/bin/pip install libpng-dev", "failed": true, "item": "libpng-dev"}
+2014-06-21 15:15:19,292 p=3640 u=patrick |  msg: stdout: Downloading/unpacking libpng-dev
+  Could not find any downloads that satisfy the requirement libpng-dev
+Cleaning up...
+No distributions at all found for libpng-dev
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:15:19,292 p=3640 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 15:15:19,292 p=3640 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 15:15:19,295 p=3640 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 15:15:19,296 p=3640 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=0    unreachable=0    failed=1   
+2014-06-21 15:15:35,054 p=3704 u=patrick |   
+2014-06-21 15:15:35,054 p=3704 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 15:15:35,054 p=3704 u=patrick |   
+2014-06-21 15:15:35,069 p=3704 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 15:15:35,070 p=3704 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 15:15:39,393 p=3704 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:15:39,401 p=3704 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 15:15:44,692 p=3704 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:15:44,699 p=3704 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 15:15:49,073 p=3704 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:15:49,078 p=3704 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 15:15:53,576 p=3704 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:15:53,585 p=3704 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 15:15:59,833 p=3704 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libfreetype6-dev,libpng-dev) => {"failed": true, "item": "python-dev,g++,libblas-dev,liblapack-dev,gfortran,libfreetype6-dev,libpng-dev"}
+2014-06-21 15:15:59,838 p=3704 u=patrick |  stderr: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/libgfortran3_4.8.2-19ubuntu1_amd64.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-21 15:15:59,842 p=3704 u=patrick |  stdout: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  gfortran-4.8 libblas3 libgfortran-4.8-dev libgfortran3 liblapack3
+Suggested packages:
+  gfortran-multilib gfortran-doc gfortran-4.8-multilib gfortran-4.8-doc
+  libgfortran3-dbg
+The following NEW packages will be installed:
+  gfortran gfortran-4.8 libblas-dev libblas3 libfreetype6-dev
+  libgfortran-4.8-dev libgfortran3 liblapack-dev liblapack3 libpng12-dev
+0 upgraded, 10 newly installed, 0 to remove and 23 not upgraded.
+Need to get 10.0 MB of archives.
+After this operation, 41.7 MB of additional disk space will be used.
+Err http://azure.archive.ubuntu.com/ubuntu/ trusty/main libgfortran3 amd64 4.8.2-19ubuntu1
+  503  Service Temporarily Unavailable
+Get:1 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libgfortran-4.8-dev amd64 4.8.2-19ubuntu1 [269 kB]
+Get:2 http://azure.archive.ubuntu.com/ubuntu/ trusty/main gfortran-4.8 amd64 4.8.2-19ubuntu1 [4,728 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu/ trusty/main gfortran amd64 4:4.8.2-1ubuntu6 [1,252 B]
+Get:4 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libblas3 amd64 1.2.20110419-7 [215 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libblas-dev amd64 1.2.20110419-7 [240 kB]
+Get:6 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpng12-dev amd64 1.2.50-1ubuntu2 [206 kB]
+Get:7 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libfreetype6-dev amd64 2.5.2-1ubuntu2.2 [623 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu/ trusty/main liblapack3 amd64 3.5.0-2ubuntu1 [1,730 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu/ trusty/main liblapack-dev amd64 3.5.0-2ubuntu1 [1,740 kB]
+Fetched 9,752 kB in 1s (8,179 kB/s)
+
+2014-06-21 15:15:59,842 p=3704 u=patrick |  msg: 'apt-get install 'libblas-dev' 'liblapack-dev' 'gfortran' 'libfreetype6-dev' 'libpng-dev' ' failed: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/libgfortran3_4.8.2-19ubuntu1_amd64.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-21 15:15:59,843 p=3704 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 15:15:59,844 p=3704 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 15:15:59,845 p=3704 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 15:15:59,845 p=3704 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=0    unreachable=0    failed=1   
+2014-06-21 15:19:27,565 p=3735 u=patrick |   
+2014-06-21 15:19:27,565 p=3735 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 15:19:27,565 p=3735 u=patrick |   
+2014-06-21 15:19:27,580 p=3735 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 15:19:27,583 p=3735 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 15:19:39,039 p=3735 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:19:39,048 p=3735 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 15:19:45,910 p=3735 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:19:45,917 p=3735 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 15:19:50,412 p=3735 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:19:50,421 p=3735 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 15:19:54,794 p=3735 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:19:54,801 p=3735 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 15:20:00,017 p=3735 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libfreetype6-dev,libpng-dev) => {"failed": true, "item": "python-dev,g++,libblas-dev,liblapack-dev,gfortran,libfreetype6-dev,libpng-dev"}
+2014-06-21 15:20:00,022 p=3735 u=patrick |  stderr: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/libgfortran3_4.8.2-19ubuntu1_amd64.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-21 15:20:00,025 p=3735 u=patrick |  stdout: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  gfortran-4.8 libblas3 libgfortran-4.8-dev libgfortran3 liblapack3
+Suggested packages:
+  gfortran-multilib gfortran-doc gfortran-4.8-multilib gfortran-4.8-doc
+  libgfortran3-dbg
+The following NEW packages will be installed:
+  gfortran gfortran-4.8 libblas-dev libblas3 libfreetype6-dev
+  libgfortran-4.8-dev libgfortran3 liblapack-dev liblapack3 libpng12-dev
+0 upgraded, 10 newly installed, 0 to remove and 23 not upgraded.
+Need to get 250 kB/10.0 MB of archives.
+After this operation, 41.7 MB of additional disk space will be used.
+Err http://azure.archive.ubuntu.com/ubuntu/ trusty/main libgfortran3 amd64 4.8.2-19ubuntu1
+  503  Service Temporarily Unavailable
+
+2014-06-21 15:20:00,027 p=3735 u=patrick |  msg: 'apt-get install 'libblas-dev' 'liblapack-dev' 'gfortran' 'libfreetype6-dev' 'libpng-dev' ' failed: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/g/gcc-4.8/libgfortran3_4.8.2-19ubuntu1_amd64.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-21 15:20:00,029 p=3735 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 15:20:00,030 p=3735 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 15:20:00,032 p=3735 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 15:20:00,034 p=3735 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=0    unreachable=0    failed=1   
+2014-06-21 15:21:02,444 p=3766 u=patrick |   
+2014-06-21 15:21:02,444 p=3766 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 15:21:02,444 p=3766 u=patrick |   
+2014-06-21 15:21:02,458 p=3766 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 15:21:02,460 p=3766 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 15:21:13,535 p=3766 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:21:13,543 p=3766 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 15:21:18,777 p=3766 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:21:18,779 p=3766 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 15:21:23,189 p=3766 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:21:23,196 p=3766 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 15:21:27,579 p=3766 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:21:27,581 p=3766 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 15:21:48,885 p=3766 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libfreetype6-dev,libpng-dev)
+2014-06-21 15:21:48,893 p=3766 u=patrick |  TASK: [install ipython pip packages] ****************************************** 
+2014-06-21 15:21:53,162 p=3766 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 15:21:57,387 p=3766 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 15:22:01,611 p=3766 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 15:22:05,821 p=3766 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 15:22:10,044 p=3766 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 15:22:20,214 p=3766 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib) => {"cmd": "/usr/bin/pip install matplotlib", "failed": true, "item": "matplotlib"}
+2014-06-21 15:22:20,222 p=3766 u=patrick |  msg: stdout: Downloading/unpacking matplotlib
+  Running setup.py (path:/tmp/pip_build_root/matplotlib/setup.py) egg_info for package matplotlib
+    ============================================================================
+    Edit setup.cfg to change the build options
+    
+    BUILDING MATPLOTLIB
+                matplotlib: yes [1.3.1]
+                    python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+                            4.8.2]]
+                  platform: yes [linux2]
+    
+    REQUIRED DEPENDENCIES AND EXTENSIONS
+                     numpy: yes [version 1.8.1]
+                  dateutil: yes [using dateutil version 2.2]
+                   tornado: yes [using tornado version 3.2.2]
+                 pyparsing: yes [pyparsing was not found. It is required for
+                            mathtext support. pip/easy_install may attempt to
+                            install it after matplotlib.]
+                     pycxx: yes [Couldn't import.  Using local copy.]
+                    libagg: yes [pkg-config information for 'libagg' could not
+                            be found. Using local copy.]
+                  freetype: no  [The C/C++ header for freetype2 (ft2build.h)
+                            could not be found.  You may need to install the
+                            development package.]
+                       png: yes [pkg-config information for 'libpng' could not
+                            be found. Using unknown version.]
+    
+    OPTIONAL SUBPACKAGES
+               sample_data: yes [installing]
+                  toolkits: yes [installing]
+                     tests: yes [using nose version 1.3.3]
+    
+    OPTIONAL BACKEND EXTENSIONS
+                    macosx: no  [Mac OS-X only]
+                    qt4agg: no  [PyQt4 not found]
+                   gtk3agg: no  [Requires pygobject to be installed.]
+                 gtk3cairo: no  [Requires cairo to be installed.]
+                    gtkagg: no  [Requires pygtk]
+                     tkagg: no  [TKAgg requires Tkinter.]
+                     wxagg: no  [requires wxPython]
+                       gtk: no  [Requires pygtk]
+                       agg: yes [installing]
+                     cairo: no  [cairo not found]
+                 windowing: no  [Microsoft Windows only]
+    
+    OPTIONAL LATEX DEPENDENCIES
+                    dvipng: no
+               ghostscript: no
+                     latex: no
+                   pdftops: no
+    
+    ============================================================================
+                            * The following required packages can not be built:
+                            * freetype
+    Complete output from command python setup.py egg_info:
+    ============================================================================
+
+Edit setup.cfg to change the build options
+
+
+
+BUILDING MATPLOTLIB
+
+            matplotlib: yes [1.3.1]
+
+                python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+
+                        4.8.2]]
+
+              platform: yes [linux2]
+
+
+
+REQUIRED DEPENDENCIES AND EXTENSIONS
+
+                 numpy: yes [version 1.8.1]
+
+              dateutil: yes [using dateutil version 2.2]
+
+               tornado: yes [using tornado version 3.2.2]
+
+             pyparsing: yes [pyparsing was not found. It is required for
+
+                        mathtext support. pip/easy_install may attempt to
+
+                        install it after matplotlib.]
+
+                 pycxx: yes [Couldn't import.  Using local copy.]
+
+                libagg: yes [pkg-config information for 'libagg' could not
+
+                        be found. Using local copy.]
+
+              freetype: no  [The C/C++ header for freetype2 (ft2build.h)
+
+                        could not be found.  You may need to install the
+
+                        development package.]
+
+                   png: yes [pkg-config information for 'libpng' could not
+
+                        be found. Using unknown version.]
+
+
+
+OPTIONAL SUBPACKAGES
+
+           sample_data: yes [installing]
+
+              toolkits: yes [installing]
+
+                 tests: yes [using nose version 1.3.3]
+
+
+
+OPTIONAL BACKEND EXTENSIONS
+
+                macosx: no  [Mac OS-X only]
+
+                qt4agg: no  [PyQt4 not found]
+
+               gtk3agg: no  [Requires pygobject to be installed.]
+
+             gtk3cairo: no  [Requires cairo to be installed.]
+
+                gtkagg: no  [Requires pygtk]
+
+                 tkagg: no  [TKAgg requires Tkinter.]
+
+                 wxagg: no  [requires wxPython]
+
+                   gtk: no  [Requires pygtk]
+
+                   agg: yes [installing]
+
+                 cairo: no  [cairo not found]
+
+             windowing: no  [Microsoft Windows only]
+
+
+
+OPTIONAL LATEX DEPENDENCIES
+
+                dvipng: no
+
+           ghostscript: no
+
+                 latex: no
+
+               pdftops: no
+
+
+
+============================================================================
+
+                        * The following required packages can not be built:
+
+                        * freetype
+
+----------------------------------------
+Cleaning up...
+Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/matplotlib
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:22:20,227 p=3766 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 15:22:20,228 p=3766 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 15:22:20,232 p=3766 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 15:22:20,237 p=3766 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=1    unreachable=0    failed=1   
+2014-06-21 15:23:00,891 p=3822 u=patrick |   
+2014-06-21 15:23:00,892 p=3822 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 15:23:00,892 p=3822 u=patrick |   
+2014-06-21 15:23:00,907 p=3822 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 15:23:00,909 p=3822 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 15:23:05,121 p=3822 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:23:05,128 p=3822 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 15:23:16,063 p=3822 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:23:16,070 p=3822 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 15:23:20,527 p=3822 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:23:20,536 p=3822 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 15:23:25,031 p=3822 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 15:23:25,033 p=3822 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 15:23:30,075 p=3822 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libfreetype6-dev,libpng-dev)
+2014-06-21 15:23:30,076 p=3822 u=patrick |  TASK: [install ipython pip packages] ****************************************** 
+2014-06-21 15:23:34,295 p=3822 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 15:23:38,618 p=3822 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 15:23:42,902 p=3822 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 15:23:47,271 p=3822 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 15:23:51,608 p=3822 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 15:24:02,188 p=3822 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib) => {"cmd": "/usr/bin/pip install matplotlib", "failed": true, "item": "matplotlib"}
+2014-06-21 15:24:02,195 p=3822 u=patrick |  msg: stdout: Downloading/unpacking matplotlib
+  Running setup.py (path:/tmp/pip_build_root/matplotlib/setup.py) egg_info for package matplotlib
+    ============================================================================
+    Edit setup.cfg to change the build options
+    
+    BUILDING MATPLOTLIB
+                matplotlib: yes [1.3.1]
+                    python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+                            4.8.2]]
+                  platform: yes [linux2]
+    
+    REQUIRED DEPENDENCIES AND EXTENSIONS
+                     numpy: yes [version 1.8.1]
+                  dateutil: yes [using dateutil version 2.2]
+                   tornado: yes [using tornado version 3.2.2]
+                 pyparsing: yes [pyparsing was not found. It is required for
+                            mathtext support. pip/easy_install may attempt to
+                            install it after matplotlib.]
+                     pycxx: yes [Couldn't import.  Using local copy.]
+                    libagg: yes [pkg-config information for 'libagg' could not
+                            be found. Using local copy.]
+                  freetype: no  [The C/C++ header for freetype2 (ft2build.h)
+                            could not be found.  You may need to install the
+                            development package.]
+                       png: yes [pkg-config information for 'libpng' could not
+                            be found. Using unknown version.]
+    
+    OPTIONAL SUBPACKAGES
+               sample_data: yes [installing]
+                  toolkits: yes [installing]
+                     tests: yes [using nose version 1.3.3]
+    
+    OPTIONAL BACKEND EXTENSIONS
+                    macosx: no  [Mac OS-X only]
+                    qt4agg: no  [PyQt4 not found]
+                   gtk3agg: no  [Requires pygobject to be installed.]
+                 gtk3cairo: no  [Requires cairo to be installed.]
+                    gtkagg: no  [Requires pygtk]
+                     tkagg: no  [TKAgg requires Tkinter.]
+                     wxagg: no  [requires wxPython]
+                       gtk: no  [Requires pygtk]
+                       agg: yes [installing]
+                     cairo: no  [cairo not found]
+                 windowing: no  [Microsoft Windows only]
+    
+    OPTIONAL LATEX DEPENDENCIES
+                    dvipng: no
+               ghostscript: no
+                     latex: no
+                   pdftops: no
+    
+    ============================================================================
+                            * The following required packages can not be built:
+                            * freetype
+    Complete output from command python setup.py egg_info:
+    ============================================================================
+
+Edit setup.cfg to change the build options
+
+
+
+BUILDING MATPLOTLIB
+
+            matplotlib: yes [1.3.1]
+
+                python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+
+                        4.8.2]]
+
+              platform: yes [linux2]
+
+
+
+REQUIRED DEPENDENCIES AND EXTENSIONS
+
+                 numpy: yes [version 1.8.1]
+
+              dateutil: yes [using dateutil version 2.2]
+
+               tornado: yes [using tornado version 3.2.2]
+
+             pyparsing: yes [pyparsing was not found. It is required for
+
+                        mathtext support. pip/easy_install may attempt to
+
+                        install it after matplotlib.]
+
+                 pycxx: yes [Couldn't import.  Using local copy.]
+
+                libagg: yes [pkg-config information for 'libagg' could not
+
+                        be found. Using local copy.]
+
+              freetype: no  [The C/C++ header for freetype2 (ft2build.h)
+
+                        could not be found.  You may need to install the
+
+                        development package.]
+
+                   png: yes [pkg-config information for 'libpng' could not
+
+                        be found. Using unknown version.]
+
+
+
+OPTIONAL SUBPACKAGES
+
+           sample_data: yes [installing]
+
+              toolkits: yes [installing]
+
+                 tests: yes [using nose version 1.3.3]
+
+
+
+OPTIONAL BACKEND EXTENSIONS
+
+                macosx: no  [Mac OS-X only]
+
+                qt4agg: no  [PyQt4 not found]
+
+               gtk3agg: no  [Requires pygobject to be installed.]
+
+             gtk3cairo: no  [Requires cairo to be installed.]
+
+                gtkagg: no  [Requires pygtk]
+
+                 tkagg: no  [TKAgg requires Tkinter.]
+
+                 wxagg: no  [requires wxPython]
+
+                   gtk: no  [Requires pygtk]
+
+                   agg: yes [installing]
+
+                 cairo: no  [cairo not found]
+
+             windowing: no  [Microsoft Windows only]
+
+
+
+OPTIONAL LATEX DEPENDENCIES
+
+                dvipng: no
+
+           ghostscript: no
+
+                 latex: no
+
+               pdftops: no
+
+
+
+============================================================================
+
+                        * The following required packages can not be built:
+
+                        * freetype
+
+----------------------------------------
+Cleaning up...
+Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/matplotlib
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 15:24:02,203 p=3822 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 15:24:02,204 p=3822 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 15:24:02,215 p=3822 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 15:24:02,217 p=3822 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=1    unreachable=0    failed=1   
+2014-06-21 16:08:15,709 p=3878 u=patrick |   
+2014-06-21 16:08:15,709 p=3878 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 16:08:15,709 p=3878 u=patrick |   
+2014-06-21 16:08:15,723 p=3878 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 16:08:15,725 p=3878 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 16:08:28,868 p=3878 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:08:28,872 p=3878 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 16:08:33,930 p=3878 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:08:33,931 p=3878 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 16:08:38,246 p=3878 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:08:38,250 p=3878 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 16:08:42,613 p=3878 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:08:42,617 p=3878 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 16:08:47,587 p=3878 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libfreetype6-dev,libpng-dev)
+2014-06-21 16:08:47,592 p=3878 u=patrick |  TASK: [install ipython pip packages] ****************************************** 
+2014-06-21 16:08:51,696 p=3878 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 16:08:55,877 p=3878 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 16:08:59,998 p=3878 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 16:09:04,077 p=3878 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 16:09:08,215 p=3878 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 16:09:18,373 p=3878 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib) => {"cmd": "/usr/bin/pip install matplotlib", "failed": true, "item": "matplotlib"}
+2014-06-21 16:09:18,383 p=3878 u=patrick |  msg: stdout: Downloading/unpacking matplotlib
+  Running setup.py (path:/tmp/pip_build_root/matplotlib/setup.py) egg_info for package matplotlib
+    ============================================================================
+    Edit setup.cfg to change the build options
+    
+    BUILDING MATPLOTLIB
+                matplotlib: yes [1.3.1]
+                    python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+                            4.8.2]]
+                  platform: yes [linux2]
+    
+    REQUIRED DEPENDENCIES AND EXTENSIONS
+                     numpy: yes [version 1.8.1]
+                  dateutil: yes [using dateutil version 2.2]
+                   tornado: yes [using tornado version 3.2.2]
+                 pyparsing: yes [pyparsing was not found. It is required for
+                            mathtext support. pip/easy_install may attempt to
+                            install it after matplotlib.]
+                     pycxx: yes [Couldn't import.  Using local copy.]
+                    libagg: yes [pkg-config information for 'libagg' could not
+                            be found. Using local copy.]
+                  freetype: no  [The C/C++ header for freetype2 (ft2build.h)
+                            could not be found.  You may need to install the
+                            development package.]
+                       png: yes [pkg-config information for 'libpng' could not
+                            be found. Using unknown version.]
+    
+    OPTIONAL SUBPACKAGES
+               sample_data: yes [installing]
+                  toolkits: yes [installing]
+                     tests: yes [using nose version 1.3.3]
+    
+    OPTIONAL BACKEND EXTENSIONS
+                    macosx: no  [Mac OS-X only]
+                    qt4agg: no  [PyQt4 not found]
+                   gtk3agg: no  [Requires pygobject to be installed.]
+                 gtk3cairo: no  [Requires cairo to be installed.]
+                    gtkagg: no  [Requires pygtk]
+                     tkagg: no  [TKAgg requires Tkinter.]
+                     wxagg: no  [requires wxPython]
+                       gtk: no  [Requires pygtk]
+                       agg: yes [installing]
+                     cairo: no  [cairo not found]
+                 windowing: no  [Microsoft Windows only]
+    
+    OPTIONAL LATEX DEPENDENCIES
+                    dvipng: no
+               ghostscript: no
+                     latex: no
+                   pdftops: no
+    
+    ============================================================================
+                            * The following required packages can not be built:
+                            * freetype
+    Complete output from command python setup.py egg_info:
+    ============================================================================
+
+Edit setup.cfg to change the build options
+
+
+
+BUILDING MATPLOTLIB
+
+            matplotlib: yes [1.3.1]
+
+                python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+
+                        4.8.2]]
+
+              platform: yes [linux2]
+
+
+
+REQUIRED DEPENDENCIES AND EXTENSIONS
+
+                 numpy: yes [version 1.8.1]
+
+              dateutil: yes [using dateutil version 2.2]
+
+               tornado: yes [using tornado version 3.2.2]
+
+             pyparsing: yes [pyparsing was not found. It is required for
+
+                        mathtext support. pip/easy_install may attempt to
+
+                        install it after matplotlib.]
+
+                 pycxx: yes [Couldn't import.  Using local copy.]
+
+                libagg: yes [pkg-config information for 'libagg' could not
+
+                        be found. Using local copy.]
+
+              freetype: no  [The C/C++ header for freetype2 (ft2build.h)
+
+                        could not be found.  You may need to install the
+
+                        development package.]
+
+                   png: yes [pkg-config information for 'libpng' could not
+
+                        be found. Using unknown version.]
+
+
+
+OPTIONAL SUBPACKAGES
+
+           sample_data: yes [installing]
+
+              toolkits: yes [installing]
+
+                 tests: yes [using nose version 1.3.3]
+
+
+
+OPTIONAL BACKEND EXTENSIONS
+
+                macosx: no  [Mac OS-X only]
+
+                qt4agg: no  [PyQt4 not found]
+
+               gtk3agg: no  [Requires pygobject to be installed.]
+
+             gtk3cairo: no  [Requires cairo to be installed.]
+
+                gtkagg: no  [Requires pygtk]
+
+                 tkagg: no  [TKAgg requires Tkinter.]
+
+                 wxagg: no  [requires wxPython]
+
+                   gtk: no  [Requires pygtk]
+
+                   agg: yes [installing]
+
+                 cairo: no  [cairo not found]
+
+             windowing: no  [Microsoft Windows only]
+
+
+
+OPTIONAL LATEX DEPENDENCIES
+
+                dvipng: no
+
+           ghostscript: no
+
+                 latex: no
+
+               pdftops: no
+
+
+
+============================================================================
+
+                        * The following required packages can not be built:
+
+                        * freetype
+
+----------------------------------------
+Cleaning up...
+Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/matplotlib
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 16:09:18,384 p=3878 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 16:09:18,385 p=3878 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 16:09:18,385 p=3878 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 16:09:18,386 p=3878 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=1    unreachable=0    failed=1   
+2014-06-21 16:16:11,913 p=3960 u=patrick |   
+2014-06-21 16:16:11,914 p=3960 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 16:16:11,914 p=3960 u=patrick |   
+2014-06-21 16:16:11,929 p=3960 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 16:16:11,932 p=3960 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 16:16:16,535 p=3960 u=patrick |  ERROR: interrupted
+2014-06-21 16:16:52,522 p=3983 u=patrick |   
+2014-06-21 16:16:52,522 p=3983 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 16:16:52,522 p=3983 u=patrick |   
+2014-06-21 16:16:52,538 p=3983 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 16:16:52,540 p=3983 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 16:17:00,882 p=3983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:17:00,889 p=3983 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 16:17:12,019 p=3983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:17:12,020 p=3983 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 16:17:16,314 p=3983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:17:16,318 p=3983 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 16:17:20,635 p=3983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:17:20,640 p=3983 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 16:17:25,596 p=3983 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libpng-dev,libfreetype6-dev,libfreetype6)
+2014-06-21 16:17:25,600 p=3983 u=patrick |  TASK: [install ipython pip packages] ****************************************** 
+2014-06-21 16:17:29,703 p=3983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 16:17:33,845 p=3983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 16:17:37,939 p=3983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 16:17:42,062 p=3983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 16:17:46,249 p=3983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 16:17:57,149 p=3983 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib) => {"cmd": "/usr/bin/pip install matplotlib", "failed": true, "item": "matplotlib"}
+2014-06-21 16:17:57,151 p=3983 u=patrick |  msg: stdout: Downloading/unpacking matplotlib
+  Running setup.py (path:/tmp/pip_build_root/matplotlib/setup.py) egg_info for package matplotlib
+    ============================================================================
+    Edit setup.cfg to change the build options
+    
+    BUILDING MATPLOTLIB
+                matplotlib: yes [1.3.1]
+                    python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+                            4.8.2]]
+                  platform: yes [linux2]
+    
+    REQUIRED DEPENDENCIES AND EXTENSIONS
+                     numpy: yes [version 1.8.1]
+                  dateutil: yes [using dateutil version 2.2]
+                   tornado: yes [using tornado version 3.2.2]
+                 pyparsing: yes [pyparsing was not found. It is required for
+                            mathtext support. pip/easy_install may attempt to
+                            install it after matplotlib.]
+                     pycxx: yes [Couldn't import.  Using local copy.]
+                    libagg: yes [pkg-config information for 'libagg' could not
+                            be found. Using local copy.]
+                  freetype: no  [The C/C++ header for freetype2 (ft2build.h)
+                            could not be found.  You may need to install the
+                            development package.]
+                       png: yes [pkg-config information for 'libpng' could not
+                            be found. Using unknown version.]
+    
+    OPTIONAL SUBPACKAGES
+               sample_data: yes [installing]
+                  toolkits: yes [installing]
+                     tests: yes [using nose version 1.3.3]
+    
+    OPTIONAL BACKEND EXTENSIONS
+                    macosx: no  [Mac OS-X only]
+                    qt4agg: no  [PyQt4 not found]
+                   gtk3agg: no  [Requires pygobject to be installed.]
+                 gtk3cairo: no  [Requires cairo to be installed.]
+                    gtkagg: no  [Requires pygtk]
+                     tkagg: no  [TKAgg requires Tkinter.]
+                     wxagg: no  [requires wxPython]
+                       gtk: no  [Requires pygtk]
+                       agg: yes [installing]
+                     cairo: no  [cairo not found]
+                 windowing: no  [Microsoft Windows only]
+    
+    OPTIONAL LATEX DEPENDENCIES
+                    dvipng: no
+               ghostscript: no
+                     latex: no
+                   pdftops: no
+    
+    ============================================================================
+                            * The following required packages can not be built:
+                            * freetype
+    Complete output from command python setup.py egg_info:
+    ============================================================================
+
+Edit setup.cfg to change the build options
+
+
+
+BUILDING MATPLOTLIB
+
+            matplotlib: yes [1.3.1]
+
+                python: yes [2.7.6 (default, Mar 22 2014, 22:59:56)  [GCC
+
+                        4.8.2]]
+
+              platform: yes [linux2]
+
+
+
+REQUIRED DEPENDENCIES AND EXTENSIONS
+
+                 numpy: yes [version 1.8.1]
+
+              dateutil: yes [using dateutil version 2.2]
+
+               tornado: yes [using tornado version 3.2.2]
+
+             pyparsing: yes [pyparsing was not found. It is required for
+
+                        mathtext support. pip/easy_install may attempt to
+
+                        install it after matplotlib.]
+
+                 pycxx: yes [Couldn't import.  Using local copy.]
+
+                libagg: yes [pkg-config information for 'libagg' could not
+
+                        be found. Using local copy.]
+
+              freetype: no  [The C/C++ header for freetype2 (ft2build.h)
+
+                        could not be found.  You may need to install the
+
+                        development package.]
+
+                   png: yes [pkg-config information for 'libpng' could not
+
+                        be found. Using unknown version.]
+
+
+
+OPTIONAL SUBPACKAGES
+
+           sample_data: yes [installing]
+
+              toolkits: yes [installing]
+
+                 tests: yes [using nose version 1.3.3]
+
+
+
+OPTIONAL BACKEND EXTENSIONS
+
+                macosx: no  [Mac OS-X only]
+
+                qt4agg: no  [PyQt4 not found]
+
+               gtk3agg: no  [Requires pygobject to be installed.]
+
+             gtk3cairo: no  [Requires cairo to be installed.]
+
+                gtkagg: no  [Requires pygtk]
+
+                 tkagg: no  [TKAgg requires Tkinter.]
+
+                 wxagg: no  [requires wxPython]
+
+                   gtk: no  [Requires pygtk]
+
+                   agg: yes [installing]
+
+                 cairo: no  [cairo not found]
+
+             windowing: no  [Microsoft Windows only]
+
+
+
+OPTIONAL LATEX DEPENDENCIES
+
+                dvipng: no
+
+           ghostscript: no
+
+                 latex: no
+
+               pdftops: no
+
+
+
+============================================================================
+
+                        * The following required packages can not be built:
+
+                        * freetype
+
+----------------------------------------
+Cleaning up...
+Command python setup.py egg_info failed with error code 1 in /tmp/pip_build_root/matplotlib
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 16:17:57,153 p=3983 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 16:17:57,155 p=3983 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 16:17:57,156 p=3983 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 16:17:57,156 p=3983 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=1    unreachable=0    failed=1   
+2014-06-21 16:21:40,096 p=4043 u=patrick |   
+2014-06-21 16:21:40,096 p=4043 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 16:21:40,096 p=4043 u=patrick |   
+2014-06-21 16:21:40,112 p=4043 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 16:21:40,115 p=4043 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 16:21:48,657 p=4043 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:21:48,664 p=4043 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 16:21:56,515 p=4043 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:21:56,521 p=4043 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 16:22:01,422 p=4043 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:22:01,425 p=4043 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 16:22:06,339 p=4043 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:22:06,345 p=4043 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 16:22:18,283 p=4043 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libpng-dev,pkg-config,libfreetype6-dev,libfreetype6)
+2014-06-21 16:22:18,289 p=4043 u=patrick |  TASK: [install ipython pip packages] ****************************************** 
+2014-06-21 16:22:22,830 p=4043 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 16:22:27,481 p=4043 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 16:22:32,035 p=4043 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 16:22:36,252 p=4043 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 16:22:40,776 p=4043 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 16:25:10,171 p=4043 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib)
+2014-06-21 16:25:10,181 p=4043 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 16:25:10,181 p=4043 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=6    changed=2    unreachable=0    failed=0   
+2014-06-21 16:25:43,442 p=4099 u=patrick |   
+2014-06-21 16:25:43,442 p=4099 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 16:25:43,442 p=4099 u=patrick |   
+2014-06-21 16:25:43,457 p=4099 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 16:25:43,459 p=4099 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 16:25:47,631 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:25:47,641 p=4099 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 16:25:54,296 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:25:54,297 p=4099 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 16:25:58,590 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:25:58,599 p=4099 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 16:26:02,853 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:26:02,861 p=4099 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 16:26:07,755 p=4099 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libpng-dev,pkg-config,libfreetype6-dev,libfreetype6)
+2014-06-21 16:26:07,760 p=4099 u=patrick |  TASK: [install ipython pip packages] ****************************************** 
+2014-06-21 16:26:11,875 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 16:26:15,974 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 16:26:20,122 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 16:26:24,223 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 16:26:28,387 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 16:26:32,473 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib)
+2014-06-21 16:26:36,569 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pandas)
+2014-06-21 16:26:43,397 p=4099 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=lxml) => {"cmd": "/usr/bin/pip install lxml", "failed": true, "item": "lxml"}
+2014-06-21 16:26:43,413 p=4099 u=patrick |  msg: stdout: Downloading/unpacking lxml
+  Running setup.py (path:/tmp/pip_build_root/lxml/setup.py) egg_info for package lxml
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'bugtrack_url'
+      warnings.warn(msg)
+    Building lxml version 3.3.5.
+    Building without Cython.
+    ERROR: /bin/sh: 1: xslt-config: not found
+    
+    ** make sure the development packages of libxml2 and libxslt are installed **
+    
+    Using build configuration of libxslt
+    
+    warning: no previously-included files found matching '*.py'
+Installing collected packages: lxml
+  Running setup.py install for lxml
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'bugtrack_url'
+      warnings.warn(msg)
+    Building lxml version 3.3.5.
+    Building without Cython.
+    ERROR: /bin/sh: 1: xslt-config: not found
+    
+    ** make sure the development packages of libxml2 and libxslt are installed **
+    
+    Using build configuration of libxslt
+    building 'lxml.etree' extension
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/tmp/pip_build_root/lxml/src/lxml/includes -I/usr/include/python2.7 -c src/lxml/lxml.etree.c -o build/temp.linux-x86_64-2.7/src/lxml/lxml.etree.o -w
+    In file included from src/lxml/lxml.etree.c:346:0:
+    /tmp/pip_build_root/lxml/src/lxml/includes/etree_defs.h:9:31: fatal error: libxml/xmlversion.h: No such file or directory
+     #include "libxml/xmlversion.h"
+                                   ^
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    Complete output from command /usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip_build_root/lxml/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-jvdTff-record/install-record.txt --single-version-externally-managed --compile:
+    /usr/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'bugtrack_url'
+
+  warnings.warn(msg)
+
+Building lxml version 3.3.5.
+
+Building without Cython.
+
+ERROR: /bin/sh: 1: xslt-config: not found
+
+
+
+** make sure the development packages of libxml2 and libxslt are installed **
+
+
+
+Using build configuration of libxslt
+
+running install
+
+running build
+
+running build_py
+
+creating build
+
+creating build/lib.linux-x86_64-2.7
+
+creating build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/cssselect.py -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/builder.py -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/_elementpath.py -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/__init__.py -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/sax.py -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/pyclasslookup.py -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/usedoctest.py -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/doctestcompare.py -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/ElementInclude.py -> build/lib.linux-x86_64-2.7/lxml
+
+creating build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/__init__.py -> build/lib.linux-x86_64-2.7/lxml/includes
+
+creating build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/formfill.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/_html5builder.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/_setmixin.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/builder.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/clean.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/__init__.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/_diffcommand.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/diff.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/soupparser.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/html5parser.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/ElementSoup.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/usedoctest.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+copying src/lxml/html/defs.py -> build/lib.linux-x86_64-2.7/lxml/html
+
+creating build/lib.linux-x86_64-2.7/lxml/isoschematron
+
+copying src/lxml/isoschematron/__init__.py -> build/lib.linux-x86_64-2.7/lxml/isoschematron
+
+copying src/lxml/lxml.etree.h -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/lxml.etree_api.h -> build/lib.linux-x86_64-2.7/lxml
+
+copying src/lxml/includes/xmlparser.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/xmlschema.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/dtdvalid.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/etreepublic.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/xinclude.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/schematron.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/tree.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/xslt.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/config.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/htmlparser.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/xmlerror.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/uri.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/xpath.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/c14n.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/relaxng.pxd -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/lxml-version.h -> build/lib.linux-x86_64-2.7/lxml/includes
+
+copying src/lxml/includes/etree_defs.h -> build/lib.linux-x86_64-2.7/lxml/includes
+
+creating build/lib.linux-x86_64-2.7/lxml/isoschematron/resources
+
+creating build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/rng
+
+copying src/lxml/isoschematron/resources/rng/iso-schematron.rng -> build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/rng
+
+creating build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl
+
+copying src/lxml/isoschematron/resources/xsl/XSD2Schtrn.xsl -> build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl
+
+copying src/lxml/isoschematron/resources/xsl/RNG2Schtrn.xsl -> build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl
+
+creating build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+
+copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_dsdl_include.xsl -> build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+
+copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_message.xsl -> build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+
+copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_skeleton_for_xslt1.xsl -> build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+
+copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_svrl_for_xslt1.xsl -> build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+
+copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_abstract_expand.xsl -> build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+
+copying src/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt -> build/lib.linux-x86_64-2.7/lxml/isoschematron/resources/xsl/iso-schematron-xslt1
+
+running build_ext
+
+building 'lxml.etree' extension
+
+creating build/temp.linux-x86_64-2.7
+
+creating build/temp.linux-x86_64-2.7/src
+
+creating build/temp.linux-x86_64-2.7/src/lxml
+
+x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/tmp/pip_build_root/lxml/src/lxml/includes -I/usr/include/python2.7 -c src/lxml/lxml.etree.c -o build/temp.linux-x86_64-2.7/src/lxml/lxml.etree.o -w
+
+In file included from src/lxml/lxml.etree.c:346:0:
+
+/tmp/pip_build_root/lxml/src/lxml/includes/etree_defs.h:9:31: fatal error: libxml/xmlversion.h: No such file or directory
+
+ #include "libxml/xmlversion.h"
+
+                               ^
+
+compilation terminated.
+
+error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+
+----------------------------------------
+Cleaning up...
+Command /usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip_build_root/lxml/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-jvdTff-record/install-record.txt --single-version-externally-managed --compile failed with error code 1 in /tmp/pip_build_root/lxml
+Storing debug log for failure in /root/.pip/pip.log
+
+2014-06-21 16:26:47,533 p=4099 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=openpyxl)
+2014-06-21 16:26:47,543 p=4099 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 16:26:47,544 p=4099 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 16:26:47,547 p=4099 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 16:26:47,549 p=4099 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=1    unreachable=0    failed=1   
+2014-06-21 16:29:55,874 p=4164 u=patrick |   
+2014-06-21 16:29:55,874 p=4164 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 16:29:55,875 p=4164 u=patrick |   
+2014-06-21 16:29:55,892 p=4164 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 16:29:55,896 p=4164 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 16:30:03,340 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:30:03,349 p=4164 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 16:30:10,052 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:30:10,064 p=4164 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 16:30:14,317 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:30:14,326 p=4164 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 16:30:18,587 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:30:18,597 p=4164 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 16:30:33,523 p=4164 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libpng-dev,pkg-config,libfreetype6-dev,libfreetype6,libxml2-dev,libxslt1-dev)
+2014-06-21 16:30:33,530 p=4164 u=patrick |  TASK: [install ipython pip packages] ****************************************** 
+2014-06-21 16:30:37,644 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 16:30:41,727 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 16:30:45,835 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 16:30:49,939 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 16:30:54,054 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 16:30:58,213 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib)
+2014-06-21 16:31:02,375 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pandas)
+2014-06-21 16:32:38,414 p=4164 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=lxml)
+2014-06-21 16:32:42,528 p=4164 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=openpyxl)
+2014-06-21 16:32:42,538 p=4164 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 16:32:42,542 p=4164 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=6    changed=2    unreachable=0    failed=0   
+2014-06-21 16:33:10,692 p=4232 u=patrick |   
+2014-06-21 16:33:10,692 p=4232 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 16:33:10,692 p=4232 u=patrick |   
+2014-06-21 16:33:10,707 p=4232 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 16:33:10,710 p=4232 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 16:33:14,933 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:33:14,940 p=4232 u=patrick |  TASK: [update Ubuntu repo cache] ********************************************** 
+2014-06-21 16:33:20,016 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:33:20,024 p=4232 u=patrick |  TASK: [install pip] *********************************************************** 
+2014-06-21 16:33:24,287 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:33:24,295 p=4232 u=patrick |  TASK: [install libpq-dev to get pg_config] ************************************ 
+2014-06-21 16:33:28,639 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 16:33:28,645 p=4232 u=patrick |  TASK: [install ubuntu system ipython packages] ******************************** 
+2014-06-21 16:33:33,604 p=4232 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libpng-dev,pkg-config,libfreetype6-dev,libfreetype6,libxml2-dev,libxslt1-dev)
+2014-06-21 16:33:33,614 p=4232 u=patrick |  TASK: [install ipython pip packages] ****************************************** 
+2014-06-21 16:33:37,785 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 16:33:41,866 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 16:33:45,976 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 16:33:50,122 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 16:33:54,231 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 16:33:58,403 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib)
+2014-06-21 16:34:02,505 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pandas)
+2014-06-21 16:34:06,668 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=lxml)
+2014-06-21 16:34:10,779 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=openpyxl)
+2014-06-21 16:34:14,891 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=xlrd)
+2014-06-21 16:34:19,024 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=twitter)
+2014-06-21 16:34:23,174 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=oauth2)
+2014-06-21 16:34:27,267 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pypandoc)
+2014-06-21 16:34:31,408 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=ipython)
+2014-06-21 16:49:31,294 p=4232 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=scipy)
+2014-06-21 16:49:35,718 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=patsy)
+2014-06-21 16:50:01,790 p=4232 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=statsmodels)
+2014-06-21 16:50:06,028 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=scikit-learn)
+2014-06-21 16:50:10,562 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=bokeh)
+2014-06-21 16:50:10,574 p=4232 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 16:50:10,576 p=4232 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=6    changed=2    unreachable=0    failed=0   

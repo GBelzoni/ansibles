@@ -1,0 +1,46 @@
+---
+# list of dependencies
+ipython_packages:
+#  - gcc
+#  - gcc-c++
+#  - gcc-gfortran
+#  - libpng-devel
+#  - freetype-devel
+#  - python-devel
+#  - blas-devel
+#  - lapack-devel
+#  - pandoc
+  - python-dev
+  - g++
+  - libblas-dev
+  - liblapack-dev
+  - gfortran
+  - libpng-dev 
+  - pkg-config #fixex path problem form lt2build.h
+  - libfreetype6-dev
+  - libfreetype6
+  - libxml2-dev
+  - libxslt1-dev
+
+
+# list of pip packages
+ipython_pip_packages:
+  - pyzmq
+  - tornado
+  - jinja2
+  - pygments
+  - numpy
+  - matplotlib
+  - pandas
+  - lxml
+  - openpyxl
+  - xlrd
+  - twitter
+  - oauth2
+  - pypandoc
+  - ipython
+  - scipy
+  - patsy
+  - statsmodels
+  - scikit-learn
+  - bokeh
