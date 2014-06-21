@@ -1,33 +1,7 @@
 ---
-- hosts: compute
+- name: this is top level playbook 
+  hosts: all
   remote_user: azureuser
-  tasks:
-  - name: update Ubuntu repo cache
-    apt: update_cache=yes
-    sudo: yes
-  - name: install pip
-    apt: name=python-pip state=present
-    sudo: yes
-  - name: install libpq-dev to get pg_config
-    apt: name=libpq-dev state=present
-    sudo: yes
-  - name: install ubuntu system ipython packages 
-    apt: name={{ item }} state=present
-#This is defined in group_vars/compute file
-    with_items: ipython_packages
-    sudo: yes
-  - name: install ipython pip packages 
-    pip: name={{ item }}
-#This is defined in group_vars/compute file
-    with_items: ipython_pip_packages     
-    sudo: yes
 
- 
-#install pip
-#install ipython notebook
-
-#install pg_config, python-headers
-
-#configure users
-
+- include: computeservers.yml
 

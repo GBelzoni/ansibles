@@ -1,0 +1,8 @@
+---
+- hosts: compute
+  remote_user: azureuser
+  sudo: True
+  roles:
+    - python_compute_install
+    - ansible-ipython 
+

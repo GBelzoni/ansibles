@@ -1463,3 +1463,907 @@ Storing debug log for failure in /root/.pip/pip.log
 2014-06-21 16:50:10,562 p=4232 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=bokeh)
 2014-06-21 16:50:10,574 p=4232 u=patrick |  PLAY RECAP ******************************************************************** 
 2014-06-21 16:50:10,576 p=4232 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=6    changed=2    unreachable=0    failed=0   
+2014-06-21 18:54:07,591 p=5655 u=patrick |   
+2014-06-21 18:54:07,592 p=5655 u=patrick |  /usr/bin/ansible-playbook computeservers.yml
+2014-06-21 18:54:07,592 p=5655 u=patrick |   
+2014-06-21 18:54:07,598 p=5655 u=patrick |  ERROR: cannot find role in /home/patrick/ansibles/compute/roles/ipython_compute_server or /home/patrick/ansibles/compute/ipython_compute_server or /etc/ansible/roles/ipython_compute_server
+2014-06-21 18:55:49,130 p=5667 u=patrick |   
+2014-06-21 18:55:49,130 p=5667 u=patrick |  /usr/bin/ansible-playbook computeservers.yml
+2014-06-21 18:55:49,130 p=5667 u=patrick |   
+2014-06-21 18:55:49,142 p=5667 u=patrick |  ERROR: expecting dict; got: tasks, error in /home/patrick/ansibles/compute/roles/python_compute_install/tasks/main.yml
+2014-06-21 18:57:06,648 p=5704 u=patrick |   
+2014-06-21 18:57:06,648 p=5704 u=patrick |  /usr/bin/ansible-playbook computeservers.yml
+2014-06-21 18:57:06,648 p=5704 u=patrick |   
+2014-06-21 18:57:06,665 p=5704 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 18:57:06,667 p=5704 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 18:57:14,226 p=5704 u=patrick |  ERROR: interrupted
+2014-06-21 18:57:17,409 p=5709 u=patrick |   
+2014-06-21 18:57:17,410 p=5709 u=patrick |  /usr/bin/ansible-playbook computeservers.yml
+2014-06-21 18:57:17,410 p=5709 u=patrick |   
+2014-06-21 18:57:17,425 p=5709 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 18:57:17,427 p=5709 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 18:57:32,662 p=5709 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 18:57:32,669 p=5709 u=patrick |  TASK: [python_compute_install | update Ubuntu repo cache] ********************* 
+2014-06-21 18:57:44,573 p=5709 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 18:57:44,574 p=5709 u=patrick |  TASK: [python_compute_install | install pip] ********************************** 
+2014-06-21 18:57:48,872 p=5709 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 18:57:48,877 p=5709 u=patrick |  TASK: [python_compute_install | install libpq-dev to get pg_config] *********** 
+2014-06-21 18:57:53,170 p=5709 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 18:57:53,179 p=5709 u=patrick |  TASK: [python_compute_install | install ubuntu system ipython packages] ******* 
+2014-06-21 18:57:57,474 p=5709 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=ipython_packages) => {"failed": true, "item": "ipython_packages"}
+2014-06-21 18:57:57,479 p=5709 u=patrick |  msg: No package matching 'ipython_packages' is available
+2014-06-21 18:57:57,483 p=5709 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 18:57:57,484 p=5709 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 18:57:57,490 p=5709 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-21 18:57:57,491 p=5709 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=0    unreachable=0    failed=1   
+2014-06-21 19:02:19,663 p=5791 u=patrick |   
+2014-06-21 19:02:19,664 p=5791 u=patrick |  /usr/bin/ansible-playbook computeservers.yml
+2014-06-21 19:02:19,664 p=5791 u=patrick |   
+2014-06-21 19:02:19,681 p=5791 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 19:02:19,683 p=5791 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 19:02:32,551 p=5791 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:02:32,557 p=5791 u=patrick |  TASK: [python_compute_install | update Ubuntu repo cache] ********************* 
+2014-06-21 19:02:43,188 p=5791 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:02:43,195 p=5791 u=patrick |  TASK: [python_compute_install | install pip] ********************************** 
+2014-06-21 19:02:47,493 p=5791 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:02:47,501 p=5791 u=patrick |  TASK: [python_compute_install | install libpq-dev to get pg_config] *********** 
+2014-06-21 19:02:51,845 p=5791 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:02:51,851 p=5791 u=patrick |  TASK: [python_compute_install | install ubuntu system ipython packages] ******* 
+2014-06-21 19:02:56,189 p=5791 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=ipython_packages) => {"failed": true, "item": "ipython_packages"}
+2014-06-21 19:02:56,193 p=5791 u=patrick |  msg: No package matching 'ipython_packages' is available
+2014-06-21 19:02:56,197 p=5791 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 19:02:56,201 p=5791 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 19:02:56,204 p=5791 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-21 19:02:56,207 p=5791 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=0    unreachable=0    failed=1   
+2014-06-21 19:06:51,020 p=5930 u=patrick |   
+2014-06-21 19:06:51,020 p=5930 u=patrick |  /usr/bin/ansible-playbook computeservers.yml
+2014-06-21 19:06:51,020 p=5930 u=patrick |   
+2014-06-21 19:06:51,030 p=5930 u=patrick |  ERROR: vars from '/home/patrick/ansibles/compute/roles/python_compute_install/vars/main.yml' are not a dict
+2014-06-21 19:10:19,626 p=5998 u=patrick |   
+2014-06-21 19:10:19,627 p=5998 u=patrick |  /usr/bin/ansible-playbook computeservers.yml
+2014-06-21 19:10:19,627 p=5998 u=patrick |   
+2014-06-21 19:10:19,652 p=5998 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 19:10:19,655 p=5998 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 19:10:30,891 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:10:30,903 p=5998 u=patrick |  TASK: [python_compute_install | update Ubuntu repo cache] ********************* 
+2014-06-21 19:10:37,606 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:10:37,608 p=5998 u=patrick |  TASK: [python_compute_install | install pip] ********************************** 
+2014-06-21 19:10:41,903 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:10:41,906 p=5998 u=patrick |  TASK: [python_compute_install | install libpq-dev to get pg_config] *********** 
+2014-06-21 19:10:46,187 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:10:46,195 p=5998 u=patrick |  TASK: [python_compute_install | install ubuntu system ipython packages] ******* 
+2014-06-21 19:10:51,081 p=5998 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libpng-dev,pkg-config,libfreetype6-dev,libfreetype6,libxml2-dev,libxslt1-dev)
+2014-06-21 19:10:51,084 p=5998 u=patrick |  TASK: [python_compute_install | install ipython pip packages] ***************** 
+2014-06-21 19:10:55,405 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 19:10:59,516 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 19:11:03,642 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 19:11:07,746 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 19:11:11,866 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 19:11:15,971 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib)
+2014-06-21 19:11:20,102 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pandas)
+2014-06-21 19:11:24,192 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=lxml)
+2014-06-21 19:11:28,276 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=openpyxl)
+2014-06-21 19:11:32,362 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=xlrd)
+2014-06-21 19:11:36,483 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=twitter)
+2014-06-21 19:11:40,602 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=oauth2)
+2014-06-21 19:11:44,707 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pypandoc)
+2014-06-21 19:11:48,800 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=ipython)
+2014-06-21 19:11:52,881 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=scipy)
+2014-06-21 19:12:08,665 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=patsy)
+2014-06-21 19:12:12,911 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=statsmodels)
+2014-06-21 19:12:17,167 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=scikit-learn)
+2014-06-21 19:12:21,476 p=5998 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=bokeh)
+2014-06-21 19:12:21,481 p=5998 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 19:12:21,484 p=5998 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=6    changed=1    unreachable=0    failed=0   
+2014-06-21 19:18:58,525 p=6169 u=patrick |   
+2014-06-21 19:18:58,526 p=6169 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 19:18:58,526 p=6169 u=patrick |   
+2014-06-21 19:18:58,532 p=6169 u=patrick |  ERROR: file could not read: /home/patrick/ansibles/compute/computservers.yml
+2014-06-21 19:19:23,812 p=6173 u=patrick |   
+2014-06-21 19:19:23,812 p=6173 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 19:19:23,812 p=6173 u=patrick |   
+2014-06-21 19:19:23,820 p=6173 u=patrick |  ERROR: hosts is not a legal parameter in an Ansible task or handler
+2014-06-21 19:20:54,598 p=6178 u=patrick |   
+2014-06-21 19:20:54,599 p=6178 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 19:20:54,599 p=6178 u=patrick |   
+2014-06-21 19:20:54,605 p=6178 u=patrick |  ERROR: hosts declaration is required
+2014-06-21 19:23:06,883 p=6182 u=patrick |   
+2014-06-21 19:23:06,884 p=6182 u=patrick |  /usr/bin/ansible-playbook site.yml
+2014-06-21 19:23:06,884 p=6182 u=patrick |   
+2014-06-21 19:23:06,909 p=6182 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 19:23:06,911 p=6182 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 19:23:17,930 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:23:17,936 p=6182 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 19:23:17,941 p=6182 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 19:23:22,443 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:23:22,467 p=6182 u=patrick |  TASK: [python_compute_install | update Ubuntu repo cache] ********************* 
+2014-06-21 19:23:27,605 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:23:27,610 p=6182 u=patrick |  TASK: [python_compute_install | install pip] ********************************** 
+2014-06-21 19:23:32,024 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:23:32,032 p=6182 u=patrick |  TASK: [python_compute_install | install libpq-dev to get pg_config] *********** 
+2014-06-21 19:23:36,408 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 19:23:36,415 p=6182 u=patrick |  TASK: [python_compute_install | install ubuntu system ipython packages] ******* 
+2014-06-21 19:23:41,474 p=6182 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libpng-dev,pkg-config,libfreetype6-dev,libfreetype6,libxml2-dev,libxslt1-dev)
+2014-06-21 19:23:41,475 p=6182 u=patrick |  TASK: [python_compute_install | install ipython pip packages] ***************** 
+2014-06-21 19:23:45,710 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-21 19:23:49,957 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-21 19:23:54,164 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-21 19:23:58,416 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-21 19:24:02,739 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-21 19:24:07,053 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib)
+2014-06-21 19:24:11,350 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pandas)
+2014-06-21 19:24:16,935 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=lxml)
+2014-06-21 19:24:21,336 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=openpyxl)
+2014-06-21 19:24:25,603 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=xlrd)
+2014-06-21 19:24:29,823 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=twitter)
+2014-06-21 19:24:34,089 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=oauth2)
+2014-06-21 19:24:38,295 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pypandoc)
+2014-06-21 19:24:42,495 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=ipython)
+2014-06-21 19:24:46,694 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=scipy)
+2014-06-21 19:24:50,936 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=patsy)
+2014-06-21 19:24:55,160 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=statsmodels)
+2014-06-21 19:24:59,381 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=scikit-learn)
+2014-06-21 19:25:03,627 p=6182 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=bokeh)
+2014-06-21 19:25:03,636 p=6182 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 19:25:03,638 p=6182 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=7    changed=1    unreachable=0    failed=0   
+2014-06-21 23:16:04,699 p=6480 u=patrick |   
+2014-06-21 23:16:04,699 p=6480 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-06-21 23:16:04,699 p=6480 u=patrick |   
+2014-06-21 23:16:04,753 p=6480 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 23:16:04,755 p=6480 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:16:16,243 p=6480 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:16:16,253 p=6480 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 23:16:16,258 p=6480 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:16:20,806 p=6480 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:16:20,822 p=6480 u=patrick |  TASK: [ansible-ipython | checking notebooks port] ***************************** 
+2014-06-21 23:16:24,614 p=6480 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:16:24,620 p=6480 u=patrick |  TASK: [ansible-ipython | creating groups] ************************************* 
+2014-06-21 23:16:28,686 p=6480 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:16:28,691 p=6480 u=patrick |  TASK: [ansible-ipython | creating users] ************************************** 
+2014-06-21 23:16:32,954 p=6480 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:16:32,963 p=6480 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-21 23:16:36,801 p=6480 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": true, "cmd": ["sudo", "-u", "compute_user", "/usr/bin/ipython", "profile", "create", "compute_user"], "delta": "0:00:00.020869", "end": "2014-06-22 13:42:13.961510", "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}, "rc": 1, "start": "2014-06-22 13:42:13.940641"}
+2014-06-21 23:16:36,806 p=6480 u=patrick |  stderr: sudo: /usr/bin/ipython: command not found
+2014-06-21 23:16:36,809 p=6480 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 23:16:36,812 p=6480 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 23:16:36,816 p=6480 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 23:16:36,821 p=6480 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=2    unreachable=0    failed=1   
+2014-06-21 23:19:17,809 p=6520 u=patrick |   
+2014-06-21 23:19:17,810 p=6520 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-06-21 23:19:17,810 p=6520 u=patrick |   
+2014-06-21 23:19:17,860 p=6520 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 23:19:17,862 p=6520 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:19:28,850 p=6520 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:19:28,858 p=6520 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 23:19:28,864 p=6520 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:19:33,165 p=6520 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:19:33,185 p=6520 u=patrick |  TASK: [ansible-ipython | checking notebooks port] ***************************** 
+2014-06-21 23:19:36,831 p=6520 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:19:36,836 p=6520 u=patrick |  TASK: [ansible-ipython | creating groups] ************************************* 
+2014-06-21 23:19:40,616 p=6520 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:19:40,624 p=6520 u=patrick |  TASK: [ansible-ipython | creating users] ************************************** 
+2014-06-21 23:19:44,449 p=6520 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:19:44,458 p=6520 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-21 23:19:48,243 p=6520 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": true, "cmd": ["sudo", "-u", "compute_user", "/usr/bin/ipython", "profile", "create", "compute_user"], "delta": "0:00:00.019470", "end": "2014-06-22 13:45:25.430699", "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}, "rc": 1, "start": "2014-06-22 13:45:25.411229"}
+2014-06-21 23:19:48,247 p=6520 u=patrick |  stderr: sudo: /usr/bin/ipython: command not found
+2014-06-21 23:19:48,251 p=6520 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 23:19:48,253 p=6520 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 23:19:48,256 p=6520 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 23:19:48,260 p=6520 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=0    unreachable=0    failed=1   
+2014-06-21 23:20:13,276 p=6557 u=patrick |   
+2014-06-21 23:20:13,276 p=6557 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-06-21 23:20:13,276 p=6557 u=patrick |   
+2014-06-21 23:20:13,329 p=6557 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 23:20:13,332 p=6557 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:20:17,449 p=6557 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:20:17,454 p=6557 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 23:20:17,459 p=6557 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:20:22,017 p=6557 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:20:22,033 p=6557 u=patrick |  TASK: [ansible-ipython | checking notebooks port] ***************************** 
+2014-06-21 23:20:25,702 p=6557 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:20:25,707 p=6557 u=patrick |  TASK: [ansible-ipython | creating groups] ************************************* 
+2014-06-21 23:20:29,457 p=6557 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:20:29,465 p=6557 u=patrick |  TASK: [ansible-ipython | creating users] ************************************** 
+2014-06-21 23:20:33,230 p=6557 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:20:33,237 p=6557 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-21 23:20:36,983 p=6557 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": true, "cmd": ["sudo", "-u", "compute_user", "/usr/bin/ipython", "profile", "create", "compute_user"], "delta": "0:00:00.017839", "end": "2014-06-22 13:46:14.180213", "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}, "rc": 1, "start": "2014-06-22 13:46:14.162374"}
+2014-06-21 23:20:36,985 p=6557 u=patrick |  stderr: sudo: /usr/bin/ipython: command not found
+2014-06-21 23:20:36,988 p=6557 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 23:20:36,990 p=6557 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 23:20:36,993 p=6557 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 23:20:36,993 p=6557 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=0    unreachable=0    failed=1   
+2014-06-21 23:24:17,284 p=6665 u=patrick |   
+2014-06-21 23:24:17,284 p=6665 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-06-21 23:24:17,284 p=6665 u=patrick |   
+2014-06-21 23:24:17,334 p=6665 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 23:24:17,336 p=6665 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:24:28,211 p=6665 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:24:28,216 p=6665 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 23:24:28,221 p=6665 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:24:32,593 p=6665 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:24:32,609 p=6665 u=patrick |  TASK: [ansible-ipython | checking notebooks port] ***************************** 
+2014-06-21 23:24:36,180 p=6665 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:24:36,189 p=6665 u=patrick |  TASK: [ansible-ipython | creating groups] ************************************* 
+2014-06-21 23:24:39,941 p=6665 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:24:39,949 p=6665 u=patrick |  TASK: [ansible-ipython | creating users] ************************************** 
+2014-06-21 23:24:43,759 p=6665 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:24:43,765 p=6665 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-21 23:24:48,894 p=6665 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:24:48,900 p=6665 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-21 23:24:52,637 p=6665 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:24:52,639 p=6665 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-21 23:24:58,929 p=6665 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}}
+2014-06-21 23:24:58,936 p=6665 u=patrick |  msg: Destination directory /home/compute_user/.ipython/profile_compute_user does not exist
+2014-06-21 23:24:58,941 p=6665 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 23:24:58,944 p=6665 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 23:24:58,948 p=6665 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 23:24:58,949 p=6665 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=7    changed=2    unreachable=0    failed=1   
+2014-06-21 23:36:20,258 p=6931 u=patrick |   
+2014-06-21 23:36:20,258 p=6931 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags config
+2014-06-21 23:36:20,258 p=6931 u=patrick |   
+2014-06-21 23:36:20,310 p=6931 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 23:36:20,314 p=6931 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:36:31,353 p=6931 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:36:31,361 p=6931 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 23:36:31,365 p=6931 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:36:35,729 p=6931 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:36:35,753 p=6931 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-21 23:36:40,289 p=6931 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:36:40,296 p=6931 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-21 23:36:44,050 p=6931 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:36:44,057 p=6931 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-21 23:36:50,385 p=6931 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}}
+2014-06-21 23:36:50,390 p=6931 u=patrick |  msg: Destination directory /home/compute_user/.ipython/profile_compute_user does not exist
+2014-06-21 23:36:50,394 p=6931 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 23:36:50,396 p=6931 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 23:36:50,401 p=6931 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 23:36:50,404 p=6931 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-21 23:47:13,520 p=7032 u=patrick |   
+2014-06-21 23:47:13,520 p=7032 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags config
+2014-06-21 23:47:13,520 p=7032 u=patrick |   
+2014-06-21 23:47:13,571 p=7032 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 23:47:13,574 p=7032 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:47:21,017 p=7032 u=patrick |  ERROR: interrupted
+2014-06-21 23:47:21,805 p=7037 u=patrick |   
+2014-06-21 23:47:21,805 p=7037 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags config
+2014-06-21 23:47:21,805 p=7037 u=patrick |   
+2014-06-21 23:47:21,856 p=7037 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 23:47:21,858 p=7037 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:47:31,578 p=7037 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:47:31,586 p=7037 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 23:47:31,590 p=7037 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:47:35,923 p=7037 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:47:35,950 p=7037 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-21 23:47:40,436 p=7037 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:47:40,443 p=7037 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-21 23:47:44,161 p=7037 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-21 23:47:44,166 p=7037 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-21 23:47:50,470 p=7037 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}}
+2014-06-21 23:47:50,475 p=7037 u=patrick |  msg: Destination directory /home/compute_user/.ipython/profile_compute_user does not exist
+2014-06-21 23:47:50,479 p=7037 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 23:47:50,480 p=7037 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 23:47:50,484 p=7037 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 23:47:50,486 p=7037 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-21 23:57:10,307 p=7227 u=patrick |   
+2014-06-21 23:57:10,307 p=7227 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags config
+2014-06-21 23:57:10,307 p=7227 u=patrick |   
+2014-06-21 23:57:10,359 p=7227 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 23:57:10,361 p=7227 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:57:22,098 p=7227 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:57:22,105 p=7227 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 23:57:22,108 p=7227 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:57:26,499 p=7227 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:57:26,528 p=7227 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-21 23:57:30,258 p=7227 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"cmd": "cd '/home/[[' 'item.user}}' '&' sudo -u compute_user /usr/local/bin/ipython profile create compute_user", "failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}, "rc": 2}
+2014-06-21 23:57:30,262 p=7227 u=patrick |  msg: [Errno 2] No such file or directory
+2014-06-21 23:57:30,265 p=7227 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 23:57:30,267 p=7227 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 23:57:30,269 p=7227 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 23:57:30,272 p=7227 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=1   
+2014-06-21 23:58:14,024 p=7248 u=patrick |   
+2014-06-21 23:58:14,024 p=7248 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags config
+2014-06-21 23:58:14,025 p=7248 u=patrick |   
+2014-06-21 23:58:14,076 p=7248 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-21 23:58:14,079 p=7248 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:58:18,259 p=7248 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:58:18,265 p=7248 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-21 23:58:18,268 p=7248 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-21 23:58:22,643 p=7248 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-21 23:58:22,669 p=7248 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-21 23:58:26,401 p=7248 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"cmd": "cd /home/compute_user '&' sudo -u compute_user /usr/local/bin/ipython profile create compute_user", "failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}, "rc": 2}
+2014-06-21 23:58:26,407 p=7248 u=patrick |  msg: [Errno 2] No such file or directory
+2014-06-21 23:58:26,413 p=7248 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-21 23:58:26,418 p=7248 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-21 23:58:26,422 p=7248 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-21 23:58:26,422 p=7248 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=1   
+2014-06-22 00:10:05,772 p=7266 u=patrick |   
+2014-06-22 00:10:05,772 p=7266 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags config
+2014-06-22 00:10:05,772 p=7266 u=patrick |   
+2014-06-22 00:10:05,824 p=7266 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:10:05,826 p=7266 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:10:17,051 p=7266 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:10:17,053 p=7266 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:10:17,056 p=7266 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:10:21,512 p=7266 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:10:21,535 p=7266 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:10:25,331 p=7266 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"cmd": "cd /home/compute_user '&' sudo -u compute_user /usr/local/bin/ipython profile create compute_user", "failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}, "rc": 2}
+2014-06-22 00:10:25,334 p=7266 u=patrick |  msg: [Errno 2] No such file or directory
+2014-06-22 00:10:25,340 p=7266 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:10:25,340 p=7266 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:10:25,345 p=7266 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:10:25,347 p=7266 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=1   
+2014-06-22 00:11:49,182 p=7393 u=patrick |   
+2014-06-22 00:11:49,182 p=7393 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-06-22 00:11:49,182 p=7393 u=patrick |   
+2014-06-22 00:11:49,235 p=7393 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:11:49,237 p=7393 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:12:00,222 p=7393 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:12:00,231 p=7393 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:12:00,235 p=7393 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:12:04,619 p=7393 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:12:04,644 p=7393 u=patrick |  TASK: [ansible-ipython | checking notebooks port] ***************************** 
+2014-06-22 00:12:08,309 p=7393 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:12:08,313 p=7393 u=patrick |  TASK: [ansible-ipython | creating groups] ************************************* 
+2014-06-22 00:12:12,096 p=7393 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:12:12,102 p=7393 u=patrick |  TASK: [ansible-ipython | creating users] ************************************** 
+2014-06-22 00:12:15,896 p=7393 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:12:15,904 p=7393 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:12:19,667 p=7393 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"cmd": "cd /home/compute_user '&' sudo -u compute_user /usr/local/bin/ipython profile create compute_user", "failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}, "rc": 2}
+2014-06-22 00:12:19,670 p=7393 u=patrick |  msg: [Errno 2] No such file or directory
+2014-06-22 00:12:19,673 p=7393 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:12:19,676 p=7393 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:12:19,680 p=7393 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:12:19,680 p=7393 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=0    unreachable=0    failed=1   
+2014-06-22 00:13:01,082 p=7440 u=patrick |   
+2014-06-22 00:13:01,082 p=7440 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-06-22 00:13:01,082 p=7440 u=patrick |   
+2014-06-22 00:13:01,133 p=7440 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:13:01,136 p=7440 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:13:05,345 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:13:05,353 p=7440 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:13:05,358 p=7440 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:13:09,871 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:13:09,887 p=7440 u=patrick |  TASK: [python_compute_install | update Ubuntu repo cache] ********************* 
+2014-06-22 00:13:21,673 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:13:21,681 p=7440 u=patrick |  TASK: [python_compute_install | install pip] ********************************** 
+2014-06-22 00:13:25,958 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:13:25,962 p=7440 u=patrick |  TASK: [python_compute_install | install libpq-dev to get pg_config] *********** 
+2014-06-22 00:13:30,251 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:13:30,256 p=7440 u=patrick |  TASK: [python_compute_install | install ubuntu system ipython packages] ******* 
+2014-06-22 00:13:35,178 p=7440 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libpng-dev,pkg-config,libfreetype6-dev,libfreetype6,libxml2-dev,libxslt1-dev)
+2014-06-22 00:13:35,183 p=7440 u=patrick |  TASK: [python_compute_install | install ipython pip packages] ***************** 
+2014-06-22 00:13:39,488 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-22 00:13:43,636 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-22 00:13:47,740 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-22 00:13:51,863 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-22 00:13:56,191 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-22 00:14:00,308 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib)
+2014-06-22 00:14:04,511 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pandas)
+2014-06-22 00:14:08,641 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=lxml)
+2014-06-22 00:14:12,772 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=openpyxl)
+2014-06-22 00:14:16,927 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=xlrd)
+2014-06-22 00:14:21,010 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=twitter)
+2014-06-22 00:14:25,143 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=oauth2)
+2014-06-22 00:14:29,283 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pypandoc)
+2014-06-22 00:14:33,418 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=ipython)
+2014-06-22 00:14:37,899 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=scipy)
+2014-06-22 00:14:42,215 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=patsy)
+2014-06-22 00:14:46,343 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=statsmodels)
+2014-06-22 00:14:50,525 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=scikit-learn)
+2014-06-22 00:14:54,658 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=bokeh)
+2014-06-22 00:14:54,667 p=7440 u=patrick |  TASK: [ansible-ipython | checking notebooks port] ***************************** 
+2014-06-22 00:14:58,270 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:14:58,275 p=7440 u=patrick |  TASK: [ansible-ipython | creating groups] ************************************* 
+2014-06-22 00:15:02,049 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:15:02,058 p=7440 u=patrick |  TASK: [ansible-ipython | creating users] ************************************** 
+2014-06-22 00:15:05,900 p=7440 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:15:05,904 p=7440 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:15:09,720 p=7440 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_user', 'group': 'group_compute', 'user': 'compute_user', 'notebook_dir': '/home/compute_user/notebooks', 'sha1_password': None, 'port': 8888}) => {"cmd": "cd /home/compute_user '&' sudo -u compute_user /usr/local/bin/ipython profile create compute_user", "failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/compute_user/notebooks", "port": 8888, "profile": "compute_user", "sha1_password": null, "user": "compute_user"}, "rc": 2}
+2014-06-22 00:15:09,725 p=7440 u=patrick |  msg: [Errno 2] No such file or directory
+2014-06-22 00:15:09,727 p=7440 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:15:09,730 p=7440 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:15:09,732 p=7440 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:15:09,735 p=7440 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=10   changed=1    unreachable=0    failed=1   
+2014-06-22 00:21:22,400 p=7704 u=patrick |   
+2014-06-22 00:21:22,400 p=7704 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-06-22 00:21:22,400 p=7704 u=patrick |   
+2014-06-22 00:21:22,451 p=7704 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:21:22,453 p=7704 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:21:24,956 p=7704 u=patrick |  ERROR: interrupted
+2014-06-22 00:21:38,294 p=7709 u=patrick |   
+2014-06-22 00:21:38,294 p=7709 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config
+2014-06-22 00:21:38,294 p=7709 u=patrick |   
+2014-06-22 00:21:38,344 p=7709 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:21:38,346 p=7709 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:21:51,108 p=7709 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:21:51,114 p=7709 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:21:51,117 p=7709 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:21:55,444 p=7709 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:21:55,465 p=7709 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:21:59,215 p=7709 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"cmd": "cd /home/azureuser '&' sudo -u azureuser /usr/local/bin/ipython profile create compute_basic", "failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "rc": 2}
+2014-06-22 00:21:59,219 p=7709 u=patrick |  msg: [Errno 2] No such file or directory
+2014-06-22 00:21:59,225 p=7709 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:21:59,227 p=7709 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:21:59,233 p=7709 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:21:59,235 p=7709 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=1   
+2014-06-22 00:23:56,207 p=7787 u=patrick |   
+2014-06-22 00:23:56,207 p=7787 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config
+2014-06-22 00:23:56,207 p=7787 u=patrick |   
+2014-06-22 00:23:56,256 p=7787 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:23:56,258 p=7787 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:24:03,348 p=7787 u=patrick |  ERROR: interrupted
+2014-06-22 00:24:26,680 p=7792 u=patrick |   
+2014-06-22 00:24:26,680 p=7792 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config
+2014-06-22 00:24:26,680 p=7792 u=patrick |   
+2014-06-22 00:24:26,731 p=7792 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:24:26,733 p=7792 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:24:36,881 p=7792 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:24:36,887 p=7792 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:24:36,895 p=7792 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:24:41,235 p=7792 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:24:41,244 p=7792 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:24:45,007 p=7792 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"cmd": "'{' '_ipython.home}}/bin/ipython' profile create compute_basic", "failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "rc": 2}
+2014-06-22 00:24:45,011 p=7792 u=patrick |  msg: [Errno 2] No such file or directory
+2014-06-22 00:24:45,016 p=7792 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:24:45,022 p=7792 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:24:45,025 p=7792 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:24:45,026 p=7792 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=1   
+2014-06-22 00:26:52,673 p=7831 u=patrick |   
+2014-06-22 00:26:52,673 p=7831 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config
+2014-06-22 00:26:52,673 p=7831 u=patrick |   
+2014-06-22 00:26:52,726 p=7831 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:26:52,727 p=7831 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:27:03,477 p=7831 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:27:03,485 p=7831 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:27:03,487 p=7831 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:27:07,843 p=7831 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:27:07,850 p=7831 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:27:12,387 p=7831 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:27:12,389 p=7831 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 00:27:16,139 p=7831 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:27:16,144 p=7831 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 00:27:22,414 p=7831 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 00:27:22,417 p=7831 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 00:27:22,419 p=7831 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:27:22,422 p=7831 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:27:22,425 p=7831 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:27:22,427 p=7831 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=2    unreachable=0    failed=1   
+2014-06-22 00:33:41,231 p=7865 u=patrick |   
+2014-06-22 00:33:41,231 p=7865 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config -v
+2014-06-22 00:33:41,231 p=7865 u=patrick |   
+2014-06-22 00:33:41,283 p=7865 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:33:41,285 p=7865 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:33:51,996 p=7865 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:33:52,005 p=7865 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:33:52,011 p=7865 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:33:56,417 p=7865 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:33:56,433 p=7865 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:34:00,901 p=7865 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": true, "cmd": ["/usr/local/bin/ipython", "profile", "create", "compute_basic"], "delta": "0:00:00.724718", "end": "2014-06-22 14:59:38.502325", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "rc": 0, "start": "2014-06-22 14:59:37.777607", "stderr": "", "stdout": ""}
+2014-06-22 00:34:00,906 p=7865 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 00:34:04,644 p=7865 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": false, "gid": 1001, "group": "group_compute", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "mode": "0755", "owner": "azureuser", "path": "/home/azureuser/notebooks", "size": 4096, "state": "directory", "uid": 1000}
+2014-06-22 00:34:04,647 p=7865 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 00:34:10,914 p=7865 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 00:34:10,919 p=7865 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 00:34:10,923 p=7865 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:34:10,926 p=7865 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:34:10,930 p=7865 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:34:10,933 p=7865 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-22 00:35:35,210 p=7899 u=patrick |   
+2014-06-22 00:35:35,211 p=7899 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config -v
+2014-06-22 00:35:35,211 p=7899 u=patrick |   
+2014-06-22 00:35:35,262 p=7899 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:35:35,263 p=7899 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:35:47,984 p=7899 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:35:47,991 p=7899 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:35:47,994 p=7899 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:35:52,357 p=7899 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:35:52,379 p=7899 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:35:56,896 p=7899 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": true, "cmd": ["/usr/local/bin/ipython", "profile", "create", "compute_basic"], "delta": "0:00:00.758982", "end": "2014-06-22 15:01:34.514355", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "rc": 0, "start": "2014-06-22 15:01:33.755373", "stderr": "", "stdout": ""}
+2014-06-22 00:35:56,902 p=7899 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 00:36:00,665 p=7899 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": false, "gid": 1001, "group": "group_compute", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "mode": "0755", "owner": "azureuser", "path": "/home/azureuser/notebooks", "size": 4096, "state": "directory", "uid": 1000}
+2014-06-22 00:36:00,669 p=7899 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 00:36:07,014 p=7899 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 00:36:07,018 p=7899 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 00:36:07,021 p=7899 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:36:07,023 p=7899 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:36:07,026 p=7899 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:36:07,028 p=7899 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-22 00:41:19,661 p=7933 u=patrick |   
+2014-06-22 00:41:19,661 p=7933 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config -v
+2014-06-22 00:41:19,661 p=7933 u=patrick |   
+2014-06-22 00:41:19,714 p=7933 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:41:19,716 p=7933 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:41:38,979 p=7933 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:41:38,988 p=7933 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:41:38,994 p=7933 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:41:43,372 p=7933 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:41:43,400 p=7933 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:41:47,960 p=7933 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": true, "cmd": ["/usr/local/bin/ipython", "profile", "create", "compute_basic"], "delta": "0:00:00.742574", "end": "2014-06-22 15:07:25.572672", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "rc": 0, "start": "2014-06-22 15:07:24.830098", "stderr": "", "stdout": ""}
+2014-06-22 00:41:47,967 p=7933 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 00:41:51,716 p=7933 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": false, "gid": 1001, "group": "group_compute", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "mode": "0755", "owner": "azureuser", "path": "/home/azureuser/notebooks", "size": 4096, "state": "directory", "uid": 1000}
+2014-06-22 00:41:51,722 p=7933 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 00:41:58,068 p=7933 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 00:41:58,073 p=7933 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 00:41:58,076 p=7933 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:41:58,078 p=7933 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:41:58,085 p=7933 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:41:58,088 p=7933 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-22 00:42:37,065 p=7967 u=patrick |   
+2014-06-22 00:42:37,065 p=7967 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config -v
+2014-06-22 00:42:37,065 p=7967 u=patrick |   
+2014-06-22 00:42:37,119 p=7967 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:42:37,121 p=7967 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:42:41,256 p=7967 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:42:41,264 p=7967 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:42:41,271 p=7967 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:42:45,627 p=7967 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:42:45,649 p=7967 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:42:50,170 p=7967 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": true, "cmd": ["/usr/local/bin/ipython", "profile", "create", "testprofile"], "delta": "0:00:00.775073", "end": "2014-06-22 15:08:27.826577", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "rc": 0, "start": "2014-06-22 15:08:27.051504", "stderr": "[ProfileCreate] Generating default config file: u'/root/.ipython/profile_testprofile/ipython_config.py'\n[ProfileCreate] Generating default config file: u'/root/.ipython/profile_testprofile/ipython_notebook_config.py'\n[ProfileCreate] Generating default config file: u'/root/.ipython/profile_testprofile/ipython_nbconvert_config.py'", "stdout": ""}
+2014-06-22 00:42:50,176 p=7967 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 00:42:53,982 p=7967 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": false, "gid": 1001, "group": "group_compute", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "mode": "0755", "owner": "azureuser", "path": "/home/azureuser/notebooks", "size": 4096, "state": "directory", "uid": 1000}
+2014-06-22 00:42:53,990 p=7967 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 00:43:00,420 p=7967 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 00:43:00,427 p=7967 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 00:43:00,430 p=7967 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:43:00,431 p=7967 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:43:00,443 p=7967 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:43:00,446 p=7967 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-22 00:45:02,077 p=8012 u=patrick |  
+2014-06-22 00:45:02,078 p=8012 u=patrick |  /usr/bin/ansible compute -a /usr/local/bin/ipython profile create testblah
+2014-06-22 00:45:02,078 p=8012 u=patrick |  
+2014-06-22 00:45:12,993 p=8012 u=patrick |  azureuser@testmlcompute.cloudapp.net | success | rc=0 >>
+[ProfileCreate] Generating default config file: u'/home/azureuser/.ipython/profile_testblah/ipython_config.py'
+[ProfileCreate] Generating default config file: u'/home/azureuser/.ipython/profile_testblah/ipython_notebook_config.py'
+[ProfileCreate] Generating default config file: u'/home/azureuser/.ipython/profile_testblah/ipython_nbconvert_config.py'
+
+2014-06-22 00:46:35,357 p=8041 u=patrick |   
+2014-06-22 00:46:35,358 p=8041 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config -v
+2014-06-22 00:46:35,358 p=8041 u=patrick |   
+2014-06-22 00:46:35,415 p=8041 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:46:35,417 p=8041 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:46:45,735 p=8041 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:46:45,742 p=8041 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:46:45,745 p=8041 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:46:50,293 p=8041 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:46:50,327 p=8041 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:46:54,062 p=8041 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"cmd": "usr/local/bin/ipython profile create testprofile", "failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "rc": 2}
+2014-06-22 00:46:54,067 p=8041 u=patrick |  msg: [Errno 2] No such file or directory
+2014-06-22 00:46:54,071 p=8041 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:46:54,075 p=8041 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:46:54,079 p=8041 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:46:54,081 p=8041 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=1   
+2014-06-22 00:47:55,479 p=8062 u=patrick |   
+2014-06-22 00:47:55,479 p=8062 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config -v
+2014-06-22 00:47:55,479 p=8062 u=patrick |   
+2014-06-22 00:47:55,534 p=8062 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:47:55,536 p=8062 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:48:08,976 p=8062 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:48:08,985 p=8062 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:48:08,990 p=8062 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:48:18,343 p=8062 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:48:18,360 p=8062 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:48:22,853 p=8062 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": true, "cmd": ["//usr/local/bin/ipython", "profile", "create", "testprofile"], "delta": "0:00:00.720072", "end": "2014-06-22 15:14:00.541672", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "rc": 0, "start": "2014-06-22 15:13:59.821600", "stderr": "", "stdout": ""}
+2014-06-22 00:48:22,859 p=8062 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 00:48:26,589 p=8062 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"changed": false, "gid": 1001, "group": "group_compute", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "mode": "0755", "owner": "azureuser", "path": "/home/azureuser/notebooks", "size": 4096, "state": "directory", "uid": 1000}
+2014-06-22 00:48:26,592 p=8062 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 00:48:32,858 p=8062 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 00:48:32,864 p=8062 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 00:48:32,869 p=8062 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:48:32,873 p=8062 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:48:32,874 p=8062 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:48:32,875 p=8062 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-22 00:50:25,604 p=8096 u=patrick |   
+2014-06-22 00:50:25,605 p=8096 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml --tags=config -v
+2014-06-22 00:50:25,605 p=8096 u=patrick |   
+2014-06-22 00:50:25,657 p=8096 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-06-22 00:50:25,659 p=8096 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:50:37,027 p=8096 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:50:37,035 p=8096 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:50:37,042 p=8096 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:50:41,413 p=8096 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:50:41,427 p=8096 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:50:45,224 p=8096 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"cmd": "/user/local/bin/ipython profile create testprofile", "failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}, "rc": 2}
+2014-06-22 00:50:45,229 p=8096 u=patrick |  msg: [Errno 2] No such file or directory
+2014-06-22 00:50:45,235 p=8096 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:50:45,235 p=8096 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:50:45,238 p=8096 u=patrick |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-06-22 00:50:45,239 p=8096 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=1   
+2014-06-22 00:52:05,131 p=8147 u=patrick |   
+2014-06-22 00:52:05,131 p=8147 u=patrick |  /usr/bin/ansible-playbook compute --tags config
+2014-06-22 00:52:05,132 p=8147 u=patrick |   
+2014-06-22 00:52:05,135 p=8147 u=patrick |  ERROR: the playbook: compute could not be found
+2014-06-22 00:52:20,181 p=8158 u=patrick |   
+2014-06-22 00:52:20,181 p=8158 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 00:52:20,181 p=8158 u=patrick |   
+2014-06-22 00:52:20,232 p=8158 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:52:20,234 p=8158 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:52:27,899 p=8158 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:52:27,924 p=8158 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:52:32,385 p=8158 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:52:32,388 p=8158 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 00:52:36,167 p=8158 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:52:36,175 p=8158 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 00:52:42,436 p=8158 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 00:52:42,443 p=8158 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 00:52:42,449 p=8158 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:52:42,451 p=8158 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:52:42,457 p=8158 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 00:52:42,458 p=8158 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=1   
+2014-06-22 00:56:42,112 p=8187 u=patrick |   
+2014-06-22 00:56:42,112 p=8187 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 00:56:42,112 p=8187 u=patrick |   
+2014-06-22 00:56:42,164 p=8187 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 00:56:42,165 p=8187 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 00:56:49,676 p=8187 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 00:56:49,703 p=8187 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 00:56:54,250 p=8187 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:56:54,255 p=8187 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 00:56:58,080 p=8187 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 00:56:58,083 p=8187 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 00:57:04,355 p=8187 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 00:57:04,361 p=8187 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 00:57:04,365 p=8187 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 00:57:04,367 p=8187 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 00:57:04,372 p=8187 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 00:57:04,375 p=8187 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=1   
+2014-06-22 01:02:40,203 p=8426 u=patrick |  
+2014-06-22 01:02:40,204 p=8426 u=patrick |  /usr/bin/ansible computeservers.yml --tags config
+2014-06-22 01:02:40,204 p=8426 u=patrick |  
+2014-06-22 01:03:35,359 p=8457 u=patrick |   
+2014-06-22 01:03:35,359 p=8457 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags compute
+2014-06-22 01:03:35,359 p=8457 u=patrick |   
+2014-06-22 01:03:35,410 p=8457 u=patrick |  ERROR: tag(s) not found in playbook: compute.  possible values: check,config,info,user
+2014-06-22 01:03:47,087 p=8460 u=patrick |   
+2014-06-22 01:03:47,087 p=8460 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 01:03:47,087 p=8460 u=patrick |   
+2014-06-22 01:03:47,138 p=8460 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 01:03:47,140 p=8460 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 01:03:54,389 p=8460 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:03:54,413 p=8460 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 01:03:58,906 p=8460 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:03:58,913 p=8460 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 01:04:02,650 p=8460 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:04:02,655 p=8460 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 01:04:08,911 p=8460 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 01:04:08,916 p=8460 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 01:04:08,921 p=8460 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 01:04:08,924 p=8460 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 01:04:08,927 p=8460 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 01:04:08,927 p=8460 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=1   
+2014-06-22 01:05:16,781 p=8515 u=patrick |   
+2014-06-22 01:05:16,781 p=8515 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 01:05:16,781 p=8515 u=patrick |   
+2014-06-22 01:05:16,832 p=8515 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 01:05:16,835 p=8515 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 01:05:24,356 p=8515 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:05:24,383 p=8515 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 01:05:28,867 p=8515 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:05:28,873 p=8515 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 01:05:32,647 p=8515 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:05:32,654 p=8515 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 01:05:38,935 p=8515 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888}) => {"failed": true, "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": null, "user": "azureuser"}}
+2014-06-22 01:05:38,941 p=8515 u=patrick |  msg: Destination directory /home/azureuser/.ipython/profile_compute_basic does not exist
+2014-06-22 01:05:38,944 p=8515 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 01:05:38,948 p=8515 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 01:05:38,952 p=8515 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 01:05:38,954 p=8515 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=1   
+2014-06-22 01:07:25,244 p=8568 u=patrick |   
+2014-06-22 01:07:25,245 p=8568 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 01:07:25,245 p=8568 u=patrick |   
+2014-06-22 01:07:25,294 p=8568 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 01:07:25,296 p=8568 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 01:07:32,878 p=8568 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:07:32,901 p=8568 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 01:07:37,388 p=8568 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:07:37,397 p=8568 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 01:07:41,170 p=8568 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:07:41,178 p=8568 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 01:07:47,458 p=8568 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:07:47,465 p=8568 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 01:07:47,468 p=8568 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=2    unreachable=0    failed=0   
+2014-06-22 01:08:32,112 p=8597 u=patrick |   
+2014-06-22 01:08:32,112 p=8597 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags info
+2014-06-22 01:08:32,112 p=8597 u=patrick |   
+2014-06-22 01:08:32,163 p=8597 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 01:08:32,166 p=8597 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 01:08:36,321 p=8597 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:08:36,345 p=8597 u=patrick |  TASK: [ansible-ipython | info] ************************************************ 
+2014-06-22 01:08:39,708 p=8597 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:08:39,708 p=8597 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 01:08:39,709 p=8597 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=0   
+2014-06-22 01:15:41,830 p=8844 u=patrick |   
+2014-06-22 01:15:41,830 p=8844 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config2
+2014-06-22 01:15:41,830 p=8844 u=patrick |   
+2014-06-22 01:15:41,880 p=8844 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 01:15:41,882 p=8844 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 01:15:49,389 p=8844 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:15:49,406 p=8844 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 01:15:53,819 p=8844 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:15:53,826 p=8844 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 01:15:53,829 p=8844 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=0   
+2014-06-22 01:20:24,319 p=8954 u=patrick |   
+2014-06-22 01:20:24,319 p=8954 u=patrick |  /usr/bin/ansible-playbook computeservers.yml
+2014-06-22 01:20:24,319 p=8954 u=patrick |   
+2014-06-22 01:20:24,371 p=8954 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 01:20:24,373 p=8954 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 01:20:31,961 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:20:31,978 p=8954 u=patrick |  TASK: [python_compute_install | update Ubuntu repo cache] ********************* 
+2014-06-22 01:20:47,092 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:20:47,097 p=8954 u=patrick |  TASK: [python_compute_install | install pip] ********************************** 
+2014-06-22 01:20:51,456 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:20:51,463 p=8954 u=patrick |  TASK: [python_compute_install | install libpq-dev to get pg_config] *********** 
+2014-06-22 01:20:55,840 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:20:55,849 p=8954 u=patrick |  TASK: [python_compute_install | install ubuntu system ipython packages] ******* 
+2014-06-22 01:21:01,029 p=8954 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=python-dev,g++,libblas-dev,liblapack-dev,gfortran,libpng-dev,pkg-config,libfreetype6-dev,libfreetype6,libxml2-dev,libxslt1-dev)
+2014-06-22 01:21:01,030 p=8954 u=patrick |  TASK: [python_compute_install | install ipython pip packages] ***************** 
+2014-06-22 01:21:05,367 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pyzmq)
+2014-06-22 01:21:09,500 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=tornado)
+2014-06-22 01:21:13,671 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=jinja2)
+2014-06-22 01:21:17,957 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pygments)
+2014-06-22 01:21:22,086 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=numpy)
+2014-06-22 01:21:26,242 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=matplotlib)
+2014-06-22 01:21:30,472 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pandas)
+2014-06-22 01:21:34,584 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=lxml)
+2014-06-22 01:21:38,750 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=openpyxl)
+2014-06-22 01:21:42,961 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=xlrd)
+2014-06-22 01:21:47,187 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=twitter)
+2014-06-22 01:21:51,426 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=oauth2)
+2014-06-22 01:21:55,809 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=pypandoc)
+2014-06-22 01:21:59,985 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=ipython)
+2014-06-22 01:22:04,264 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=scipy)
+2014-06-22 01:22:08,542 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=patsy)
+2014-06-22 01:22:12,754 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=statsmodels)
+2014-06-22 01:22:17,062 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=scikit-learn)
+2014-06-22 01:22:21,246 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=bokeh)
+2014-06-22 01:22:21,250 p=8954 u=patrick |  TASK: [ansible-ipython | checking notebooks port] ***************************** 
+2014-06-22 01:22:25,019 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:22:25,021 p=8954 u=patrick |  TASK: [ansible-ipython | creating groups] ************************************* 
+2014-06-22 01:22:28,809 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:22:28,818 p=8954 u=patrick |  TASK: [ansible-ipython | creating users] ************************************** 
+2014-06-22 01:22:32,710 p=8954 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:22:32,718 p=8954 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 01:22:37,300 p=8954 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:22:37,303 p=8954 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 01:22:41,093 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:22:41,100 p=8954 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 01:22:45,783 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:22:45,790 p=8954 u=patrick |  TASK: [ansible-ipython | debug var=cat.stdout_lines] ************************** 
+2014-06-22 01:22:45,915 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => {
+    "cat.stdout_lines": "{{ cat.stdout_lines }}"
+}
+2014-06-22 01:22:45,920 p=8954 u=patrick |  TASK: [ansible-ipython | info] ************************************************ 
+2014-06-22 01:22:50,226 p=8954 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': None, 'port': 8888})
+2014-06-22 01:22:50,228 p=8954 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 01:22:50,228 p=8954 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=14   changed=3    unreachable=0    failed=0   
+2014-06-22 01:50:12,426 p=9213 u=patrick |   
+2014-06-22 01:50:12,427 p=9213 u=patrick |  /usr/bin/ansible-playbook computeservers.yml config
+2014-06-22 01:50:12,427 p=9213 u=patrick |   
+2014-06-22 01:50:12,430 p=9213 u=patrick |  ERROR: the playbook: config could not be found
+2014-06-22 01:50:19,270 p=9216 u=patrick |   
+2014-06-22 01:50:19,270 p=9216 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 01:50:19,270 p=9216 u=patrick |   
+2014-06-22 01:50:19,320 p=9216 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 01:50:19,321 p=9216 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 01:50:19,334 p=9216 u=patrick |  fatal: [azureuser@testmlcompute.cloudapp.net] => Syntax Error while loading YAML script, /home/patrick/ansibles/compute/group_vars/all
+Note: The error may actually appear before this position: line 7, column 5
+
+    sha1_password:sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724
+    notebook_dir: /home/azureuser/notebooks
+    ^
+2014-06-22 01:50:19,336 p=9216 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 01:50:19,337 p=9216 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 01:50:19,339 p=9216 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 01:50:19,339 p=9216 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=0    changed=0    unreachable=1    failed=0   
+2014-06-22 01:51:02,682 p=9222 u=patrick |   
+2014-06-22 01:51:02,682 p=9222 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 01:51:02,682 p=9222 u=patrick |   
+2014-06-22 01:51:02,733 p=9222 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 01:51:02,734 p=9222 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 01:51:10,266 p=9222 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:51:10,284 p=9222 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 01:51:14,798 p=9222 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 01:51:14,808 p=9222 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 01:51:18,628 p=9222 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 01:51:18,634 p=9222 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 01:51:18,637 p=9222 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=0   
+2014-06-22 01:53:11,756 p=9348 u=patrick |   
+2014-06-22 01:53:11,757 p=9348 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config2
+2014-06-22 01:53:11,757 p=9348 u=patrick |   
+2014-06-22 01:53:11,808 p=9348 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 01:53:11,811 p=9348 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 01:53:19,375 p=9348 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 01:53:19,381 p=9348 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 01:53:25,667 p=9348 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 01:53:25,674 p=9348 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 01:53:25,676 p=9348 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=1    unreachable=0    failed=0   
+2014-06-22 02:04:49,758 p=9481 u=patrick |   
+2014-06-22 02:04:49,759 p=9481 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config2
+2014-06-22 02:04:49,759 p=9481 u=patrick |   
+2014-06-22 02:04:49,810 p=9481 u=patrick |  ERROR: tag(s) not found in playbook: config2.  possible values: check,config,info,user
+2014-06-22 02:04:51,737 p=9484 u=patrick |   
+2014-06-22 02:04:51,737 p=9484 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:04:51,737 p=9484 u=patrick |   
+2014-06-22 02:04:51,789 p=9484 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:04:51,791 p=9484 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:04:59,287 p=9484 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:04:59,308 p=9484 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:05:03,791 p=9484 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:05:03,799 p=9484 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:05:07,539 p=9484 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:05:07,547 p=9484 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:05:11,455 p=9484 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => {"changed": true, "cmd": ["openssl", "req", "-x509", "-nodes", "-days", "365", "-newkey", "ras:1024", "-keyout", "mycert.pem", "mycert.pem"], "delta": "0:00:00.114649", "end": "2014-06-22 16:30:49.579870", "rc": 1, "start": "2014-06-22 16:30:49.465221"}
+2014-06-22 02:05:11,464 p=9484 u=patrick |  stderr: unknown option mycert.pem
+req [options] <infile >outfile
+where options  are
+ -inform arg    input format - DER or PEM
+ -outform arg   output format - DER or PEM
+ -in arg        input file
+ -out arg       output file
+ -text          text form of request
+ -pubkey        output public key
+ -noout         do not output REQ
+ -verify        verify signature on REQ
+ -modulus       RSA modulus
+ -nodes         don't encrypt the output key
+ -engine e      use engine e, possibly a hardware device
+ -subject       output the request's subject
+ -passin        private key password source
+ -key file      use the private key contained in file
+ -keyform arg   key file format
+ -keyout arg    file to send the key to
+ -rand file:file:...
+                load the file (or the files in the directory) into
+                the random number generator
+ -newkey rsa:bits generate a new RSA key of 'bits' in size
+ -newkey dsa:file generate a new DSA key, parameters taken from CA in 'file'
+ -newkey ec:file generate a new EC key, parameters taken from CA in 'file'
+ -[digest]      Digest to sign with (md5, sha1, md2, mdc2, md4)
+ -config file   request template file.
+ -subj arg      set or modify request subject
+ -multivalue-rdn enable support for multivalued RDNs
+ -new           new request.
+ -batch         do not ask anything during request generation
+ -x509          output a x509 structure instead of a cert. req.
+ -days          number of days a certificate generated by -x509 is valid for.
+ -set_serial    serial number to use for a certificate generated by -x509.
+ -newhdr        output "NEW" in the header lines
+ -asn1-kludge   Output the 'request' in a format that is wrong but some CA's
+                have been reported as requiring
+ -extensions .. specify certificate extension section (override value in config file)
+ -reqexts ..    specify request extension section (override value in config file)
+ -utf8          input characters are UTF8 (default ASCII)
+ -nameopt arg    - various certificate name options
+ -reqopt arg    - various request text options
+2014-06-22 02:05:11,467 p=9484 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 02:05:11,469 p=9484 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:05:11,472 p=9484 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 02:05:11,475 p=9484 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=1   
