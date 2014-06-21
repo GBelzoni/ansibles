@@ -1,0 +1,12 @@
+---
+- hosts: compute
+
+ 
+#install pip
+#install ipython notebook
+
+#install pg_config, python-headers
+
+#configure users
+
+
