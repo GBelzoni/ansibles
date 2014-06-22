@@ -1,0 +1,13 @@
+---
+# defaults file for ipython
+
+# ipython notebooks configuration
+# provide a list of { profile, port, user, group, sha1_password, notebook_dir } items
+# sha1_password can be empty or generated via:
+#     python -c 'from IPython.lib import passwd; print(passwd("<password>"))'
+
+# list of dependencies
+cran_packages:
+  - 'r-base'
+  - gdebi-core
+  - libapparmor1

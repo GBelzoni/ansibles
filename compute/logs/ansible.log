@@ -2705,3 +2705,639 @@ where options  are
 2014-06-22 03:14:15,672 p=10269 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
 2014-06-22 03:14:15,681 p=10269 u=patrick |  PLAY RECAP ******************************************************************** 
 2014-06-22 03:14:15,683 p=10269 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=3    unreachable=0    failed=0   
+2014-06-22 03:57:59,367 p=10650 u=patrick |   
+2014-06-22 03:57:59,368 p=10650 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 03:57:59,368 p=10650 u=patrick |   
+2014-06-22 03:57:59,418 p=10650 u=patrick |  ERROR: tag(s) not found in playbook: rinstall.  possible values: check,config,info,user
+2014-06-22 03:58:53,077 p=10663 u=patrick |   
+2014-06-22 03:58:53,077 p=10663 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 03:58:53,077 p=10663 u=patrick |   
+2014-06-22 03:58:53,135 p=10663 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 03:58:53,137 p=10663 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 03:59:04,288 p=10663 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 03:59:04,310 p=10663 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 03:59:19,465 p=10663 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=r-base) => {"failed": true, "item": "r-base"}
+2014-06-22 03:59:19,472 p=10663 u=patrick |  stderr: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.34-1ubuntu1_all.deb  503  Service Temporarily Unavailable
+
+E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/libf/libfile-mimeinfo-perl/libfile-mimeinfo-perl_0.22-1_all.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-22 03:59:19,480 p=10663 u=patrick |  stdout: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autotools-dev cdbs debhelper dh-apparmor dh-translations
+  fontconfig fontconfig-config fonts-dejavu-core gettext intltool
+  intltool-debian libasprintf-dev libauthen-sasl-perl libbz2-dev libcairo2
+  libcroco3 libdatrie1 libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+  libencode-locale-perl libfile-basedir-perl libfile-desktopentry-perl
+  libfile-listing-perl libfile-mimeinfo-perl libfont-afm-perl libfontconfig1
+  libfontenc1 libgettextpo-dev libgettextpo0 libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libgraphite2-3 libharfbuzz0b libhtml-form-perl
+  libhtml-format-perl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libice6 libio-html-perl
+  libio-socket-inet6-perl libio-socket-ssl-perl libjbig0 libjpeg-dev
+  libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev libllvm3.4
+  liblwp-mediatypes-perl liblwp-protocol-https-perl libmail-sendmail-perl
+  libmailtools-perl libncurses5-dev libnet-http-perl libnet-smtp-ssl-perl
+  libnet-ssleay-perl libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpaper-utils libpaper1 libpciaccess0 libpcre3-dev libpcrecpp0
+  libpixman-1-0 libreadline-dev libreadline6-dev libsm6 libsocket6-perl
+  libsys-hostname-long-perl libtcl8.5 libthai-data libthai0 libtiff5
+  libtinfo-dev libtk8.5 libtxc-dxtn-s2tc0 libunistring0 liburi-perl
+  libutempter0 libwww-perl libwww-robotrules-perl libx11-xcb1 libxaw7
+  libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0
+  libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxft2 libxi6 libxinerama1 libxml-parser-perl
+  libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxss1 libxt6 libxtst6
+  libxv1 libxxf86dga1 libxxf86vm1 m4 po-debconf python-scour r-base-core
+  r-base-dev r-base-html r-cran-boot r-cran-class r-cran-cluster
+  r-cran-codetools r-cran-foreign r-cran-kernsmooth r-cran-lattice r-cran-mass
+  r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart
+  r-cran-spatial r-cran-survival r-doc-html r-recommended tcl8.5 tk8.5 unzip
+  x11-common x11-utils x11-xserver-utils xbitmaps xdg-utils xterm zip
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc libtool devscripts
+  dh-make apparmor-easyprof gettext-doc libdigest-hmac-perl libgssapi-perl
+  libglide3 libdata-dump-perl libcrypt-ssleay-perl ncurses-doc ttf-baekmuk
+  ttf-arphic-gbsn00lp ttf-arphic-bsmi00lp ttf-arphic-gkai00mp
+  ttf-arphic-bkai00mp libauthen-ntlm-perl libmail-box-perl python-rsvg
+  python-cairo ess r-doc-info r-doc-pdf r-mathlib texlive-base
+  texlive-latex-base texlive-generic-recommended texlive-fonts-recommended
+  texlive-fonts-extra texlive-extra-utils texlive-latex-recommended
+  texlive-latex-extra texinfo texi2html tcl-tclreadline mesa-utils nickle
+  cairo-5c xorg-docs-core gvfs-bin xfonts-cyrillic
+The following NEW packages will be installed:
+  autoconf automake autotools-dev cdbs debhelper dh-apparmor dh-translations
+  fontconfig fontconfig-config fonts-dejavu-core gettext intltool
+  intltool-debian libasprintf-dev libauthen-sasl-perl libbz2-dev libcairo2
+  libcroco3 libdatrie1 libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+  libencode-locale-perl libfile-basedir-perl libfile-desktopentry-perl
+  libfile-listing-perl libfile-mimeinfo-perl libfont-afm-perl libfontconfig1
+  libfontenc1 libgettextpo-dev libgettextpo0 libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libgraphite2-3 libharfbuzz0b libhtml-form-perl
+  libhtml-format-perl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libice6 libio-html-perl
+  libio-socket-inet6-perl libio-socket-ssl-perl libjbig0 libjpeg-dev
+  libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev libllvm3.4
+  liblwp-mediatypes-perl liblwp-protocol-https-perl libmail-sendmail-perl
+  libmailtools-perl libncurses5-dev libnet-http-perl libnet-smtp-ssl-perl
+  libnet-ssleay-perl libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpaper-utils libpaper1 libpciaccess0 libpcre3-dev libpcrecpp0
+  libpixman-1-0 libreadline-dev libreadline6-dev libsm6 libsocket6-perl
+  libsys-hostname-long-perl libtcl8.5 libthai-data libthai0 libtiff5
+  libtinfo-dev libtk8.5 libtxc-dxtn-s2tc0 libunistring0 liburi-perl
+  libutempter0 libwww-perl libwww-robotrules-perl libx11-xcb1 libxaw7
+  libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0
+  libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxft2 libxi6 libxinerama1 libxml-parser-perl
+  libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxss1 libxt6 libxtst6
+  libxv1 libxxf86dga1 libxxf86vm1 m4 po-debconf python-scour r-base
+  r-base-core r-base-dev r-base-html r-cran-boot r-cran-class r-cran-cluster
+  r-cran-codetools r-cran-foreign r-cran-kernsmooth r-cran-lattice r-cran-mass
+  r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart
+  r-cran-spatial r-cran-survival r-doc-html r-recommended tcl8.5 tk8.5 unzip
+  x11-common x11-utils x11-xserver-utils xbitmaps xdg-utils xterm zip
+0 upgraded, 155 newly installed, 0 to remove and 22 not upgraded.
+Need to get 62.2 MB of archives.
+After this operation, 166 MB of additional disk space will be used.
+Err http://azure.archive.ubuntu.com/ubuntu/ trusty/main fonts-dejavu-core all 2.34-1ubuntu1
+  503  Service Temporarily Unavailable
+Get:1 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main fontconfig-config all 2.11.0-0ubuntu4.1 [47.4 kB]
+Get:2 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libfontconfig1 amd64 2.11.0-0ubuntu4.1 [123 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpixman-1-0 amd64 0.30.2-2ubuntu1 [227 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcb-render0 amd64 1.10-2ubuntu1 [11.0 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcb-shm0 amd64 1.10-2ubuntu1 [5,432 B]
+Get:6 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxrender1 amd64 1:0.9.8-1 [20.9 kB]
+Get:7 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libcairo2 amd64 1.13.0~20140204-0ubuntu1 [535 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libcroco3 amd64 0.6.8-2ubuntu1 [82.4 kB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libdatrie1 amd64 0.2.8-1 [16.7 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpciaccess0 amd64 0.13.2-1 [20.4 kB]
+Get:11 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libdrm-intel1 amd64 2.4.52-1 [54.8 kB]
+Get:12 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libdrm-nouveau2 amd64 2.4.52-1 [13.4 kB]
+Get:13 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libdrm-radeon1 amd64 2.4.52-1 [23.8 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libfontenc1 amd64 1:1.1.2-1 [15.6 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libunistring0 amd64 0.9.3-5ubuntu3 [271 kB]
+Get:16 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libgettextpo0 amd64 0.18.3.1-1ubuntu3 [108 kB]
+Get:17 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libllvm3.4 amd64 1:3.4-1ubuntu3 [6,540 kB]
+Get:18 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libgl1-mesa-dri amd64 10.1.3-0ubuntu0.1 [4,962 kB]
+Get:19 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libglapi-mesa amd64 10.1.3-0ubuntu0.1 [21.3 kB]
+Get:20 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libx11-xcb1 amd64 2:1.6.2-1ubuntu2 [9,426 B]
+Get:21 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcb-dri2-0 amd64 1.10-2ubuntu1 [6,710 B]
+Get:22 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcb-dri3-0 amd64 1.10-2ubuntu1 [5,118 B]
+Get:23 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcb-glx0 amd64 1.10-2ubuntu1 [20.0 kB]
+Get:24 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcb-present0 amd64 1.10-2ubuntu1 [5,254 B]
+Get:25 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcb-sync1 amd64 1.10-2ubuntu1 [8,090 B]
+Get:26 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxdamage1 amd64 1:1.1.4-1ubuntu1 [7,612 B]
+Get:27 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxfixes3 amd64 1:5.0.1-1ubuntu1 [11.7 kB]
+Get:28 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxshmfence1 amd64 1.1-2 [4,644 B]
+Get:29 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxxf86vm1 amd64 1:1.1.3-1 [11.7 kB]
+Get:30 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libgl1-mesa-glx amd64 10.1.3-0ubuntu0.1 [114 kB]
+Get:31 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libgraphite2-3 amd64 1.2.4-1ubuntu1 [53.8 kB]
+Get:32 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libharfbuzz0b amd64 0.9.27-1 [126 kB]
+Get:33 http://azure.archive.ubuntu.com/ubuntu/ trusty/main x11-common all 1:7.7+1ubuntu8 [49.8 kB]
+Get:34 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libice6 amd64 2:1.0.8-2 [47.0 kB]
+Get:35 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libjpeg-turbo8 amd64 1.3.0-0ubuntu2 [104 kB]
+Get:36 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libthai-data all 0.1.20-3 [130 kB]
+Get:37 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libthai0 amd64 0.1.20-3 [16.9 kB]
+Get:38 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main fontconfig amd64 2.11.0-0ubuntu4.1 [176 kB]
+Get:39 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpango-1.0-0 amd64 1.36.3-1ubuntu1 [149 kB]
+Get:40 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpangoft2-1.0-0 amd64 1.36.3-1ubuntu1 [32.6 kB]
+Get:41 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpangocairo-1.0-0 amd64 1.36.3-1ubuntu1 [19.9 kB]
+Get:42 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpaper1 amd64 1.1.24+nmu2ubuntu3 [13.4 kB]
+Get:43 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpcrecpp0 amd64 1:8.31-2ubuntu2 [14.5 kB]
+Get:44 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libsm6 amd64 2:1.2.1-2 [18.1 kB]
+Get:45 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libtcl8.5 amd64 8.5.15-2ubuntu1 [684 kB]
+Get:46 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libjbig0 amd64 2.0-2ubuntu4.1 [26.1 kB]
+Get:47 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libjpeg8 amd64 8c-2ubuntu8 [2,194 B]
+Get:48 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libtiff5 amd64 4.0.3-7ubuntu0.1 [142 kB]
+Get:49 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxft2 amd64 2.3.1-2 [36.2 kB]
+Get:50 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxss1 amd64 1:1.2.2-1 [8,582 B]
+Get:51 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libtk8.5 amd64 8.5.15-2ubuntu3 [641 kB]
+Get:52 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxt6 amd64 1:1.1.4-1 [185 kB]
+Get:53 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxmu6 amd64 2:1.1.1-1 [53.8 kB]
+Get:54 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxpm4 amd64 1:3.5.10-1 [38.3 kB]
+Get:55 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxaw7 amd64 2:1.0.12-1 [168 kB]
+Get:56 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcb-shape0 amd64 1.10-2ubuntu1 [5,654 B]
+Get:57 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcomposite1 amd64 1:0.4.4-1 [7,714 B]
+Get:58 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxcursor1 amd64 1:1.1.14-1 [22.8 kB]
+Get:59 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxi6 amd64 2:1.7.1.901-1ubuntu1 [31.9 kB]
+Get:60 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxinerama1 amd64 2:1.1.3-1 [7,908 B]
+Get:61 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxrandr2 amd64 2:1.4.2-1 [16.6 kB]
+Get:62 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxtst6 amd64 2:1.2.2-1 [14.1 kB]
+Get:63 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxv1 amd64 2:1.0.10-1 [10.3 kB]
+Get:64 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxxf86dga1 amd64 2:1.1.4-1 [13.7 kB]
+Get:65 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libtxc-dxtn-s2tc0 amd64 0~git20131104-1.1 [51.8 kB]
+Get:66 http://azure.archive.ubuntu.com/ubuntu/ trusty/main m4 amd64 1.4.17-2ubuntu1 [195 kB]
+Get:67 http://azure.archive.ubuntu.com/ubuntu/ trusty/main autoconf all 2.69-6 [322 kB]
+Get:68 http://azure.archive.ubuntu.com/ubuntu/ trusty/main autotools-dev all 20130810.1 [44.3 kB]
+Get:69 http://azure.archive.ubuntu.com/ubuntu/ trusty/main automake all 1:1.14.1-2ubuntu1 [510 kB]
+Get:70 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main gettext amd64 0.18.3.1-1ubuntu3 [829 kB]
+Get:71 http://azure.archive.ubuntu.com/ubuntu/ trusty/main intltool-debian all 0.35.0+20060710.1 [31.6 kB]
+Get:72 http://azure.archive.ubuntu.com/ubuntu/ trusty/main po-debconf all 1.0.16+nmu2ubuntu1 [210 kB]
+Get:73 http://azure.archive.ubuntu.com/ubuntu/ trusty/main dh-apparmor all 2.8.95~2430-0ubuntu5 [11.3 kB]
+Get:74 http://azure.archive.ubuntu.com/ubuntu/ trusty/main debhelper all 9.20131227ubuntu1 [604 kB]
+Get:75 http://azure.archive.ubuntu.com/ubuntu/ trusty/main liburi-perl all 1.60-1 [89.6 kB]
+Get:76 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libencode-locale-perl all 1.03-1 [12.4 kB]
+Get:77 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhttp-date-perl all 6.02-1 [10.4 kB]
+Get:78 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libfile-listing-perl all 6.04-1 [9,774 B]
+Get:79 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhtml-tagset-perl all 3.20-2 [13.5 kB]
+Get:80 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhtml-parser-perl amd64 3.71-1build1 [98.2 kB]
+Get:81 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhtml-tree-perl all 5.03-1 [215 kB]
+Get:82 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libio-html-perl all 1.00-1 [15.7 kB]
+Get:83 http://azure.archive.ubuntu.com/ubuntu/ trusty/main liblwp-mediatypes-perl all 6.02-1 [21.7 kB]
+Get:84 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhttp-message-perl all 6.06-1 [78.7 kB]
+Get:85 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhttp-cookies-perl all 6.00-2 [23.3 kB]
+Get:86 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhttp-negotiate-perl all 6.00-2 [13.4 kB]
+Get:87 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libnet-ssleay-perl amd64 1.58-1 [243 kB]
+Get:88 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libio-socket-ssl-perl all 1.965-1ubuntu1 [73.7 kB]
+Get:89 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libnet-http-perl all 6.06-1 [24.2 kB]
+Get:90 http://azure.archive.ubuntu.com/ubuntu/ trusty/main liblwp-protocol-https-perl all 6.04-2 [7,330 B]
+Get:91 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libwww-robotrules-perl all 6.01-1 [14.1 kB]
+Get:92 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libwww-perl all 6.05-2 [146 kB]
+Get:93 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libxml-parser-perl amd64 2.41-1build3 [294 kB]
+Get:94 http://azure.archive.ubuntu.com/ubuntu/ trusty/main intltool all 0.50.2-2 [52.0 kB]
+Get:95 http://azure.archive.ubuntu.com/ubuntu/ trusty/main dh-translations all 121 [21.6 kB]
+Get:96 http://azure.archive.ubuntu.com/ubuntu/ trusty/main python-scour all 0.26-3build1 [40.5 kB]
+Get:97 http://azure.archive.ubuntu.com/ubuntu/ trusty/main cdbs all 0.4.122ubuntu2 [42.1 kB]
+Get:98 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libasprintf-dev amd64 0.18.3.1-1ubuntu3 [4,438 B]
+Get:99 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libbz2-dev amd64 1.0.6-5 [33.2 kB]
+Get:100 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libfile-basedir-perl all 0.03-1fakesync1 [10.5 kB]
+Get:101 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libfile-desktopentry-perl all 0.07-1 [19.4 kB]
+Err http://azure.archive.ubuntu.com/ubuntu/ trusty/main libfile-mimeinfo-perl all 0.22-1
+  503  Service Temporarily Unavailable
+Get:102 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libfont-afm-perl all 1.20-1 [14.3 kB]
+Get:103 http://azure.archive.ubuntu.com/ubuntu/ trusty-updates/main libgettextpo-dev amd64 0.18.3.1-1ubuntu3 [122 kB]
+Get:104 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhtml-form-perl all 6.03-1 [23.5 kB]
+Get:105 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhtml-format-perl all 2.11-1 [44.7 kB]
+Get:106 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libhttp-daemon-perl all 6.01-1 [17.0 kB]
+Get:107 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libsocket6-perl amd64 0.25-1 [23.5 kB]
+Get:108 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libio-socket-inet6-perl all 2.71-1 [14.6 kB]
+Get:109 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libjpeg-turbo8-dev amd64 1.3.0-0ubuntu2 [242 kB]
+Get:110 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libjpeg8-dev amd64 8c-2ubuntu8 [1,552 B]
+Get:111 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libjpeg-dev amd64 8c-2ubuntu8 [1,546 B]
+Get:112 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libsys-hostname-long-perl all 1.4-3 [11.3 kB]
+Get:113 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libmail-sendmail-perl all 0.79.16-1 [26.5 kB]
+Get:114 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libnet-smtp-ssl-perl all 1.01-3 [5,948 B]
+Get:115 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libmailtools-perl all 2.12-1 [84.1 kB]
+Get:116 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libtinfo-dev amd64 5.9+20140118-1ubuntu1 [76.3 kB]
+Get:117 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libncurses5-dev amd64 5.9+20140118-1ubuntu1 [170 kB]
+Get:118 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpaper-utils amd64 1.1.24+nmu2ubuntu3 [8,244 B]
+Get:119 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libpcre3-dev amd64 1:8.31-2ubuntu2 [237 kB]
+Get:120 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libreadline6-dev amd64 6.3-4ubuntu2 [213 kB]
+Get:121 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libreadline-dev amd64 6.3-4ubuntu2 [988 B]
+Get:122 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libutempter0 amd64 1.1.5-4build1 [8,366 B]
+Get:123 http://azure.archive.ubuntu.com/ubuntu/ trusty/main zip amd64 3.0-8 [262 kB]
+Get:124 http://azure.archive.ubuntu.com/ubuntu/ trusty/main unzip amd64 6.0-9ubuntu1 [193 kB]
+Get:125 http://azure.archive.ubuntu.com/ubuntu/ trusty/main xdg-utils all 1.1.0~rc1-2ubuntu7 [65.6 kB]
+Get:126 http://azure.archive.ubuntu.com/ubuntu/ trusty/main tcl8.5 amd64 8.5.15-2ubuntu1 [13.9 kB]
+Get:127 http://azure.archive.ubuntu.com/ubuntu/ trusty/main tk8.5 amd64 8.5.15-2ubuntu3 [12.0 kB]
+Get:128 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-base-core amd64 3.0.2-1ubuntu1 [21.5 MB]
+Get:129 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-boot all 1.3-9-1 [569 kB]
+Get:130 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-cluster amd64 1.14.4-1 [457 kB]
+Get:131 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-foreign amd64 0.8.59-1 [199 kB]
+Get:132 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-mass amd64 7.3-29-1 [1,046 kB]
+Get:133 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-kernsmooth amd64 2.23-10-2 [82.9 kB]
+Get:134 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-lattice amd64 0.20-24-1 [716 kB]
+Get:135 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-nlme amd64 3.1.113-1 [2,019 kB]
+Get:136 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-matrix amd64 1.1-2-1 [2,900 kB]
+Get:137 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-mgcv amd64 1.7-28-1 [1,481 kB]
+Get:138 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-survival amd64 2.37-7-1 [4,442 kB]
+Get:139 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-rpart amd64 4.1-5-1 [855 kB]
+Get:140 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-class amd64 7.3-9-1 [84.0 kB]
+Get:141 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-nnet amd64 7.3-7-1 [99.1 kB]
+Get:142 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-spatial amd64 7.3-7-1 [129 kB]
+Get:143 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-cran-codetools all 0.2-8-2 [44.9 kB]
+Get:144 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-recommended all 3.0.2-1ubuntu1 [2,724 B]
+Get:145 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-base all 3.0.2-1ubuntu1 [9,568 B]
+Get:146 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-base-dev all 3.0.2-1ubuntu1 [3,952 B]
+Get:147 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-doc-html all 3.0.2-1ubuntu1 [648 kB]
+Get:148 http://azure.archive.ubuntu.com/ubuntu/ trusty/main x11-utils amd64 7.7+1 [230 kB]
+Get:149 http://azure.archive.ubuntu.com/ubuntu/ trusty/main x11-xserver-utils amd64 7.7+2ubuntu1 [151 kB]
+Get:150 http://azure.archive.ubuntu.com/ubuntu/ trusty/main xbitmaps all 1.1.1-2 [28.1 kB]
+Get:151 http://azure.archive.ubuntu.com/ubuntu/ trusty/main xterm amd64 297-1ubuntu1 [665 kB]
+Get:152 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libauthen-sasl-perl all 2.1500-1 [53.2 kB]
+Get:153 http://azure.archive.ubuntu.com/ubuntu/ trusty/universe r-base-html all 3.0.2-1ubuntu1 [64.8 kB]
+Fetched 61.2 MB in 9s (6,154 kB/s)
+
+2014-06-22 03:59:19,486 p=10663 u=patrick |  msg: 'apt-get install 'r-base' ' failed: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.34-1ubuntu1_all.deb  503  Service Temporarily Unavailable
+
+E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/libf/libfile-mimeinfo-perl/libfile-mimeinfo-perl_0.22-1_all.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-22 03:59:19,487 p=10663 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 03:59:19,487 p=10663 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 03:59:19,489 p=10663 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 03:59:19,491 p=10663 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=1    changed=0    unreachable=0    failed=1   
+2014-06-22 04:01:01,165 p=10679 u=patrick |   
+2014-06-22 04:01:01,165 p=10679 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:01:01,165 p=10679 u=patrick |   
+2014-06-22 04:01:01,224 p=10679 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:01:01,225 p=10679 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:01:12,321 p=10679 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:01:12,346 p=10679 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 04:01:17,679 p=10679 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=r-base) => {"failed": true, "item": "r-base"}
+2014-06-22 04:01:17,685 p=10679 u=patrick |  stderr: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.34-1ubuntu1_all.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-22 04:01:17,690 p=10679 u=patrick |  stdout: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autotools-dev cdbs debhelper dh-apparmor dh-translations
+  fontconfig fontconfig-config fonts-dejavu-core gettext intltool
+  intltool-debian libasprintf-dev libauthen-sasl-perl libbz2-dev libcairo2
+  libcroco3 libdatrie1 libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+  libencode-locale-perl libfile-basedir-perl libfile-desktopentry-perl
+  libfile-listing-perl libfile-mimeinfo-perl libfont-afm-perl libfontconfig1
+  libfontenc1 libgettextpo-dev libgettextpo0 libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libgraphite2-3 libharfbuzz0b libhtml-form-perl
+  libhtml-format-perl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libice6 libio-html-perl
+  libio-socket-inet6-perl libio-socket-ssl-perl libjbig0 libjpeg-dev
+  libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev libllvm3.4
+  liblwp-mediatypes-perl liblwp-protocol-https-perl libmail-sendmail-perl
+  libmailtools-perl libncurses5-dev libnet-http-perl libnet-smtp-ssl-perl
+  libnet-ssleay-perl libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpaper-utils libpaper1 libpciaccess0 libpcre3-dev libpcrecpp0
+  libpixman-1-0 libreadline-dev libreadline6-dev libsm6 libsocket6-perl
+  libsys-hostname-long-perl libtcl8.5 libthai-data libthai0 libtiff5
+  libtinfo-dev libtk8.5 libtxc-dxtn-s2tc0 libunistring0 liburi-perl
+  libutempter0 libwww-perl libwww-robotrules-perl libx11-xcb1 libxaw7
+  libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0
+  libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxft2 libxi6 libxinerama1 libxml-parser-perl
+  libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxss1 libxt6 libxtst6
+  libxv1 libxxf86dga1 libxxf86vm1 m4 po-debconf python-scour r-base-core
+  r-base-dev r-base-html r-cran-boot r-cran-class r-cran-cluster
+  r-cran-codetools r-cran-foreign r-cran-kernsmooth r-cran-lattice r-cran-mass
+  r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart
+  r-cran-spatial r-cran-survival r-doc-html r-recommended tcl8.5 tk8.5 unzip
+  x11-common x11-utils x11-xserver-utils xbitmaps xdg-utils xterm zip
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc libtool devscripts
+  dh-make apparmor-easyprof gettext-doc libdigest-hmac-perl libgssapi-perl
+  libglide3 libdata-dump-perl libcrypt-ssleay-perl ncurses-doc ttf-baekmuk
+  ttf-arphic-gbsn00lp ttf-arphic-bsmi00lp ttf-arphic-gkai00mp
+  ttf-arphic-bkai00mp libauthen-ntlm-perl libmail-box-perl python-rsvg
+  python-cairo ess r-doc-info r-doc-pdf r-mathlib texlive-base
+  texlive-latex-base texlive-generic-recommended texlive-fonts-recommended
+  texlive-fonts-extra texlive-extra-utils texlive-latex-recommended
+  texlive-latex-extra texinfo texi2html tcl-tclreadline mesa-utils nickle
+  cairo-5c xorg-docs-core gvfs-bin xfonts-cyrillic
+The following NEW packages will be installed:
+  autoconf automake autotools-dev cdbs debhelper dh-apparmor dh-translations
+  fontconfig fontconfig-config fonts-dejavu-core gettext intltool
+  intltool-debian libasprintf-dev libauthen-sasl-perl libbz2-dev libcairo2
+  libcroco3 libdatrie1 libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+  libencode-locale-perl libfile-basedir-perl libfile-desktopentry-perl
+  libfile-listing-perl libfile-mimeinfo-perl libfont-afm-perl libfontconfig1
+  libfontenc1 libgettextpo-dev libgettextpo0 libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libgraphite2-3 libharfbuzz0b libhtml-form-perl
+  libhtml-format-perl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libice6 libio-html-perl
+  libio-socket-inet6-perl libio-socket-ssl-perl libjbig0 libjpeg-dev
+  libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev libllvm3.4
+  liblwp-mediatypes-perl liblwp-protocol-https-perl libmail-sendmail-perl
+  libmailtools-perl libncurses5-dev libnet-http-perl libnet-smtp-ssl-perl
+  libnet-ssleay-perl libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpaper-utils libpaper1 libpciaccess0 libpcre3-dev libpcrecpp0
+  libpixman-1-0 libreadline-dev libreadline6-dev libsm6 libsocket6-perl
+  libsys-hostname-long-perl libtcl8.5 libthai-data libthai0 libtiff5
+  libtinfo-dev libtk8.5 libtxc-dxtn-s2tc0 libunistring0 liburi-perl
+  libutempter0 libwww-perl libwww-robotrules-perl libx11-xcb1 libxaw7
+  libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0
+  libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxft2 libxi6 libxinerama1 libxml-parser-perl
+  libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxss1 libxt6 libxtst6
+  libxv1 libxxf86dga1 libxxf86vm1 m4 po-debconf python-scour r-base
+  r-base-core r-base-dev r-base-html r-cran-boot r-cran-class r-cran-cluster
+  r-cran-codetools r-cran-foreign r-cran-kernsmooth r-cran-lattice r-cran-mass
+  r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart
+  r-cran-spatial r-cran-survival r-doc-html r-recommended tcl8.5 tk8.5 unzip
+  x11-common x11-utils x11-xserver-utils xbitmaps xdg-utils xterm zip
+0 upgraded, 155 newly installed, 0 to remove and 22 not upgraded.
+Need to get 1,071 kB/62.2 MB of archives.
+After this operation, 166 MB of additional disk space will be used.
+Err http://azure.archive.ubuntu.com/ubuntu/ trusty/main fonts-dejavu-core all 2.34-1ubuntu1
+  503  Service Temporarily Unavailable
+Get:1 http://azure.archive.ubuntu.com/ubuntu/ trusty/main libfile-mimeinfo-perl all 0.22-1 [46.6 kB]
+Fetched 46.6 kB in 0s (135 kB/s)
+
+2014-06-22 04:01:17,693 p=10679 u=patrick |  msg: 'apt-get install 'r-base' ' failed: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.34-1ubuntu1_all.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-22 04:01:17,694 p=10679 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 04:01:17,694 p=10679 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 04:01:17,697 p=10679 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 04:01:17,698 p=10679 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=1    changed=0    unreachable=0    failed=1   
+2014-06-22 04:02:07,631 p=10715 u=patrick |   
+2014-06-22 04:02:07,632 p=10715 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:02:07,632 p=10715 u=patrick |   
+2014-06-22 04:02:07,689 p=10715 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:02:07,690 p=10715 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:02:11,842 p=10715 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:02:11,855 p=10715 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 04:02:16,850 p=10715 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item=r-base) => {"failed": true, "item": "r-base"}
+2014-06-22 04:02:16,854 p=10715 u=patrick |  stderr: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.34-1ubuntu1_all.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-22 04:02:16,857 p=10715 u=patrick |  stdout: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autotools-dev cdbs debhelper dh-apparmor dh-translations
+  fontconfig fontconfig-config fonts-dejavu-core gettext intltool
+  intltool-debian libasprintf-dev libauthen-sasl-perl libbz2-dev libcairo2
+  libcroco3 libdatrie1 libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+  libencode-locale-perl libfile-basedir-perl libfile-desktopentry-perl
+  libfile-listing-perl libfile-mimeinfo-perl libfont-afm-perl libfontconfig1
+  libfontenc1 libgettextpo-dev libgettextpo0 libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libgraphite2-3 libharfbuzz0b libhtml-form-perl
+  libhtml-format-perl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libice6 libio-html-perl
+  libio-socket-inet6-perl libio-socket-ssl-perl libjbig0 libjpeg-dev
+  libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev libllvm3.4
+  liblwp-mediatypes-perl liblwp-protocol-https-perl libmail-sendmail-perl
+  libmailtools-perl libncurses5-dev libnet-http-perl libnet-smtp-ssl-perl
+  libnet-ssleay-perl libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpaper-utils libpaper1 libpciaccess0 libpcre3-dev libpcrecpp0
+  libpixman-1-0 libreadline-dev libreadline6-dev libsm6 libsocket6-perl
+  libsys-hostname-long-perl libtcl8.5 libthai-data libthai0 libtiff5
+  libtinfo-dev libtk8.5 libtxc-dxtn-s2tc0 libunistring0 liburi-perl
+  libutempter0 libwww-perl libwww-robotrules-perl libx11-xcb1 libxaw7
+  libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0
+  libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxft2 libxi6 libxinerama1 libxml-parser-perl
+  libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxss1 libxt6 libxtst6
+  libxv1 libxxf86dga1 libxxf86vm1 m4 po-debconf python-scour r-base-core
+  r-base-dev r-base-html r-cran-boot r-cran-class r-cran-cluster
+  r-cran-codetools r-cran-foreign r-cran-kernsmooth r-cran-lattice r-cran-mass
+  r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart
+  r-cran-spatial r-cran-survival r-doc-html r-recommended tcl8.5 tk8.5 unzip
+  x11-common x11-utils x11-xserver-utils xbitmaps xdg-utils xterm zip
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc libtool devscripts
+  dh-make apparmor-easyprof gettext-doc libdigest-hmac-perl libgssapi-perl
+  libglide3 libdata-dump-perl libcrypt-ssleay-perl ncurses-doc ttf-baekmuk
+  ttf-arphic-gbsn00lp ttf-arphic-bsmi00lp ttf-arphic-gkai00mp
+  ttf-arphic-bkai00mp libauthen-ntlm-perl libmail-box-perl python-rsvg
+  python-cairo ess r-doc-info r-doc-pdf r-mathlib texlive-base
+  texlive-latex-base texlive-generic-recommended texlive-fonts-recommended
+  texlive-fonts-extra texlive-extra-utils texlive-latex-recommended
+  texlive-latex-extra texinfo texi2html tcl-tclreadline mesa-utils nickle
+  cairo-5c xorg-docs-core gvfs-bin xfonts-cyrillic
+The following NEW packages will be installed:
+  autoconf automake autotools-dev cdbs debhelper dh-apparmor dh-translations
+  fontconfig fontconfig-config fonts-dejavu-core gettext intltool
+  intltool-debian libasprintf-dev libauthen-sasl-perl libbz2-dev libcairo2
+  libcroco3 libdatrie1 libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+  libencode-locale-perl libfile-basedir-perl libfile-desktopentry-perl
+  libfile-listing-perl libfile-mimeinfo-perl libfont-afm-perl libfontconfig1
+  libfontenc1 libgettextpo-dev libgettextpo0 libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libgraphite2-3 libharfbuzz0b libhtml-form-perl
+  libhtml-format-perl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-tree-perl libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libice6 libio-html-perl
+  libio-socket-inet6-perl libio-socket-ssl-perl libjbig0 libjpeg-dev
+  libjpeg-turbo8 libjpeg-turbo8-dev libjpeg8 libjpeg8-dev libllvm3.4
+  liblwp-mediatypes-perl liblwp-protocol-https-perl libmail-sendmail-perl
+  libmailtools-perl libncurses5-dev libnet-http-perl libnet-smtp-ssl-perl
+  libnet-ssleay-perl libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpaper-utils libpaper1 libpciaccess0 libpcre3-dev libpcrecpp0
+  libpixman-1-0 libreadline-dev libreadline6-dev libsm6 libsocket6-perl
+  libsys-hostname-long-perl libtcl8.5 libthai-data libthai0 libtiff5
+  libtinfo-dev libtk8.5 libtxc-dxtn-s2tc0 libunistring0 liburi-perl
+  libutempter0 libwww-perl libwww-robotrules-perl libx11-xcb1 libxaw7
+  libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0
+  libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxft2 libxi6 libxinerama1 libxml-parser-perl
+  libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxss1 libxt6 libxtst6
+  libxv1 libxxf86dga1 libxxf86vm1 m4 po-debconf python-scour r-base
+  r-base-core r-base-dev r-base-html r-cran-boot r-cran-class r-cran-cluster
+  r-cran-codetools r-cran-foreign r-cran-kernsmooth r-cran-lattice r-cran-mass
+  r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart
+  r-cran-spatial r-cran-survival r-doc-html r-recommended tcl8.5 tk8.5 unzip
+  x11-common x11-utils x11-xserver-utils xbitmaps xdg-utils xterm zip
+0 upgraded, 155 newly installed, 0 to remove and 22 not upgraded.
+Need to get 1,024 kB/62.2 MB of archives.
+After this operation, 166 MB of additional disk space will be used.
+Err http://azure.archive.ubuntu.com/ubuntu/ trusty/main fonts-dejavu-core all 2.34-1ubuntu1
+  503  Service Temporarily Unavailable
+
+2014-06-22 04:02:16,857 p=10715 u=patrick |  msg: 'apt-get install 'r-base' ' failed: E: Failed to fetch http://azure.archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.34-1ubuntu1_all.deb  503  Service Temporarily Unavailable
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+2014-06-22 04:02:16,859 p=10715 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 04:02:16,859 p=10715 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 04:02:16,861 p=10715 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 04:02:16,861 p=10715 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=1    changed=0    unreachable=0    failed=1   
+2014-06-22 04:02:37,491 p=10728 u=patrick |   
+2014-06-22 04:02:37,492 p=10728 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall install
+2014-06-22 04:02:37,492 p=10728 u=patrick |   
+2014-06-22 04:02:37,496 p=10728 u=patrick |  ERROR: the playbook: install could not be found
+2014-06-22 04:03:12,520 p=10731 u=patrick |   
+2014-06-22 04:03:12,521 p=10731 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:03:12,521 p=10731 u=patrick |   
+2014-06-22 04:03:12,577 p=10731 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:03:12,578 p=10731 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:03:17,191 p=10731 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:03:17,212 p=10731 u=patrick |  TASK: [rstudio | update Ubuntu repo cache] ************************************ 
+2014-06-22 04:03:32,790 p=10731 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:03:32,795 p=10731 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 04:06:26,138 p=10731 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=r-base)
+2014-06-22 04:06:26,138 p=10731 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 04:06:26,138 p=10731 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=0   
+2014-06-22 04:06:57,738 p=10750 u=patrick |   
+2014-06-22 04:06:57,739 p=10750 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:06:57,739 p=10750 u=patrick |   
+2014-06-22 04:06:57,798 p=10750 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:06:57,799 p=10750 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:07:03,167 p=10750 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:07:03,181 p=10750 u=patrick |  TASK: [rstudio | update Ubuntu repo cache] ************************************ 
+2014-06-22 04:07:09,974 p=10750 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:07:09,976 p=10750 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 04:07:22,915 p=10750 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item=r-base,gdebi-core,libapparmor1)
+2014-06-22 04:07:22,921 p=10750 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 04:07:22,923 p=10750 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=0   
+2014-06-22 04:08:48,699 p=10768 u=patrick |   
+2014-06-22 04:08:48,699 p=10768 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:08:48,699 p=10768 u=patrick |   
+2014-06-22 04:08:48,758 p=10768 u=patrick |  ERROR: cmd is not a legal parameter in an Ansible task or handler
+2014-06-22 04:10:52,069 p=10771 u=patrick |   
+2014-06-22 04:10:52,069 p=10771 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:10:52,069 p=10771 u=patrick |   
+2014-06-22 04:10:52,128 p=10771 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:10:52,129 p=10771 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:10:59,803 p=10771 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:10:59,819 p=10771 u=patrick |  TASK: [rstudio | update Ubuntu repo cache] ************************************ 
+2014-06-22 04:11:04,883 p=10771 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:11:04,885 p=10771 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 04:11:09,243 p=10771 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=r-base,gdebi-core,libapparmor1)
+2014-06-22 04:11:09,246 p=10771 u=patrick |  TASK: [rstudio | download rstudio server] ************************************* 
+2014-06-22 04:11:35,106 p=10771 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:11:35,112 p=10771 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 04:11:35,117 p=10771 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=0   
+2014-06-22 04:13:51,280 p=10797 u=patrick |   
+2014-06-22 04:13:51,280 p=10797 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:13:51,280 p=10797 u=patrick |   
+2014-06-22 04:13:51,340 p=10797 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:13:51,342 p=10797 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:13:58,965 p=10797 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:13:58,982 p=10797 u=patrick |  TASK: [rstudio | update Ubuntu repo cache] ************************************ 
+2014-06-22 04:14:05,507 p=10797 u=patrick |  ERROR: interrupted
+2014-06-22 04:14:20,564 p=10813 u=patrick |   
+2014-06-22 04:14:20,565 p=10813 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:14:20,565 p=10813 u=patrick |   
+2014-06-22 04:14:20,626 p=10813 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:14:20,627 p=10813 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:14:24,983 p=10813 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:14:25,010 p=10813 u=patrick |  TASK: [rstudio | update Ubuntu repo cache] ************************************ 
+2014-06-22 04:14:36,066 p=10813 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:14:36,070 p=10813 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 04:14:40,430 p=10813 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=r-base,gdebi-core,libapparmor1)
+2014-06-22 04:14:40,436 p=10813 u=patrick |  TASK: [rstudio | download rstudio server] ************************************* 
+2014-06-22 04:14:53,646 p=10813 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:14:53,653 p=10813 u=patrick |  TASK: [rstudio | install rstudio server] ************************************** 
+2014-06-22 04:14:58,528 p=10813 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => {"changed": true, "cmd": ["gdebi", "rstudio-server-0.98.945-i386.deb"], "delta": "0:00:00.904563", "end": "2014-06-22 18:40:37.224126", "rc": 1, "start": "2014-06-22 18:40:36.319563"}
+2014-06-22 04:14:58,533 p=10813 u=patrick |  stderr: This package is uninstallable
+Wrong architecture 'i386'
+2014-06-22 04:14:58,539 p=10813 u=patrick |  stdout: Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree        
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Building data structures... 0%   Building data structures... 0%   Building data structures... 0%   Building data structures... 0%   Building data structures... 0%   Building data structures... 1%   Building data structures... 1%   Building data structures... 1%   Building data structures... 1%   Building data structures... 1%   Building data structures... 1%   Building data structures... 2%   Building data structures... 2%   Building data structures... 2%   Building data structures... 2%   Building data structures... 2%   Building data structures... 3%   Building data structures... 3%   Building data structures... 3%   Building data structures... 3%   Building data structures... 3%   Building data structures... 3%   Building data structures... 4%   Building data structures... 4%   Building data structures... 4%   Building data structures... 4%   Building data structures... 4%   Building data structures... 5%   Building data structures... 5%   Building data structures... 5%   Building data structures... 5%   Building data structures... 5%   Building data structures... 5%   Building data structures... 6%   Building data structures... 6%   Building data structures... 6%   Building data structures... 6%   Building data structures... 6%   Building data structures... 7%   Building data structures... 7%   Building data structures... 7%   Building data structures... 7%   Building data structures... 7%   Building data structures... 7%   Building data structures... 8%   Building data structures... 8%   Building data structures... 8%   Building data structures... 8%   Building data structures... 8%   Building data structures... 9%   Building data structures... 9%   Building data structures... 9%   Building data structures... 9%   Building data structures... 9%   Building data structures... 9%   Building data structures... 10%  Building data structures... 10%  Building data structures... 10%  Building data structures... 10%  Building data structures... 10%  Building data structures... 11%  Building data structures... 11%  Building data structures... 11%  Building data structures... 11%  Building data structures... 11%  Building data structures... 11%  Building data structures... 12%  Building data structures... 12%  Building data structures... 12%  Building data structures... 12%  Building data structures... 12%  Building data structures... 12%  Building data structures... 13%  Building data structures... 13%  Building data structures... 13%  Building data structures... 13%  Building data structures... 13%  Building data structures... 14%  Building data structures... 14%  Building data structures... 14%  Building data structures... 14%  Building data structures... 14%  Building data structures... 14%  Building data structures... 15%  Building data structures... 15%  Building data structures... 15%  Building data structures... 15%  Building data structures... 15%  Building data structures... 16%  Building data structures... 16%  Building data structures... 16%  Building data structures... 16%  Building data structures... 16%  Building data structures... 16%  Building data structures... 17%  Building data structures... 17%  Building data structures... 17%  Building data structures... 17%  Building data structures... 17%  Building data structures... 18%  Building data structures... 18%  Building data structures... 18%  Building data structures... 18%  Building data structures... 18%  Building data structures... 18%  Building data structures... 19%  Building data structures... 19%  Building data structures... 19%  Building data structures... 19%  Building data structures... 19%  Building data structures... 20%  Building data structures... 20%  Building data structures... 20%  Building data structures... 20%  Building data structures... 20%  Building data structures... 20%  Building data structures... 21%  Building data structures... 21%  Building data structures... 21%  Building data structures... 21%  Building data structures... 21%  Building data structures... 22%  Building data structures... 22%  Building data structures... 22%  Building data structures... 22%  Building data structures... 22%  Building data structures... 22%  Building data structures... 23%  Building data structures... 23%  Building data structures... 23%  Building data structures... 23%  Building data structures... 23%  Building data structures... 23%  Building data structures... 24%  Building data structures... 24%  Building data structures... 24%  Building data structures... 24%  Building data structures... 24%  Building data structures... 25%  Building data structures... 25%  Building data structures... 25%  Building data structures... 25%  Building data structures... 25%  Building data structures... 25%  Building data structures... 26%  Building data structures... 26%  Building data structures... 26%  Building data structures... 26%  Building data structures... 26%  Building data structures... 27%  Building data structures... 27%  Building data structures... 27%  Building data structures... 27%  Building data structures... 27%  Building data structures... 27%  Building data structures... 28%  Building data structures... 28%  Building data structures... 28%  Building data structures... 28%  Building data structures... 28%  Building data structures... 29%  Building data structures... 29%  Building data structures... 29%  Building data structures... 29%  Building data structures... 29%  Building data structures... 29%  Building data structures... 30%  Building data structures... 30%  Building data structures... 30%  Building data structures... 30%  Building data structures... 30%  Building data structures... 31%  Building data structures... 31%  Building data structures... 31%  Building data structures... 31%  Building data structures... 31%  Building data structures... 31%  Building data structures... 32%  Building data structures... 32%  Building data structures... 32%  Building data structures... 32%  Building data structures... 32%  Building data structures... 33%  Building data structures... 33%  Building data structures... 33%  Building data structures... 33%  Building data structures... 33%  Building data structures... 33%  Building data structures... 34%  Building data structures... 34%  Building data structures... 34%  Building data structures... 34%  Building data structures... 34%  Building data structures... 35%  Building data structures... 35%  Building data structures... 35%  Building data structures... 35%  Building data structures... 35%  Building data structures... 35%  Building data structures... 36%  Building data structures... 36%  Building data structures... 36%  Building data structures... 36%  Building data structures... 36%  Building data structures... 36%  Building data structures... 37%  Building data structures... 37%  Building data structures... 37%  Building data structures... 37%  Building data structures... 37%  Building data structures... 38%  Building data structures... 38%  Building data structures... 38%  Building data structures... 38%  Building data structures... 38%  Building data structures... 38%  Building data structures... 39%  Building data structures... 39%  Building data structures... 39%  Building data structures... 39%  Building data structures... 39%  Building data structures... 40%  Building data structures... 40%  Building data structures... 40%  Building data structures... 40%  Building data structures... 40%  Building data structures... 40%  Building data structures... 41%  Building data structures... 41%  Building data structures... 41%  Building data structures... 41%  Building data structures... 41%  Building data structures... 42%  Building data structures... 42%  Building data structures... 42%  Building data structures... 42%  Building data structures... 42%  Building data structures... 42%  Building data structures... 43%  Building data structures... 43%  Building data structures... 43%  Building data structures... 43%  Building data structures... 43%  Building data structures... 44%  Building data structures... 44%  Building data structures... 44%  Building data structures... 44%  Building data structures... 44%  Building data structures... 44%  Building data structures... 45%  Building data structures... 45%  Building data structures... 45%  Building data structures... 45%  Building data structures... 45%  Building data structures... 46%  Building data structures... 46%  Building data structures... 46%  Building data structures... 46%  Building data structures... 46%  Building data structures... 46%  Building data structures... 47%  Building data structures... 47%  Building data structures... 47%  Building data structures... 47%  Building data structures... 47%  Building data structures... 47%  Building data structures... 48%  Building data structures... 48%  Building data structures... 48%  Building data structures... 48%  Building data structures... 48%  Building data structures... 49%  Building data structures... 49%  Building data structures... 49%  Building data structures... 49%  Building data structures... 49%  Building data structures... 49%  Building data structures... 50%  Building data structures... 50%  Building data structures... 50%  Building data structures... 50%  Building data structures... 50%  Building data structures... 51%  Building data structures... 51%  Building data structures... 51%  Building data structures... 51%  Building data structures... 51%  Building data structures... 51%  Building data structures... 52%  Building data structures... 52%  Building data structures... 52%  Building data structures... 52%  Building data structures... 52%  Building data structures... 53%  Building data structures... 53%  Building data structures... 53%  Building data structures... 53%  Building data structures... 53%  Building data structures... 53%  Building data structures... 54%  Building data structures... 54%  Building data structures... 54%  Building data structures... 54%  Building data structures... 54%  Building data structures... 55%  Building data structures... 55%  Building data structures... 55%  Building data structures... 55%  Building data structures... 55%  Building data structures... 55%  Building data structures... 56%  Building data structures... 56%  Building data structures... 56%  Building data structures... 56%  Building data structures... 56%  Building data structures... 57%  Building data structures... 57%  Building data structures... 57%  Building data structures... 57%  Building data structures... 57%  Building data structures... 57%  Building data structures... 58%  Building data structures... 58%  Building data structures... 58%  Building data structures... 58%  Building data structures... 58%  Building data structures... 59%  Building data structures... 59%  Building data structures... 59%  Building data structures... 59%  Building data structures... 59%  Building data structures... 59%  Building data structures... 60%  Building data structures... 60%  Building data structures... 60%  Building data structures... 60%  Building data structures... 60%  Building data structures... 60%  Building data structures... 61%  Building data structures... 61%  Building data structures... 61%  Building data structures... 61%  Building data structures... 61%  Building data structures... 62%  Building data structures... 62%  Building data structures... 62%  Building data structures... 62%  Building data structures... 62%  Building data structures... 62%  Building data structures... 63%  Building data structures... 63%  Building data structures... 63%  Building data structures... 63%  Building data structures... 63%  Building data structures... 64%  Building data structures... 64%  Building data structures... 64%  Building data structures... 64%  Building data structures... 64%  Building data structures... 64%  Building data structures... 65%  Building data structures... 65%  Building data structures... 65%  Building data structures... 65%  Building data structures... 65%  Building data structures... 66%  Building data structures... 66%  Building data structures... 66%  Building data structures... 66%  Building data structures... 66%  Building data structures... 66%  Building data structures... 67%  Building data structures... 67%  Building data structures... 67%  Building data structures... 67%  Building data structures... 67%  Building data structures... 68%  Building data structures... 68%  Building data structures... 68%  Building data structures... 68%  Building data structures... 68%  Building data structures... 68%  Building data structures... 69%  Building data structures... 69%  Building data structures... 69%  Building data structures... 69%  Building data structures... 69%  Building data structures... 70%  Building data structures... 70%  Building data structures... 70%  Building data structures... 70%  Building data structures... 70%  Building data structures... 70%  Building data structures... 71%  Building data structures... 71%  Building data structures... 71%  Building data structures... 71%  Building data structures... 71%  Building data structures... 71%  Building data structures... 72%  Building data structures... 72%  Building data structures... 72%  Building data structures... 72%  Building data structures... 72%  Building data structures... 73%  Building data structures... 73%  Building data structures... 73%  Building data structures... 73%  Building data structures... 73%  Building data structures... 73%  Building data structures... 74%  Building data structures... 74%  Building data structures... 74%  Building data structures... 74%  Building data structures... 74%  Building data structures... 75%  Building data structures... 75%  Building data structures... 75%  Building data structures... 75%  Building data structures... 75%  Building data structures... 75%  Building data structures... 76%  Building data structures... 76%  Building data structures... 76%  Building data structures... 76%  Building data structures... 76%  Building data structures... 77%  Building data structures... 77%  Building data structures... 77%  Building data structures... 77%  Building data structures... 77%  Building data structures... 77%  Building data structures... 78%  Building data structures... 78%  Building data structures... 78%  Building data structures... 78%  Building data structures... 78%  Building data structures... 79%  Building data structures... 79%  Building data structures... 79%  Building data structures... 79%  Building data structures... 79%  Building data structures... 79%  Building data structures... 80%  Building data structures... 80%  Building data structures... 80%  Building data structures... 80%  Building data structures... 80%  Building data structures... 81%  Building data structures... 81%  Building data structures... 81%  Building data structures... 81%  Building data structures... 81%  Building data structures... 81%  Building data structures... 82%  Building data structures... 82%  Building data structures... 82%  Building data structures... 82%  Building data structures... 82%  Building data structures... 83%  Building data structures... 83%  Building data structures... 83%  Building data structures... 83%  Building data structures... 83%  Building data structures... 83%  Building data structures... 84%  Building data structures... 84%  Building data structures... 84%  Building data structures... 84%  Building data structures... 84%  Building data structures... 84%  Building data structures... 85%  Building data structures... 85%  Building data structures... 85%  Building data structures... 85%  Building data structures... 85%  Building data structures... 86%  Building data structures... 86%  Building data structures... 86%  Building data structures... 86%  Building data structures... 86%  Building data structures... 86%  Building data structures... 87%  Building data structures... 87%  Building data structures... 87%  Building data structures... 87%  Building data structures... 87%  Building data structures... 88%  Building data structures... 88%  Building data structures... 88%  Building data structures... 88%  Building data structures... 88%  Building data structures... 88%  Building data structures... 89%  Building data structures... 89%  Building data structures... 89%  Building data structures... 89%  Building data structures... 89%  Building data structures... 90%  Building data structures... 90%  Building data structures... 90%  Building data structures... 90%  Building data structures... 90%  Building data structures... 90%  Building data structures... 91%  Building data structures... 91%  Building data structures... 91%  Building data structures... 91%  Building data structures... 91%  Building data structures... 92%  Building data structures... 92%  Building data structures... 92%  Building data structures... 92%  Building data structures... 92%  Building data structures... 92%  Building data structures... 93%  Building data structures... 93%  Building data structures... 93%  Building data structures... 93%  Building data structures... 93%  Building data structures... 94%  Building data structures... 94%  Building data structures... 94%  Building data structures... 94%  Building data structures... 94%  Building data structures... 94%  Building data structures... 95%  Building data structures... 95%  Building data structures... 95%  Building data structures... 95%  Building data structures... 95%  Building data structures... 95%  Building data structures... 96%  Building data structures... 96%  Building data structures... 96%  Building data structures... 96%  Building data structures... 96%  Building data structures... 97%  Building data structures... 97%  Building data structures... 97%  Building data structures... 97%  Building data structures... 97%  Building data structures... 97%  Building data structures... 98%  Building data structures... 98%  Building data structures... 98%  Building data structures... 98%  Building data structures... 98%  Building data structures... 99%  Building data structures... 99%  Building data structures... 99%  Building data structures... 99%  Building data structures... 99%  Building data structures... 99%  Building data structures... Done 
+2014-06-22 04:14:58,542 p=10813 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 04:14:58,544 p=10813 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 04:14:58,549 p=10813 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 04:14:58,552 p=10813 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-22 04:16:11,653 p=10841 u=patrick |   
+2014-06-22 04:16:11,653 p=10841 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:16:11,653 p=10841 u=patrick |   
+2014-06-22 04:16:11,714 p=10841 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:16:11,715 p=10841 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:16:19,531 p=10841 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:16:19,554 p=10841 u=patrick |  TASK: [rstudio | update Ubuntu repo cache] ************************************ 
+2014-06-22 04:16:26,265 p=10841 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:16:26,267 p=10841 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 04:16:30,618 p=10841 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=r-base,gdebi-core,libapparmor1)
+2014-06-22 04:16:30,623 p=10841 u=patrick |  TASK: [rstudio | download rstudio server] ************************************* 
+2014-06-22 04:17:25,033 p=10841 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:17:25,033 p=10841 u=patrick |  TASK: [rstudio | install rstudio server] ************************************** 
+2014-06-22 04:22:10,510 p=10841 u=patrick |  ERROR: interrupted
+2014-06-22 04:23:54,521 p=10875 u=patrick |   
+2014-06-22 04:23:54,521 p=10875 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:23:54,521 p=10875 u=patrick |   
+2014-06-22 04:23:54,582 p=10875 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:23:54,584 p=10875 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:24:02,133 p=10875 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:24:02,154 p=10875 u=patrick |  TASK: [rstudio | update Ubuntu repo cache] ************************************ 
+2014-06-22 04:24:07,173 p=10875 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:24:07,179 p=10875 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 04:24:11,414 p=10875 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=r-base,gdebi-core,libapparmor1)
+2014-06-22 04:24:11,419 p=10875 u=patrick |  TASK: [rstudio | download rstudio server] ************************************* 
+2014-06-22 04:24:17,402 p=10875 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:24:17,408 p=10875 u=patrick |  TASK: [rstudio | install rstudio server] ************************************** 
+2014-06-22 04:24:21,375 p=10875 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => {"changed": true, "cmd": ["gdebi", "--force-yes", "rstudio-server-0.98.945-amd64.deb"], "delta": "0:00:00.181559", "end": "2014-06-22 18:50:00.300598", "rc": 2, "start": "2014-06-22 18:50:00.119039"}
+2014-06-22 04:24:21,381 p=10875 u=patrick |  stderr: Usage: gdebi [options] filename
+For a graphical version run gdebi-gtk
+
+
+gdebi: error: no such option: --force-yes
+2014-06-22 04:24:21,385 p=10875 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 04:24:21,388 p=10875 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 04:24:21,393 p=10875 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 04:24:21,396 p=10875 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-22 04:27:33,563 p=10906 u=patrick |   
+2014-06-22 04:27:33,563 p=10906 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 04:27:33,563 p=10906 u=patrick |   
+2014-06-22 04:27:33,624 p=10906 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 04:27:33,625 p=10906 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 04:27:41,351 p=10906 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:27:41,374 p=10906 u=patrick |  TASK: [rstudio | update Ubuntu repo cache] ************************************ 
+2014-06-22 04:27:48,147 p=10906 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:27:48,151 p=10906 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 04:27:52,446 p=10906 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=r-base,gdebi-core,libapparmor1)
+2014-06-22 04:27:52,451 p=10906 u=patrick |  TASK: [rstudio | download rstudio server] ************************************* 
+2014-06-22 04:27:58,175 p=10906 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 04:27:58,178 p=10906 u=patrick |  TASK: [rstudio | install rstudio server] ************************************** 
+2014-06-22 04:28:02,149 p=10906 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => {"changed": true, "cmd": ["gdebi", "--option=APT::GET::force-yes", "rstudio-server-0.98.945-amd64.deb"], "delta": "0:00:00.190336", "end": "2014-06-22 18:53:41.096373", "rc": 1, "start": "2014-06-22 18:53:40.906037"}
+2014-06-22 04:28:02,152 p=10906 u=patrick |  stderr: Configuration items must be specified with a =<value>
+2014-06-22 04:28:02,155 p=10906 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 04:28:02,160 p=10906 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 04:28:02,164 p=10906 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 04:28:02,167 p=10906 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=1    unreachable=0    failed=1   
+2014-06-22 05:10:30,354 p=10938 u=patrick |   
+2014-06-22 05:10:30,355 p=10938 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags rinstall
+2014-06-22 05:10:30,355 p=10938 u=patrick |   
+2014-06-22 05:10:30,416 p=10938 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 05:10:30,417 p=10938 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 05:10:38,162 p=10938 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 05:10:38,184 p=10938 u=patrick |  TASK: [rstudio | update Ubuntu repo cache] ************************************ 
+2014-06-22 05:10:44,987 p=10938 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 05:10:44,993 p=10938 u=patrick |  TASK: [rstudio | install ubuntu system R packages] **************************** 
+2014-06-22 05:10:49,249 p=10938 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item=r-base,gdebi-core,libapparmor1)
+2014-06-22 05:10:49,252 p=10938 u=patrick |  TASK: [rstudio | download rstudio server] ************************************* 
+2014-06-22 05:10:54,895 p=10938 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 05:10:54,899 p=10938 u=patrick |  TASK: [rstudio | unpack using dpkg rstudio server] **************************** 
+2014-06-22 05:11:10,146 p=10938 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 05:11:10,155 p=10938 u=patrick |  TASK: [rstudio | fix missing dependencies] ************************************ 
+2014-06-22 05:11:15,758 p=10938 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 05:11:15,760 p=10938 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 05:11:15,761 p=10938 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=6    changed=3    unreachable=0    failed=0   

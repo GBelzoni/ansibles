@@ -1,0 +1,23 @@
+---
+- name: update Ubuntu repo cache
+  apt: update_cache=yes
+  sudo: yes
+  tags: rinstall
+- name: install ubuntu system R packages 
+  apt: name={{ item }} state=present
+  with_items: cran_packages #This is defined in group_vars/compute file
+  sudo: yes
+  tags: rinstall
+- name: download rstudio server
+  command: wget "http://download2.rstudio.org/rstudio-server-0.98.945-amd64.deb"
+  sudo: yes
+  tags: rinstall
+- name: unpack using dpkg rstudio server
+  command: dpkg -i "rstudio-server-0.98.945-amd64.deb"
+  sudo: yes
+  tags: rinstall
+- name: fix missing dependencies
+  command: apt-get -f -y install
+  sudo: yes
+  tags: rinstall
+

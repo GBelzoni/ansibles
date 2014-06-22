@@ -5,4 +5,5 @@
   roles:
     - python_compute_install
     - ansible-ipython 
+    - rstudio
 
