@@ -4,6 +4,7 @@ ipython_notebooks:
     user: azureuser 
     group: group_compute
     sha1_password: "sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724"
+    ssl_cert: mycert
     notebook_dir: /home/azureuser/notebooks
     
 

@@ -2367,3 +2367,341 @@ where options  are
 2014-06-22 02:05:11,472 p=9484 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
 
 2014-06-22 02:05:11,475 p=9484 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=1   
+2014-06-22 02:07:33,279 p=9523 u=patrick |   
+2014-06-22 02:07:33,279 p=9523 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:07:33,279 p=9523 u=patrick |   
+2014-06-22 02:07:33,329 p=9523 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:07:33,331 p=9523 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:07:40,781 p=9523 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:07:40,798 p=9523 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:07:45,313 p=9523 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:07:45,320 p=9523 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:07:49,158 p=9523 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:07:49,164 p=9523 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:10:44,245 p=9523 u=patrick |  ERROR: interrupted
+2014-06-22 02:11:03,352 p=9630 u=patrick |   
+2014-06-22 02:11:03,352 p=9630 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:11:03,352 p=9630 u=patrick |   
+2014-06-22 02:11:03,403 p=9630 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:11:03,405 p=9630 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:11:07,561 p=9630 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:11:07,567 p=9630 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:11:12,096 p=9630 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:11:12,103 p=9630 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:11:15,874 p=9630 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:11:15,882 p=9630 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:11:55,246 p=9630 u=patrick |  ERROR: interrupted
+2014-06-22 02:17:20,993 p=9656 u=patrick |   
+2014-06-22 02:17:20,993 p=9656 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:17:20,993 p=9656 u=patrick |   
+2014-06-22 02:17:21,049 p=9656 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:17:21,051 p=9656 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:17:28,572 p=9656 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:17:28,589 p=9656 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:17:33,088 p=9656 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:17:33,094 p=9656 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:17:36,851 p=9656 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:17:36,856 p=9656 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:17:40,689 p=9656 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => {"changed": true, "cmd": ["openssl", "req", "-x509", "-subj", "/C=AUS/ST=ACT/L=Canberra/O=IT/CN=Patrick", "-nodes", "-days", "365", "-newkey", "rsa:1024", "-keyout", "mycert.pem", "-out", "mycert.pem"], "delta": "0:00:00.090192", "end": "2014-06-22 16:43:18.895599", "rc": 1, "start": "2014-06-22 16:43:18.805407"}
+2014-06-22 02:17:40,695 p=9656 u=patrick |  stderr: Generating a 1024 bit RSA private key
+..++++++
+................................................++++++
+writing new private key to 'mycert.pem'
+-----
+problems making Certificate Request
+140120997652128:error:0D07A097:asn1 encoding routines:ASN1_mbstring_ncopy:string too long:a_mbstr.c:154:maxsize=2
+2014-06-22 02:17:40,697 p=9656 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 02:17:40,697 p=9656 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:17:40,698 p=9656 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 02:17:40,699 p=9656 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=1   
+2014-06-22 02:28:19,344 p=9699 u=patrick |   
+2014-06-22 02:28:19,345 p=9699 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:28:19,345 p=9699 u=patrick |   
+2014-06-22 02:28:19,396 p=9699 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:28:19,398 p=9699 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:28:26,981 p=9699 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:28:27,001 p=9699 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:28:31,548 p=9699 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:28:31,557 p=9699 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:28:35,316 p=9699 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:28:35,323 p=9699 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:28:39,084 p=9699 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888}) => {"changed": true, "cmd": ["openssl", "req", "-x509", "-subj", "/C=AU/ST=AT/L=Canberra/O=IT/CN=Patrick", "-nodes", "-days", "365", "-newkey", "rsa:1024", "-keyout", "mycert.pem", "-out", "/home/", "azureuser/.ipython/profile_compute_basic/mycert.pem"], "delta": "0:00:00.010609", "end": "2014-06-22 16:54:17.354304", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": "sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724", "user": "azureuser"}, "rc": 1, "start": "2014-06-22 16:54:17.343695"}
+2014-06-22 02:28:39,092 p=9699 u=patrick |  stderr: unknown option azureuser/.ipython/profile_compute_basic/mycert.pem
+req [options] <infile >outfile
+where options  are
+ -inform arg    input format - DER or PEM
+ -outform arg   output format - DER or PEM
+ -in arg        input file
+ -out arg       output file
+ -text          text form of request
+ -pubkey        output public key
+ -noout         do not output REQ
+ -verify        verify signature on REQ
+ -modulus       RSA modulus
+ -nodes         don't encrypt the output key
+ -engine e      use engine e, possibly a hardware device
+ -subject       output the request's subject
+ -passin        private key password source
+ -key file      use the private key contained in file
+ -keyform arg   key file format
+ -keyout arg    file to send the key to
+ -rand file:file:...
+                load the file (or the files in the directory) into
+                the random number generator
+ -newkey rsa:bits generate a new RSA key of 'bits' in size
+ -newkey dsa:file generate a new DSA key, parameters taken from CA in 'file'
+ -newkey ec:file generate a new EC key, parameters taken from CA in 'file'
+ -[digest]      Digest to sign with (md5, sha1, md2, mdc2, md4)
+ -config file   request template file.
+ -subj arg      set or modify request subject
+ -multivalue-rdn enable support for multivalued RDNs
+ -new           new request.
+ -batch         do not ask anything during request generation
+ -x509          output a x509 structure instead of a cert. req.
+ -days          number of days a certificate generated by -x509 is valid for.
+ -set_serial    serial number to use for a certificate generated by -x509.
+ -newhdr        output "NEW" in the header lines
+ -asn1-kludge   Output the 'request' in a format that is wrong but some CA's
+                have been reported as requiring
+ -extensions .. specify certificate extension section (override value in config file)
+ -reqexts ..    specify request extension section (override value in config file)
+ -utf8          input characters are UTF8 (default ASCII)
+ -nameopt arg    - various certificate name options
+ -reqopt arg    - various request text options
+2014-06-22 02:28:39,095 p=9699 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 02:28:39,095 p=9699 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:28:39,098 p=9699 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 02:28:39,100 p=9699 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=1   
+2014-06-22 02:30:52,959 p=9725 u=patrick |   
+2014-06-22 02:30:52,959 p=9725 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:30:52,959 p=9725 u=patrick |   
+2014-06-22 02:30:53,011 p=9725 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:30:53,014 p=9725 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:31:00,546 p=9725 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:31:00,567 p=9725 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:31:05,027 p=9725 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:31:05,034 p=9725 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:31:08,778 p=9725 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:31:08,785 p=9725 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:31:12,570 p=9725 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:31:12,575 p=9725 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 02:31:16,961 p=9725 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:31:16,969 p=9725 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:31:16,971 p=9725 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=2    unreachable=0    failed=0   
+2014-06-22 02:37:33,421 p=9929 u=patrick |   
+2014-06-22 02:37:33,421 p=9929 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:37:33,421 p=9929 u=patrick |   
+2014-06-22 02:37:33,476 p=9929 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:37:33,478 p=9929 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:37:40,891 p=9929 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:37:40,913 p=9929 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:37:45,395 p=9929 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:37:45,396 p=9929 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:37:49,149 p=9929 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:37:49,156 p=9929 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:37:53,038 p=9929 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:37:53,042 p=9929 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 02:37:53,703 p=9929 u=patrick |  fatal: [azureuser@testmlcompute.cloudapp.net] => {'msg': "file: /home/patrick/ansibles/compute/roles/ansible-ipython/templates/ipython_notebook_config.py.j2, line number: 19, error: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.", 'failed': True}
+2014-06-22 02:37:53,708 p=9929 u=patrick |  fatal: [azureuser@testmlcompute.cloudapp.net] => {'msg': 'One or more items failed.', 'failed': True, 'changed': False, 'results': [{'msg': "file: /home/patrick/ansibles/compute/roles/ansible-ipython/templates/ipython_notebook_config.py.j2, line number: 19, error: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.", 'failed': True}]}
+2014-06-22 02:37:53,715 p=9929 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 02:37:53,718 p=9929 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:37:53,722 p=9929 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 02:37:53,724 p=9929 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=2    unreachable=1    failed=0   
+2014-06-22 02:38:43,784 p=9958 u=patrick |   
+2014-06-22 02:38:43,784 p=9958 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:38:43,784 p=9958 u=patrick |   
+2014-06-22 02:38:43,836 p=9958 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:38:43,839 p=9958 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:38:48,025 p=9958 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:38:48,031 p=9958 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:38:52,525 p=9958 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:38:52,535 p=9958 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:38:56,253 p=9958 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:38:56,257 p=9958 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:39:00,081 p=9958 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:39:00,083 p=9958 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 02:39:00,694 p=9958 u=patrick |  fatal: [azureuser@testmlcompute.cloudapp.net] => {'msg': "One or more undefined variables: 'dict object' has no attribute 'ssl_cer'", 'failed': True}
+2014-06-22 02:39:00,696 p=9958 u=patrick |  fatal: [azureuser@testmlcompute.cloudapp.net] => {'msg': 'One or more items failed.', 'failed': True, 'changed': False, 'results': [{'msg': "One or more undefined variables: 'dict object' has no attribute 'ssl_cer'", 'failed': True}]}
+2014-06-22 02:39:00,697 p=9958 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 02:39:00,699 p=9958 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:39:00,701 p=9958 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 02:39:00,703 p=9958 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=4    changed=2    unreachable=1    failed=0   
+2014-06-22 02:40:07,811 p=9983 u=patrick |   
+2014-06-22 02:40:07,811 p=9983 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:40:07,811 p=9983 u=patrick |   
+2014-06-22 02:40:07,863 p=9983 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:40:07,865 p=9983 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:40:16,326 p=9983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:40:16,348 p=9983 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:40:20,888 p=9983 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:40:20,896 p=9983 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:40:24,639 p=9983 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:40:24,645 p=9983 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:40:28,519 p=9983 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:40:28,527 p=9983 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 02:40:34,801 p=9983 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:40:34,804 p=9983 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:40:34,806 p=9983 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=3    unreachable=0    failed=0   
+2014-06-22 02:42:48,083 p=10017 u=patrick |   
+2014-06-22 02:42:48,083 p=10017 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:42:48,084 p=10017 u=patrick |   
+2014-06-22 02:42:48,135 p=10017 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:42:48,138 p=10017 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:42:55,706 p=10017 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:42:55,711 p=10017 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:43:00,196 p=10017 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:43:00,202 p=10017 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:43:03,932 p=10017 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:43:03,938 p=10017 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:43:07,757 p=10017 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:43:07,763 p=10017 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 02:43:14,033 p=10017 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:43:14,036 p=10017 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:43:14,038 p=10017 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=3    unreachable=0    failed=0   
+2014-06-22 02:43:47,703 p=10076 u=patrick |   
+2014-06-22 02:43:47,703 p=10076 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags info
+2014-06-22 02:43:47,703 p=10076 u=patrick |   
+2014-06-22 02:43:47,756 p=10076 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:43:47,758 p=10076 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:43:51,983 p=10076 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:43:52,007 p=10076 u=patrick |  TASK: [ansible-ipython | info] ************************************************ 
+2014-06-22 02:43:54,380 p=10076 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:43:54,383 p=10076 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:43:54,384 p=10076 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=0   
+2014-06-22 02:45:13,060 p=10085 u=patrick |   
+2014-06-22 02:45:13,060 p=10085 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags info
+2014-06-22 02:45:13,060 p=10085 u=patrick |   
+2014-06-22 02:45:13,110 p=10085 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:45:13,111 p=10085 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:45:20,755 p=10085 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:45:20,771 p=10085 u=patrick |  TASK: [ansible-ipython | info] ************************************************ 
+2014-06-22 02:45:23,058 p=10085 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert.pem', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:45:23,058 p=10085 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:45:23,058 p=10085 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=2    changed=0    unreachable=0    failed=0   
+2014-06-22 02:53:07,403 p=10139 u=patrick |   
+2014-06-22 02:53:07,404 p=10139 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:53:07,404 p=10139 u=patrick |   
+2014-06-22 02:53:07,455 p=10139 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:53:07,457 p=10139 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:53:15,039 p=10139 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:53:15,052 p=10139 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:53:19,788 p=10139 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:53:19,794 p=10139 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:53:23,643 p=10139 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:53:23,653 p=10139 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:53:27,577 p=10139 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:53:27,585 p=10139 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 02:53:33,871 p=10139 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:53:33,878 p=10139 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:53:33,882 p=10139 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=3    unreachable=0    failed=0   
+2014-06-22 02:54:25,244 p=10175 u=patrick |   
+2014-06-22 02:54:25,244 p=10175 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 02:54:25,244 p=10175 u=patrick |   
+2014-06-22 02:54:25,296 p=10175 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 02:54:25,298 p=10175 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 02:54:29,505 p=10175 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 02:54:29,522 p=10175 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 02:54:34,041 p=10175 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:54:34,045 p=10175 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 02:54:37,802 p=10175 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:54:37,809 p=10175 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 02:54:41,641 p=10175 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:54:41,648 p=10175 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 02:54:47,931 p=10175 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 02:54:47,937 p=10175 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 02:54:47,941 p=10175 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=3    unreachable=0    failed=0   
+2014-06-22 03:10:11,292 p=10206 u=patrick |   
+2014-06-22 03:10:11,292 p=10206 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 03:10:11,292 p=10206 u=patrick |   
+2014-06-22 03:10:11,344 p=10206 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 03:10:11,345 p=10206 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 03:10:18,738 p=10206 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 03:10:18,763 p=10206 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 03:10:23,242 p=10206 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:10:23,249 p=10206 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 03:10:26,983 p=10206 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:10:26,993 p=10206 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 03:10:30,803 p=10206 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:10:30,810 p=10206 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 03:10:37,059 p=10206 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:10:37,065 p=10206 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 03:10:37,068 p=10206 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=3    unreachable=0    failed=0   
+2014-06-22 03:12:04,845 p=10242 u=patrick |   
+2014-06-22 03:12:04,845 p=10242 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 03:12:04,846 p=10242 u=patrick |   
+2014-06-22 03:12:04,897 p=10242 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 03:12:04,900 p=10242 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 03:12:12,381 p=10242 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 03:12:12,397 p=10242 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 03:12:16,927 p=10242 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:12:16,935 p=10242 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 03:12:20,713 p=10242 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:12:20,718 p=10242 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 03:12:24,582 p=10242 u=patrick |  failed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888}) => {"changed": true, "cmd": ["openssl", "req", "-x509", "-subj", "/C=AU/ST=AT/L=Canberra/O=IT/CN=Patrick", "-nodes", "-days", "365", "-newkey", "rsa:1024", "-keyout", "/home/azureuser/.ipython/profile_compute_basic/mycert.pem", "-key", "out", "/home/azureuser/.ipython/profile_compute_basic/mycert.pem"], "delta": "0:00:00.012050", "end": "2014-06-22 17:38:03.083193", "item": {"group": "group_compute", "notebook_dir": "/home/azureuser/notebooks", "port": 8888, "profile": "compute_basic", "sha1_password": "sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724", "ssl_cert": "mycert", "user": "azureuser"}, "rc": 1, "start": "2014-06-22 17:38:03.071143"}
+2014-06-22 03:12:24,590 p=10242 u=patrick |  stderr: unknown option /home/azureuser/.ipython/profile_compute_basic/mycert.pem
+req [options] <infile >outfile
+where options  are
+ -inform arg    input format - DER or PEM
+ -outform arg   output format - DER or PEM
+ -in arg        input file
+ -out arg       output file
+ -text          text form of request
+ -pubkey        output public key
+ -noout         do not output REQ
+ -verify        verify signature on REQ
+ -modulus       RSA modulus
+ -nodes         don't encrypt the output key
+ -engine e      use engine e, possibly a hardware device
+ -subject       output the request's subject
+ -passin        private key password source
+ -key file      use the private key contained in file
+ -keyform arg   key file format
+ -keyout arg    file to send the key to
+ -rand file:file:...
+                load the file (or the files in the directory) into
+                the random number generator
+ -newkey rsa:bits generate a new RSA key of 'bits' in size
+ -newkey dsa:file generate a new DSA key, parameters taken from CA in 'file'
+ -newkey ec:file generate a new EC key, parameters taken from CA in 'file'
+ -[digest]      Digest to sign with (md5, sha1, md2, mdc2, md4)
+ -config file   request template file.
+ -subj arg      set or modify request subject
+ -multivalue-rdn enable support for multivalued RDNs
+ -new           new request.
+ -batch         do not ask anything during request generation
+ -x509          output a x509 structure instead of a cert. req.
+ -days          number of days a certificate generated by -x509 is valid for.
+ -set_serial    serial number to use for a certificate generated by -x509.
+ -newhdr        output "NEW" in the header lines
+ -asn1-kludge   Output the 'request' in a format that is wrong but some CA's
+                have been reported as requiring
+ -extensions .. specify certificate extension section (override value in config file)
+ -reqexts ..    specify request extension section (override value in config file)
+ -utf8          input characters are UTF8 (default ASCII)
+ -nameopt arg    - various certificate name options
+ -reqopt arg    - various request text options
+2014-06-22 03:12:24,593 p=10242 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-06-22 03:12:24,593 p=10242 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 03:12:24,596 p=10242 u=patrick |             to retry, use: --limit @/home/patrick/computeservers.retry
+
+2014-06-22 03:12:24,596 p=10242 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=3    changed=1    unreachable=0    failed=1   
+2014-06-22 03:13:49,754 p=10269 u=patrick |   
+2014-06-22 03:13:49,754 p=10269 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-22 03:13:49,754 p=10269 u=patrick |   
+2014-06-22 03:13:49,804 p=10269 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-22 03:13:49,806 p=10269 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-22 03:13:57,366 p=10269 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-22 03:13:57,386 p=10269 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-22 03:14:01,863 p=10269 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:14:01,871 p=10269 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-22 03:14:05,639 p=10269 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:14:05,644 p=10269 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-22 03:14:09,416 p=10269 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:14:09,425 p=10269 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-22 03:14:15,672 p=10269 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-22 03:14:15,681 p=10269 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-22 03:14:15,683 p=10269 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=3    unreachable=0    failed=0   
