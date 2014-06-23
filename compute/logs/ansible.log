@@ -3341,3 +3341,19 @@ gdebi: error: no such option: --force-yes
 2014-06-22 05:11:15,758 p=10938 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net]
 2014-06-22 05:11:15,760 p=10938 u=patrick |  PLAY RECAP ******************************************************************** 
 2014-06-22 05:11:15,761 p=10938 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=6    changed=3    unreachable=0    failed=0   
+2014-06-23 10:09:18,179 p=1143 u=patrick |   
+2014-06-23 10:09:18,203 p=1143 u=patrick |  /usr/bin/ansible-playbook computeservers.yml --tags config
+2014-06-23 10:09:18,203 p=1143 u=patrick |   
+2014-06-23 10:09:18,641 p=1143 u=patrick |  PLAY [compute] **************************************************************** 
+2014-06-23 10:09:18,643 p=1143 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-06-23 10:09:33,465 p=1143 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net]
+2014-06-23 10:09:33,484 p=1143 u=patrick |  TASK: [ansible-ipython | creating ipython profile] **************************** 
+2014-06-23 10:09:38,271 p=1143 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-23 10:09:38,277 p=1143 u=patrick |  TASK: [ansible-ipython | creating ipython directory] ************************** 
+2014-06-23 10:09:41,931 p=1143 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-23 10:09:41,937 p=1143 u=patrick |  TASK: [ansible-ipython | creating self signed ssl certificate] **************** 
+2014-06-23 10:09:46,570 p=1143 u=patrick |  changed: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-23 10:09:46,580 p=1143 u=patrick |  TASK: [ansible-ipython | updating ipython configuration] ********************** 
+2014-06-23 10:09:53,873 p=1143 u=patrick |  ok: [azureuser@testmlcompute.cloudapp.net] => (item={'profile': 'compute_basic', 'ssl_cert': 'mycert', 'group': 'group_compute', 'user': 'azureuser', 'notebook_dir': '/home/azureuser/notebooks', 'sha1_password': 'sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724', 'port': 8888})
+2014-06-23 10:09:53,878 p=1143 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-06-23 10:09:53,881 p=1143 u=patrick |  azureuser@testmlcompute.cloudapp.net : ok=5    changed=2    unreachable=0    failed=0   
