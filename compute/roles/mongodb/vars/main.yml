@@ -1,0 +1,7 @@
+---
+# list of dependencies
+mongodb_packages:
+  - mongodb
+# list of pip packages
+mongodb_pip_packages:
+  - pymongo

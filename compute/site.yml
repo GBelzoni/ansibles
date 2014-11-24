@@ -1,7 +1,8 @@
 ---
 - name: this is top level playbook 
   hosts: all
-  remote_user: azureuser
+  remote_user: patrick 
 
-- include: computeservers.yml
+# - include: computeservers.yml
+- include: dbservers.yml
 

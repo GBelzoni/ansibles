@@ -1,9 +1,9 @@
 ---
 - hosts: compute
-  remote_user: azureuser
+  remote_user: ubuntu 
   sudo: True
   roles:
-    - python_compute_install
+#    - python_compute_install
     - ansible-ipython 
-    - rstudio
+#    - rstudio
 

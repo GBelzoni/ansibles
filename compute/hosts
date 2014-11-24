@@ -1,3 +1,9 @@
 [compute]
-azureuser@testmlcompute.cloudapp.net
-
+#ubuntu@154.72.0.91
+#patrick@41.242.2.148
+#azureuser@testmlcompute.cloudapp.net
+patrick@192.168.56.11
+#ubuntu@54.88.240.151
+[dbserver]
+#azureuser@testmlcompute.cloudapp.net
+patrick@192.168.56.11

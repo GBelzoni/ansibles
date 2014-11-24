@@ -1,0 +1,6 @@
+---
+- hosts: dbserver
+  sudo: True
+  roles:
+  #  - mongodb 
+    - redis

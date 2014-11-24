@@ -1,12 +1,14 @@
 ipython_notebooks:
   - profile: compute_basic
     port: 8888
-    user: azureuser 
+    user: ubuntu 
     group: group_compute
     sha1_password: "sha1:8d663176a4ff:0efb1a2c153a2faf9e9ee34313bbc537ab95f724"
     ssl_cert: mycert
-    notebook_dir: /home/azureuser/notebooks
+    notebook_dir: /home/ubuntu/notebooks
     
+mongdb:
+  - suff: stuff
 
 #proxy_env:
 #  http_proxy: http://proxy.domain:8080

@@ -1,0 +1,10 @@
+---
+- name: update Ubuntu repo cache
+  apt: update_cache=yes
+  sudo: yes
+- name: install pip
+  apt: name=python-pip state=present
+  sudo: yes
+- name: install libpq-dev to get pg_config
+  apt: name=libpq-dev state=present
+  sudo: yes
