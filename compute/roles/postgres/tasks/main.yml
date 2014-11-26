@@ -1,0 +1,39 @@
+---
+- name: install postgres packages
+  apt: name={{ item }} state=present
+  with_items:   
+    - postgresql
+    - postgresql-contrib
+    - phppgadmin 
+    - libpq-dev
+    - python-sqlalchemy
+    - python-psycopg2
+  sudo: yes
+  tags: install
+#######
+# Below is config to setup user and db
+# Note that the vars dbname, dbuser, dbpassword are defined in playbook
+######
+- name: create postgres db
+  postgresql_db: name={{dbname}}
+  sudo: yes
+  sudo_user: postgres 
+  tags: create_user
+- name: create postgres user
+  postgresql_user: db={{dbname}} name={{dbuser}} password={{dbpassword}} priv=ALL
+  sudo: yes
+  sudo_user: postgres 
+  tags: create_user
+- name: ensure user does not have unnecessary privileges
+  postgresql_user: name={{dbuser}} role_attr_flags=NOSUPERUSER,NOCREATEDB 
+  sudo: yes
+  sudo_user: postgres 
+  tags: create_user
+########### 
+
+# - name: install pip postgres packages
+#   pip: name= {{ item }} state=present
+#   with_items: postgres_pip_packages
+#   sudo: yes
+#   tags: install
+

@@ -1,0 +1,7 @@
+---
+# list of dependencies
+redis_packages:
+  - redis-server
+# list of pip packages
+redis_pip_packages:
+  - redis 
