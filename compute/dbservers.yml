@@ -1,6 +1,12 @@
 ---
 - hosts: dbserver
   sudo: True
+  vars:
+    dbuser: finappuser
+    dbname: finappdb  
+    dbpassword: finapppassword
+  
   roles:
-  #  - mongodb 
+    - common   
     - redis
+    - postgres

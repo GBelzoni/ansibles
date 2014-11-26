@@ -40719,3 +40719,1233 @@ Permission denied (publickey,password).
 2014-11-24 12:52:35,054 p=1892 u=patrick |  PLAY [dbserver] *************************************************************** 
 2014-11-24 12:52:35,055 p=1892 u=patrick |  GATHERING FACTS *************************************************************** 
 2014-11-24 12:52:47,521 p=1892 u=patrick |  ERROR: interrupted
+2014-11-24 13:02:06,569 p=2327 u=patrick |   
+2014-11-24 13:02:06,569 p=2327 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml
+2014-11-24 13:02:06,569 p=2327 u=patrick |   
+2014-11-24 13:02:06,581 p=2327 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:02:06,582 p=2327 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:03:13,628 p=2327 u=patrick |  ERROR: interrupted
+2014-11-24 13:03:16,901 p=2338 u=patrick |   
+2014-11-24 13:03:16,901 p=2338 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:03:16,901 p=2338 u=patrick |   
+2014-11-24 13:03:16,913 p=2338 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:03:16,914 p=2338 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:03:16,929 p=2338 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:03:16,930 p=2338 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:03:16,933 p=2338 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416823396.93-78988972178115 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416823396.93-78988972178115 && echo $HOME/.ansible/tmp/ansible-tmp-1416823396.93-78988972178115'"]
+2014-11-24 13:03:16,950 p=2338 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpFl6gdo TO /home/patrick/.ansible/tmp/ansible-tmp-1416823396.93-78988972178115/setup
+2014-11-24 13:03:16,979 p=2338 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u'/bin/sh -c \'sudo -k && sudo -H -S -p "[sudo via ansible, key=gteohuvozkvdliwjjecqaqqodgbsxrfi] password: " -u root /bin/sh -c \'"\'"\'echo SUDO-SUCCESS-gteohuvozkvdliwjjecqaqqodgbsxrfi; LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416823396.93-78988972178115/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416823396.93-78988972178115/ >/dev/null 2>&1\'"\'"\'\'']
+2014-11-24 13:05:05,136 p=2338 u=patrick |  ERROR: interrupted
+2014-11-24 13:06:31,591 p=2478 u=patrick |   
+2014-11-24 13:06:31,591 p=2478 u=patrick |  /usr/bin/ansible-playbook dbserver -i hosts dbserver.yml
+2014-11-24 13:06:31,591 p=2478 u=patrick |   
+2014-11-24 13:06:31,596 p=2478 u=patrick |  ERROR: the playbook: dbserver could not be found
+2014-11-24 13:06:41,612 p=2481 u=patrick |   
+2014-11-24 13:06:41,613 p=2481 u=patrick |  /usr/bin/ansible-playbook dbserver -i hosts dbservers.yml
+2014-11-24 13:06:41,613 p=2481 u=patrick |   
+2014-11-24 13:06:41,617 p=2481 u=patrick |  ERROR: the playbook: dbserver could not be found
+2014-11-24 13:07:25,574 p=2484 u=patrick |   
+2014-11-24 13:07:25,574 p=2484 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml
+2014-11-24 13:07:25,574 p=2484 u=patrick |   
+2014-11-24 13:07:25,589 p=2484 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:07:25,590 p=2484 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:07:42,036 p=2484 u=patrick |  ERROR: interrupted
+2014-11-24 13:10:35,800 p=2504 u=patrick |   
+2014-11-24 13:10:35,801 p=2504 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml
+2014-11-24 13:10:35,801 p=2504 u=patrick |   
+2014-11-24 13:10:35,813 p=2504 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:10:35,813 p=2504 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:10:40,388 p=2504 u=patrick |  ERROR: interrupted
+2014-11-24 13:10:50,069 p=2515 u=patrick |  
+2014-11-24 13:10:50,069 p=2515 u=patrick |  /usr/bin/ansible dbserver -m ping
+2014-11-24 13:10:50,069 p=2515 u=patrick |  
+2014-11-24 13:10:50,073 p=2515 u=patrick |  No hosts matched
+2014-11-24 13:10:57,649 p=2516 u=patrick |  
+2014-11-24 13:10:57,649 p=2516 u=patrick |  /usr/bin/ansible dbserver -i hosts -m ping
+2014-11-24 13:10:57,649 p=2516 u=patrick |  
+2014-11-24 13:10:57,895 p=2516 u=patrick |  patrick@192.168.56.11 | success >> {
+    "changed": false, 
+    "ping": "pong"
+}
+
+2014-11-24 13:11:26,334 p=2522 u=patrick |   
+2014-11-24 13:11:26,334 p=2522 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:11:26,334 p=2522 u=patrick |   
+2014-11-24 13:11:26,349 p=2522 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:11:26,350 p=2522 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:11:26,368 p=2522 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:11:26,369 p=2522 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:11:26,375 p=2522 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416823886.37-59306991180801 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416823886.37-59306991180801 && echo $HOME/.ansible/tmp/ansible-tmp-1416823886.37-59306991180801'"]
+2014-11-24 13:11:26,397 p=2522 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmp9Orji9 TO /home/patrick/.ansible/tmp/ansible-tmp-1416823886.37-59306991180801/setup
+2014-11-24 13:11:26,434 p=2522 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u'/bin/sh -c \'sudo -k && sudo -H -S -p "[sudo via ansible, key=tckmkgjnoberavbqedfxlpujsxqzbigq] password: " -u root /bin/sh -c \'"\'"\'echo SUDO-SUCCESS-tckmkgjnoberavbqedfxlpujsxqzbigq; LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416823886.37-59306991180801/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416823886.37-59306991180801/ >/dev/null 2>&1\'"\'"\'\'']
+2014-11-24 13:12:05,507 p=2522 u=patrick |  ERROR: interrupted
+2014-11-24 13:13:50,140 p=2627 u=patrick |   
+2014-11-24 13:13:50,141 p=2627 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:13:50,141 p=2627 u=patrick |   
+2014-11-24 13:13:50,155 p=2627 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:13:50,157 p=2627 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:13:50,174 p=2627 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:13:50,176 p=2627 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:13:50,182 p=2627 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824030.18-82592007413564 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416824030.18-82592007413564 && echo $HOME/.ansible/tmp/ansible-tmp-1416824030.18-82592007413564'"]
+2014-11-24 13:13:51,645 p=2627 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpHBkWPw TO /home/patrick/.ansible/tmp/ansible-tmp-1416824030.18-82592007413564/setup
+2014-11-24 13:13:51,710 p=2627 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u'/bin/sh -c \'sudo -k && sudo -H -S -p "[sudo via ansible, key=dhymruhbcrswkwpipkbchdafuqtptqji] password: " -u root /bin/sh -c \'"\'"\'echo SUDO-SUCCESS-dhymruhbcrswkwpipkbchdafuqtptqji; LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824030.18-82592007413564/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824030.18-82592007413564/ >/dev/null 2>&1\'"\'"\'\'']
+2014-11-24 13:15:10,355 p=2627 u=patrick |  ERROR: interrupted
+2014-11-24 13:16:59,335 p=2695 u=patrick |   
+2014-11-24 13:16:59,336 p=2695 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml
+2014-11-24 13:16:59,336 p=2695 u=patrick |   
+2014-11-24 13:16:59,350 p=2695 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:16:59,352 p=2695 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:17:02,802 p=2695 u=patrick |  ERROR: interrupted
+2014-11-24 13:17:06,927 p=2709 u=patrick |   
+2014-11-24 13:17:06,927 p=2709 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:17:06,927 p=2709 u=patrick |   
+2014-11-24 13:17:06,942 p=2709 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:17:06,945 p=2709 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:17:06,960 p=2709 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:17:06,961 p=2709 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:17:06,969 p=2709 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824226.96-107012540510760 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416824226.96-107012540510760 && echo $HOME/.ansible/tmp/ansible-tmp-1416824226.96-107012540510760'"]
+2014-11-24 13:17:06,989 p=2709 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpNtvc3q TO /home/patrick/.ansible/tmp/ansible-tmp-1416824226.96-107012540510760/setup
+2014-11-24 13:17:07,030 p=2709 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u'/bin/sh -c \'sudo -k && sudo -H -S -p "[sudo via ansible, key=yhiyzrsjzuftrjkzxphobwditrlkvbfl] password: " -u root /bin/sh -c \'"\'"\'echo SUDO-SUCCESS-yhiyzrsjzuftrjkzxphobwditrlkvbfl; LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824226.96-107012540510760/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824226.96-107012540510760/ >/dev/null 2>&1\'"\'"\'\'']
+2014-11-24 13:17:35,122 p=2709 u=patrick |  ERROR: interrupted
+2014-11-24 13:17:44,197 p=2719 u=root |   
+2014-11-24 13:17:44,197 p=2719 u=root |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:17:44,197 p=2719 u=root |   
+2014-11-24 13:17:44,211 p=2719 u=root |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:17:44,213 p=2719 u=root |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:17:44,231 p=2719 u=root |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: root
+2014-11-24 13:17:44,232 p=2719 u=root |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:17:44,238 p=2719 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824264.23-146359372076628 && echo $HOME/.ansible/tmp/ansible-tmp-1416824264.23-146359372076628'"]
+2014-11-24 13:17:44,325 p=2719 u=root |  <patrick@192.168.56.11> PUT /tmp/tmpcLZIhE TO /home/patrick/.ansible/tmp/ansible-tmp-1416824264.23-146359372076628/setup
+2014-11-24 13:17:44,362 p=2719 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824264.23-146359372076628/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824264.23-146359372076628/ >/dev/null 2>&1'"]
+2014-11-24 13:17:45,094 p=2719 u=root |  ok: [patrick@192.168.56.11]
+2014-11-24 13:17:45,095 p=2719 u=root |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:17:45,102 p=2719 u=root |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: root
+2014-11-24 13:17:45,104 p=2719 u=root |  <patrick@192.168.56.11> REMOTE_MODULE apt update_cache=yes
+2014-11-24 13:17:45,129 p=2719 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824265.12-161700219525278 && echo $HOME/.ansible/tmp/ansible-tmp-1416824265.12-161700219525278'"]
+2014-11-24 13:17:45,149 p=2719 u=root |  <patrick@192.168.56.11> PUT /tmp/tmpqBfl1j TO /home/patrick/.ansible/tmp/ansible-tmp-1416824265.12-161700219525278/apt
+2014-11-24 13:17:45,179 p=2719 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824265.12-161700219525278/apt; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824265.12-161700219525278/ >/dev/null 2>&1'"]
+2014-11-24 13:17:46,101 p=2719 u=root |  failed: [patrick@192.168.56.11] => {"failed": true}
+2014-11-24 13:17:46,102 p=2719 u=root |  msg: Failed to lock apt for exclusive operation
+2014-11-24 13:17:46,104 p=2719 u=root |  FATAL: all hosts have already failed -- aborting
+2014-11-24 13:17:46,106 p=2719 u=root |  PLAY RECAP ******************************************************************** 
+2014-11-24 13:17:46,108 p=2719 u=root |             to retry, use: --limit @/home/patrick/dbservers.retry
+
+2014-11-24 13:17:46,109 p=2719 u=root |  patrick@192.168.56.11      : ok=1    changed=0    unreachable=0    failed=1   
+2014-11-24 13:19:02,305 p=2758 u=patrick |   
+2014-11-24 13:19:02,305 p=2758 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml
+2014-11-24 13:19:02,305 p=2758 u=patrick |   
+2014-11-24 13:19:02,318 p=2758 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:19:02,319 p=2758 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:19:04,347 p=2758 u=patrick |  ERROR: interrupted
+2014-11-24 13:19:07,981 p=2769 u=patrick |   
+2014-11-24 13:19:07,981 p=2769 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:19:07,981 p=2769 u=patrick |   
+2014-11-24 13:19:07,995 p=2769 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:19:07,996 p=2769 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:19:08,013 p=2769 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:19:08,014 p=2769 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:19:08,019 p=2769 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824348.02-167692922861311 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416824348.02-167692922861311 && echo $HOME/.ansible/tmp/ansible-tmp-1416824348.02-167692922861311'"]
+2014-11-24 13:19:08,040 p=2769 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpzd8k6z TO /home/patrick/.ansible/tmp/ansible-tmp-1416824348.02-167692922861311/setup
+2014-11-24 13:19:08,074 p=2769 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u'/bin/sh -c \'sudo -k && sudo -H -S -p "[sudo via ansible, key=imqgspttynigsbbkxgjitpwgriedvmlq] password: " -u root /bin/sh -c \'"\'"\'echo SUDO-SUCCESS-imqgspttynigsbbkxgjitpwgriedvmlq; LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824348.02-167692922861311/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824348.02-167692922861311/ >/dev/null 2>&1\'"\'"\'\'']
+2014-11-24 13:19:26,225 p=2769 u=patrick |  ERROR: interrupted
+2014-11-24 13:19:29,710 p=2778 u=root |   
+2014-11-24 13:19:29,710 p=2778 u=root |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:19:29,710 p=2778 u=root |   
+2014-11-24 13:19:29,725 p=2778 u=root |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:19:29,726 p=2778 u=root |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:19:29,743 p=2778 u=root |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: root
+2014-11-24 13:19:29,744 p=2778 u=root |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:19:29,750 p=2778 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824369.75-146790194831079 && echo $HOME/.ansible/tmp/ansible-tmp-1416824369.75-146790194831079'"]
+2014-11-24 13:19:29,770 p=2778 u=root |  <patrick@192.168.56.11> PUT /tmp/tmpUDXFGq TO /home/patrick/.ansible/tmp/ansible-tmp-1416824369.75-146790194831079/setup
+2014-11-24 13:19:29,803 p=2778 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824369.75-146790194831079/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824369.75-146790194831079/ >/dev/null 2>&1'"]
+2014-11-24 13:19:30,183 p=2778 u=root |  ok: [patrick@192.168.56.11]
+2014-11-24 13:19:30,185 p=2778 u=root |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:19:30,193 p=2778 u=root |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: root
+2014-11-24 13:19:30,194 p=2778 u=root |  <patrick@192.168.56.11> REMOTE_MODULE apt update_cache=yes
+2014-11-24 13:19:30,200 p=2778 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824370.2-215872877674643 && echo $HOME/.ansible/tmp/ansible-tmp-1416824370.2-215872877674643'"]
+2014-11-24 13:19:30,218 p=2778 u=root |  <patrick@192.168.56.11> PUT /tmp/tmpMI6kyj TO /home/patrick/.ansible/tmp/ansible-tmp-1416824370.2-215872877674643/apt
+2014-11-24 13:19:30,248 p=2778 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824370.2-215872877674643/apt; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824370.2-215872877674643/ >/dev/null 2>&1'"]
+2014-11-24 13:19:30,831 p=2778 u=root |  failed: [patrick@192.168.56.11] => {"failed": true}
+2014-11-24 13:19:30,832 p=2778 u=root |  msg: Failed to lock apt for exclusive operation
+2014-11-24 13:19:30,833 p=2778 u=root |  FATAL: all hosts have already failed -- aborting
+2014-11-24 13:19:30,835 p=2778 u=root |  PLAY RECAP ******************************************************************** 
+2014-11-24 13:19:30,836 p=2778 u=root |             to retry, use: --limit @/home/patrick/dbservers.retry
+
+2014-11-24 13:19:30,837 p=2778 u=root |  patrick@192.168.56.11      : ok=1    changed=0    unreachable=0    failed=1   
+2014-11-24 13:20:51,877 p=2875 u=root |   
+2014-11-24 13:20:51,877 p=2875 u=root |  /usr/bin/ansible-playbook -i hosts dbservers.yml
+2014-11-24 13:20:51,877 p=2875 u=root |   
+2014-11-24 13:20:51,890 p=2875 u=root |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:20:51,891 p=2875 u=root |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:20:59,418 p=2875 u=root |  fatal: [patrick@192.168.56.11] => SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue
+2014-11-24 13:20:59,421 p=2875 u=root |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:20:59,437 p=2875 u=root |  FATAL: no hosts matched or all hosts have already failed -- aborting
+
+2014-11-24 13:20:59,439 p=2875 u=root |  PLAY RECAP ******************************************************************** 
+2014-11-24 13:20:59,442 p=2875 u=root |             to retry, use: --limit @/home/patrick/dbservers.retry
+
+2014-11-24 13:20:59,442 p=2875 u=root |  patrick@192.168.56.11      : ok=0    changed=0    unreachable=1    failed=0   
+2014-11-24 13:21:17,678 p=2882 u=root |   
+2014-11-24 13:21:17,679 p=2882 u=root |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:21:17,679 p=2882 u=root |   
+2014-11-24 13:21:17,692 p=2882 u=root |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:21:17,692 p=2882 u=root |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:21:17,708 p=2882 u=root |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: root
+2014-11-24 13:21:17,708 p=2882 u=root |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:21:17,710 p=2882 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824477.71-275273439175605 && echo $HOME/.ansible/tmp/ansible-tmp-1416824477.71-275273439175605'"]
+2014-11-24 13:21:17,819 p=2882 u=root |  fatal: [patrick@192.168.56.11] => SSH encountered an unknown error. The output was:
+OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: Control socket "/home/patrick/.ansible/cp/ansible-ssh-192.168.56.11-22-patrick" does not exist
+debug2: ssh_connect: needpriv 0
+debug1: Connecting to 192.168.56.11 [192.168.56.11] port 22.
+debug2: fd 3 setting O_NONBLOCK
+debug1: fd 3 clearing O_NONBLOCK
+debug1: Connection established.
+debug3: timeout: 10000 ms remain after connect
+debug1: permanently_set_uid: 0/0
+debug1: identity file /root/.ssh/id_rsa type -1
+debug1: identity file /root/.ssh/id_rsa-cert type -1
+debug1: identity file /root/.ssh/id_dsa type -1
+debug1: identity file /root/.ssh/id_dsa-cert type -1
+debug1: identity file /root/.ssh/id_ecdsa type -1
+debug1: identity file /root/.ssh/id_ecdsa-cert type -1
+debug1: identity file /root/.ssh/id_ed25519 type -1
+debug1: identity file /root/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+debug1: match: OpenSSH_6.6.1p1 Ubuntu-2ubuntu2 pat OpenSSH_6.6.1* compat 0x04000000
+debug2: fd 3 setting O_NONBLOCK
+debug3: load_hostkeys: loading entries for host "192.168.56.11" from file "/root/.ssh/known_hosts"
+debug3: load_hostkeys: found key type ECDSA in file /root/.ssh/known_hosts:2
+debug3: load_hostkeys: loaded 1 keys
+debug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug2: kex_parse_kexinit: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: kex_parse_kexinit: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-dss-cert-v01@openssh.com,ssh-rsa-cert-v00@openssh.com,ssh-dss-cert-v00@openssh.com,ssh-ed25519,ssh-rsa,ssh-dss
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: zlib@openssh.com,zlib,none
+debug2: kex_parse_kexinit: zlib@openssh.com,zlib,none
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: first_kex_follows 0 
+debug2: kex_parse_kexinit: reserved 0 
+debug2: kex_parse_kexinit: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: kex_parse_kexinit: ssh-rsa,ssh-dss,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: none,zlib@openssh.com
+debug2: kex_parse_kexinit: none,zlib@openssh.com
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: first_kex_follows 0 
+debug2: kex_parse_kexinit: reserved 0 
+debug2: mac_setup: setup hmac-md5-etm@openssh.com
+debug1: kex: server->client aes128-ctr hmac-md5-etm@openssh.com zlib@openssh.com
+debug2: mac_setup: setup hmac-md5-etm@openssh.com
+debug1: kex: client->server aes128-ctr hmac-md5-etm@openssh.com zlib@openssh.com
+debug1: sending SSH2_MSG_KEX_ECDH_INIT
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ECDSA c8:84:60:26:29:a9:ab:3a:89:f2:b6:f0:ef:3e:e0:7e
+debug3: load_hostkeys: loading entries for host "192.168.56.11" from file "/root/.ssh/known_hosts"
+debug3: load_hostkeys: found key type ECDSA in file /root/.ssh/known_hosts:2
+debug3: load_hostkeys: loaded 1 keys
+debug1: Host '192.168.56.11' is known and matches the ECDSA host key.
+debug1: Found key in /root/.ssh/known_hosts:2
+debug1: ssh_ecdsa_verify: signature correct
+debug2: kex_derive_keys
+debug2: set_newkeys: mode 1
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug2: set_newkeys: mode 0
+debug1: SSH2_MSG_NEWKEYS received
+debug1: Roaming not allowed by server
+debug1: SSH2_MSG_SERVICE_REQUEST sent
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug2: key: /root/.ssh/id_rsa ((nil)),
+debug2: key: /root/.ssh/id_dsa ((nil)),
+debug2: key: /root/.ssh/id_ecdsa ((nil)),
+debug2: key: /root/.ssh/id_ed25519 ((nil)),
+debug1: Authentications that can continue: publickey,password
+debug3: start over, passed a different list publickey,password
+debug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: ,gssapi-keyex,hostbased,publickey
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+debug1: Trying private key: /root/.ssh/id_rsa
+debug3: no such identity: /root/.ssh/id_rsa: No such file or directory
+debug1: Trying private key: /root/.ssh/id_dsa
+debug3: no such identity: /root/.ssh/id_dsa: No such file or directory
+debug1: Trying private key: /root/.ssh/id_ecdsa
+debug3: no such identity: /root/.ssh/id_ecdsa: No such file or directory
+debug1: Trying private key: /root/.ssh/id_ed25519
+debug3: no such identity: /root/.ssh/id_ed25519: No such file or directory
+debug2: we did not send a packet, disable method
+debug1: No more authentication methods to try.
+Permission denied (publickey,password).
+
+2014-11-24 13:21:17,820 p=2882 u=root |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:21:17,829 p=2882 u=root |  FATAL: no hosts matched or all hosts have already failed -- aborting
+
+2014-11-24 13:21:17,830 p=2882 u=root |  PLAY RECAP ******************************************************************** 
+2014-11-24 13:21:17,832 p=2882 u=root |             to retry, use: --limit @/home/patrick/dbservers.retry
+
+2014-11-24 13:21:17,833 p=2882 u=root |  patrick@192.168.56.11      : ok=0    changed=0    unreachable=1    failed=0   
+2014-11-24 13:25:11,747 p=2936 u=patrick |  
+2014-11-24 13:25:11,748 p=2936 u=patrick |  /usr/bin/ansible dbserver -i hosts
+2014-11-24 13:25:11,748 p=2936 u=patrick |  
+2014-11-24 13:25:11,751 p=2936 u=patrick |  No argument passed to command module
+2014-11-24 13:25:21,168 p=2937 u=patrick |  
+2014-11-24 13:25:21,168 p=2937 u=patrick |  /usr/bin/ansible dbserver -i hosts ping -m
+2014-11-24 13:25:21,168 p=2937 u=patrick |  
+2014-11-24 13:25:27,265 p=2938 u=patrick |  
+2014-11-24 13:25:27,265 p=2938 u=patrick |  /usr/bin/ansible dbserver -i hosts -m ping
+2014-11-24 13:25:27,265 p=2938 u=patrick |  
+2014-11-24 13:25:28,823 p=2938 u=patrick |  patrick@192.168.56.11 | success >> {
+    "changed": false, 
+    "ping": "pong"
+}
+
+2014-11-24 13:26:24,206 p=2959 u=patrick |   
+2014-11-24 13:26:24,207 p=2959 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:26:24,207 p=2959 u=patrick |   
+2014-11-24 13:26:24,219 p=2959 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:26:24,219 p=2959 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:26:24,235 p=2959 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:26:24,236 p=2959 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:26:24,238 p=2959 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824784.24-80686961520750 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416824784.24-80686961520750 && echo $HOME/.ansible/tmp/ansible-tmp-1416824784.24-80686961520750'"]
+2014-11-24 13:26:24,257 p=2959 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpfKCydU TO /home/patrick/.ansible/tmp/ansible-tmp-1416824784.24-80686961520750/setup
+2014-11-24 13:26:24,284 p=2959 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824784.24-80686961520750/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824784.24-80686961520750/ >/dev/null 2>&1'"]
+2014-11-24 13:26:24,666 p=2959 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:26:24,667 p=2959 u=patrick |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:26:24,673 p=2959 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:26:24,674 p=2959 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE apt update_cache=yes
+2014-11-24 13:26:24,675 p=2959 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824784.68-243865823830493 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416824784.68-243865823830493 && echo $HOME/.ansible/tmp/ansible-tmp-1416824784.68-243865823830493'"]
+2014-11-24 13:26:24,693 p=2959 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmp_csaq9 TO /home/patrick/.ansible/tmp/ansible-tmp-1416824784.68-243865823830493/apt
+2014-11-24 13:26:24,717 p=2959 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u'/bin/sh -c \'sudo -k && sudo -H -S -p "[sudo via ansible, key=kstttthyoavzjzhcsbfscxqwkfmwmdej] password: " -u root /bin/sh -c \'"\'"\'echo SUDO-SUCCESS-kstttthyoavzjzhcsbfscxqwkfmwmdej; LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824784.68-243865823830493/apt; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824784.68-243865823830493/ >/dev/null 2>&1\'"\'"\'\'']
+2014-11-24 13:26:42,305 p=2959 u=patrick |  ERROR: interrupted
+2014-11-24 13:28:31,800 p=2990 u=root |   
+2014-11-24 13:28:31,800 p=2990 u=root |  /usr/bin/ansible-playbook -i hosts dbservers.yml -vvvv
+2014-11-24 13:28:31,800 p=2990 u=root |   
+2014-11-24 13:28:31,812 p=2990 u=root |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:28:31,812 p=2990 u=root |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:28:31,827 p=2990 u=root |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: root
+2014-11-24 13:28:31,827 p=2990 u=root |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:28:31,829 p=2990 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824911.83-134534320580079 && echo $HOME/.ansible/tmp/ansible-tmp-1416824911.83-134534320580079'"]
+2014-11-24 13:28:31,937 p=2990 u=root |  fatal: [patrick@192.168.56.11] => SSH encountered an unknown error. The output was:
+OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: Control socket "/home/patrick/.ansible/cp/ansible-ssh-192.168.56.11-22-patrick" does not exist
+debug2: ssh_connect: needpriv 0
+debug1: Connecting to 192.168.56.11 [192.168.56.11] port 22.
+debug2: fd 3 setting O_NONBLOCK
+debug1: fd 3 clearing O_NONBLOCK
+debug1: Connection established.
+debug3: timeout: 10000 ms remain after connect
+debug1: permanently_set_uid: 0/0
+debug1: identity file /root/.ssh/id_rsa type -1
+debug1: identity file /root/.ssh/id_rsa-cert type -1
+debug1: identity file /root/.ssh/id_dsa type -1
+debug1: identity file /root/.ssh/id_dsa-cert type -1
+debug1: identity file /root/.ssh/id_ecdsa type -1
+debug1: identity file /root/.ssh/id_ecdsa-cert type -1
+debug1: identity file /root/.ssh/id_ed25519 type -1
+debug1: identity file /root/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+debug1: match: OpenSSH_6.6.1p1 Ubuntu-2ubuntu2 pat OpenSSH_6.6.1* compat 0x04000000
+debug2: fd 3 setting O_NONBLOCK
+debug3: load_hostkeys: loading entries for host "192.168.56.11" from file "/root/.ssh/known_hosts"
+debug3: load_hostkeys: found key type ECDSA in file /root/.ssh/known_hosts:2
+debug3: load_hostkeys: loaded 1 keys
+debug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug2: kex_parse_kexinit: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: kex_parse_kexinit: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-dss-cert-v01@openssh.com,ssh-rsa-cert-v00@openssh.com,ssh-dss-cert-v00@openssh.com,ssh-ed25519,ssh-rsa,ssh-dss
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: zlib@openssh.com,zlib,none
+debug2: kex_parse_kexinit: zlib@openssh.com,zlib,none
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: first_kex_follows 0 
+debug2: kex_parse_kexinit: reserved 0 
+debug2: kex_parse_kexinit: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: kex_parse_kexinit: ssh-rsa,ssh-dss,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: none,zlib@openssh.com
+debug2: kex_parse_kexinit: none,zlib@openssh.com
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: first_kex_follows 0 
+debug2: kex_parse_kexinit: reserved 0 
+debug2: mac_setup: setup hmac-md5-etm@openssh.com
+debug1: kex: server->client aes128-ctr hmac-md5-etm@openssh.com zlib@openssh.com
+debug2: mac_setup: setup hmac-md5-etm@openssh.com
+debug1: kex: client->server aes128-ctr hmac-md5-etm@openssh.com zlib@openssh.com
+debug1: sending SSH2_MSG_KEX_ECDH_INIT
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ECDSA c8:84:60:26:29:a9:ab:3a:89:f2:b6:f0:ef:3e:e0:7e
+debug3: load_hostkeys: loading entries for host "192.168.56.11" from file "/root/.ssh/known_hosts"
+debug3: load_hostkeys: found key type ECDSA in file /root/.ssh/known_hosts:2
+debug3: load_hostkeys: loaded 1 keys
+debug1: Host '192.168.56.11' is known and matches the ECDSA host key.
+debug1: Found key in /root/.ssh/known_hosts:2
+debug1: ssh_ecdsa_verify: signature correct
+debug2: kex_derive_keys
+debug2: set_newkeys: mode 1
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug2: set_newkeys: mode 0
+debug1: SSH2_MSG_NEWKEYS received
+debug1: Roaming not allowed by server
+debug1: SSH2_MSG_SERVICE_REQUEST sent
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug2: key: /root/.ssh/id_rsa ((nil)),
+debug2: key: /root/.ssh/id_dsa ((nil)),
+debug2: key: /root/.ssh/id_ecdsa ((nil)),
+debug2: key: /root/.ssh/id_ed25519 ((nil)),
+debug1: Authentications that can continue: publickey,password
+debug3: start over, passed a different list publickey,password
+debug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: ,gssapi-keyex,hostbased,publickey
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+debug1: Trying private key: /root/.ssh/id_rsa
+debug3: no such identity: /root/.ssh/id_rsa: No such file or directory
+debug1: Trying private key: /root/.ssh/id_dsa
+debug3: no such identity: /root/.ssh/id_dsa: No such file or directory
+debug1: Trying private key: /root/.ssh/id_ecdsa
+debug3: no such identity: /root/.ssh/id_ecdsa: No such file or directory
+debug1: Trying private key: /root/.ssh/id_ed25519
+debug3: no such identity: /root/.ssh/id_ed25519: No such file or directory
+debug2: we did not send a packet, disable method
+debug1: No more authentication methods to try.
+Permission denied (publickey,password).
+
+2014-11-24 13:28:31,940 p=2990 u=root |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:28:31,954 p=2990 u=root |  FATAL: no hosts matched or all hosts have already failed -- aborting
+
+2014-11-24 13:28:31,956 p=2990 u=root |  PLAY RECAP ******************************************************************** 
+2014-11-24 13:28:31,958 p=2990 u=root |             to retry, use: --limit @/home/patrick/dbservers.retry
+
+2014-11-24 13:28:31,958 p=2990 u=root |  patrick@192.168.56.11      : ok=0    changed=0    unreachable=1    failed=0   
+2014-11-24 13:29:11,580 p=3007 u=root |   
+2014-11-24 13:29:11,581 p=3007 u=root |  /usr/bin/ansible-playbook -i hosts site.yml -vvvv
+2014-11-24 13:29:11,581 p=3007 u=root |   
+2014-11-24 13:29:11,594 p=3007 u=root |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 13:29:11,595 p=3007 u=root |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:29:11,610 p=3007 u=root |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:29:11,611 p=3007 u=root |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:29:11,613 p=3007 u=root |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'User=patrick', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824951.61-277794714103506 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416824951.61-277794714103506 && echo $HOME/.ansible/tmp/ansible-tmp-1416824951.61-277794714103506'"]
+2014-11-24 13:29:11,711 p=3007 u=root |  fatal: [patrick@192.168.56.11] => SSH encountered an unknown error. The output was:
+OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: Control socket "/home/patrick/.ansible/cp/ansible-ssh-192.168.56.11-22-patrick" does not exist
+debug2: ssh_connect: needpriv 0
+debug1: Connecting to 192.168.56.11 [192.168.56.11] port 22.
+debug2: fd 3 setting O_NONBLOCK
+debug1: fd 3 clearing O_NONBLOCK
+debug1: Connection established.
+debug3: timeout: 10000 ms remain after connect
+debug1: permanently_set_uid: 0/0
+debug1: identity file /root/.ssh/id_rsa type -1
+debug1: identity file /root/.ssh/id_rsa-cert type -1
+debug1: identity file /root/.ssh/id_dsa type -1
+debug1: identity file /root/.ssh/id_dsa-cert type -1
+debug1: identity file /root/.ssh/id_ecdsa type -1
+debug1: identity file /root/.ssh/id_ecdsa-cert type -1
+debug1: identity file /root/.ssh/id_ed25519 type -1
+debug1: identity file /root/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+debug1: match: OpenSSH_6.6.1p1 Ubuntu-2ubuntu2 pat OpenSSH_6.6.1* compat 0x04000000
+debug2: fd 3 setting O_NONBLOCK
+debug3: load_hostkeys: loading entries for host "192.168.56.11" from file "/root/.ssh/known_hosts"
+debug3: load_hostkeys: found key type ECDSA in file /root/.ssh/known_hosts:2
+debug3: load_hostkeys: loaded 1 keys
+debug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug2: kex_parse_kexinit: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: kex_parse_kexinit: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-dss-cert-v01@openssh.com,ssh-rsa-cert-v00@openssh.com,ssh-dss-cert-v00@openssh.com,ssh-ed25519,ssh-rsa,ssh-dss
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: zlib@openssh.com,zlib,none
+debug2: kex_parse_kexinit: zlib@openssh.com,zlib,none
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: first_kex_follows 0 
+debug2: kex_parse_kexinit: reserved 0 
+debug2: kex_parse_kexinit: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: kex_parse_kexinit: ssh-rsa,ssh-dss,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: none,zlib@openssh.com
+debug2: kex_parse_kexinit: none,zlib@openssh.com
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: first_kex_follows 0 
+debug2: kex_parse_kexinit: reserved 0 
+debug2: mac_setup: setup hmac-md5-etm@openssh.com
+debug1: kex: server->client aes128-ctr hmac-md5-etm@openssh.com zlib@openssh.com
+debug2: mac_setup: setup hmac-md5-etm@openssh.com
+debug1: kex: client->server aes128-ctr hmac-md5-etm@openssh.com zlib@openssh.com
+debug1: sending SSH2_MSG_KEX_ECDH_INIT
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ECDSA c8:84:60:26:29:a9:ab:3a:89:f2:b6:f0:ef:3e:e0:7e
+debug3: load_hostkeys: loading entries for host "192.168.56.11" from file "/root/.ssh/known_hosts"
+debug3: load_hostkeys: found key type ECDSA in file /root/.ssh/known_hosts:2
+debug3: load_hostkeys: loaded 1 keys
+debug1: Host '192.168.56.11' is known and matches the ECDSA host key.
+debug1: Found key in /root/.ssh/known_hosts:2
+debug1: ssh_ecdsa_verify: signature correct
+debug2: kex_derive_keys
+debug2: set_newkeys: mode 1
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug2: set_newkeys: mode 0
+debug1: SSH2_MSG_NEWKEYS received
+debug1: Roaming not allowed by server
+debug1: SSH2_MSG_SERVICE_REQUEST sent
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug2: key: /root/.ssh/id_rsa ((nil)),
+debug2: key: /root/.ssh/id_dsa ((nil)),
+debug2: key: /root/.ssh/id_ecdsa ((nil)),
+debug2: key: /root/.ssh/id_ed25519 ((nil)),
+debug1: Authentications that can continue: publickey,password
+debug3: start over, passed a different list publickey,password
+debug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: ,gssapi-keyex,hostbased,publickey
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+debug1: Trying private key: /root/.ssh/id_rsa
+debug3: no such identity: /root/.ssh/id_rsa: No such file or directory
+debug1: Trying private key: /root/.ssh/id_dsa
+debug3: no such identity: /root/.ssh/id_dsa: No such file or directory
+debug1: Trying private key: /root/.ssh/id_ecdsa
+debug3: no such identity: /root/.ssh/id_ecdsa: No such file or directory
+debug1: Trying private key: /root/.ssh/id_ed25519
+debug3: no such identity: /root/.ssh/id_ed25519: No such file or directory
+debug2: we did not send a packet, disable method
+debug1: No more authentication methods to try.
+Permission denied (publickey,password).
+
+2014-11-24 13:29:11,712 p=3007 u=root |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:29:11,713 p=3007 u=root |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:29:11,718 p=3007 u=root |  FATAL: no hosts matched or all hosts have already failed -- aborting
+
+2014-11-24 13:29:11,719 p=3007 u=root |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:29:11,725 p=3007 u=root |  FATAL: no hosts matched or all hosts have already failed -- aborting
+
+2014-11-24 13:29:11,726 p=3007 u=root |  PLAY RECAP ******************************************************************** 
+2014-11-24 13:29:11,726 p=3007 u=root |             to retry, use: --limit @/home/patrick/site.retry
+
+2014-11-24 13:29:11,727 p=3007 u=root |  patrick@192.168.56.11      : ok=0    changed=0    unreachable=1    failed=0   
+2014-11-24 13:29:15,555 p=3014 u=patrick |   
+2014-11-24 13:29:15,555 p=3014 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -vvvv
+2014-11-24 13:29:15,556 p=3014 u=patrick |   
+2014-11-24 13:29:15,570 p=3014 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 13:29:15,570 p=3014 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:29:15,586 p=3014 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:29:15,586 p=3014 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:29:15,588 p=3014 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824955.59-5645831137693 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416824955.59-5645831137693 && echo $HOME/.ansible/tmp/ansible-tmp-1416824955.59-5645831137693'"]
+2014-11-24 13:29:16,997 p=3014 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpRPE90O TO /home/patrick/.ansible/tmp/ansible-tmp-1416824955.59-5645831137693/setup
+2014-11-24 13:29:17,062 p=3014 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824955.59-5645831137693/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824955.59-5645831137693/ >/dev/null 2>&1'"]
+2014-11-24 13:29:17,441 p=3014 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:29:17,442 p=3014 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:29:17,443 p=3014 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:29:17,450 p=3014 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:29:17,451 p=3014 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:29:17,452 p=3014 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824957.45-16220629377392 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416824957.45-16220629377392 && echo $HOME/.ansible/tmp/ansible-tmp-1416824957.45-16220629377392'"]
+2014-11-24 13:29:17,470 p=3014 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpnDvhQk TO /home/patrick/.ansible/tmp/ansible-tmp-1416824957.45-16220629377392/setup
+2014-11-24 13:29:17,499 p=3014 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824957.45-16220629377392/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824957.45-16220629377392/ >/dev/null 2>&1'"]
+2014-11-24 13:29:17,878 p=3014 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:29:17,879 p=3014 u=patrick |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:29:17,885 p=3014 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:29:17,886 p=3014 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE apt update_cache=yes
+2014-11-24 13:29:17,888 p=3014 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416824957.89-197127909575884 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416824957.89-197127909575884 && echo $HOME/.ansible/tmp/ansible-tmp-1416824957.89-197127909575884'"]
+2014-11-24 13:29:17,905 p=3014 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmprfwatm TO /home/patrick/.ansible/tmp/ansible-tmp-1416824957.89-197127909575884/apt
+2014-11-24 13:29:17,928 p=3014 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u'/bin/sh -c \'sudo -k && sudo -H -S -p "[sudo via ansible, key=amynodujtiybihtnkqlvrycsqlqexvxx] password: " -u root /bin/sh -c \'"\'"\'echo SUDO-SUCCESS-amynodujtiybihtnkqlvrycsqlqexvxx; LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416824957.89-197127909575884/apt; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416824957.89-197127909575884/ >/dev/null 2>&1\'"\'"\'\'']
+2014-11-24 13:33:08,381 p=3014 u=patrick |  ERROR: interrupted
+2014-11-24 13:33:14,462 p=3129 u=patrick |   
+2014-11-24 13:33:14,463 p=3129 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -vvvv
+2014-11-24 13:33:14,463 p=3129 u=patrick |   
+2014-11-24 13:33:14,476 p=3129 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 13:33:14,477 p=3129 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:33:14,493 p=3129 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:33:14,494 p=3129 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:33:14,496 p=3129 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416825194.5-201464361357949 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416825194.5-201464361357949 && echo $HOME/.ansible/tmp/ansible-tmp-1416825194.5-201464361357949'"]
+2014-11-24 13:33:14,515 p=3129 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpkxF_rz TO /home/patrick/.ansible/tmp/ansible-tmp-1416825194.5-201464361357949/setup
+2014-11-24 13:33:14,543 p=3129 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416825194.5-201464361357949/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416825194.5-201464361357949/ >/dev/null 2>&1'"]
+2014-11-24 13:33:14,928 p=3129 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:33:14,928 p=3129 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:33:14,929 p=3129 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:33:14,938 p=3129 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:33:14,938 p=3129 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:33:14,940 p=3129 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416825194.94-264549929228594 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416825194.94-264549929228594 && echo $HOME/.ansible/tmp/ansible-tmp-1416825194.94-264549929228594'"]
+2014-11-24 13:33:14,959 p=3129 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmp_Tewh6 TO /home/patrick/.ansible/tmp/ansible-tmp-1416825194.94-264549929228594/setup
+2014-11-24 13:33:14,987 p=3129 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416825194.94-264549929228594/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416825194.94-264549929228594/ >/dev/null 2>&1'"]
+2014-11-24 13:33:15,376 p=3129 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:33:15,377 p=3129 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-24 13:33:15,384 p=3129 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:33:15,385 p=3129 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE apt name=python-pip state=present
+2014-11-24 13:33:15,387 p=3129 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416825195.39-89307265934902 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416825195.39-89307265934902 && echo $HOME/.ansible/tmp/ansible-tmp-1416825195.39-89307265934902'"]
+2014-11-24 13:33:15,405 p=3129 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpV19awZ TO /home/patrick/.ansible/tmp/ansible-tmp-1416825195.39-89307265934902/apt
+2014-11-24 13:33:15,429 p=3129 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u'/bin/sh -c \'sudo -k && sudo -H -S -p "[sudo via ansible, key=fkomoporcdzfwimggntbqsohumrqrimr] password: " -u root /bin/sh -c \'"\'"\'echo SUDO-SUCCESS-fkomoporcdzfwimggntbqsohumrqrimr; LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416825195.39-89307265934902/apt; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416825195.39-89307265934902/ >/dev/null 2>&1\'"\'"\'\'']
+2014-11-24 13:33:29,837 p=3129 u=patrick |  ERROR: interrupted
+2014-11-24 13:35:10,124 p=3215 u=patrick |   
+2014-11-24 13:35:10,124 p=3215 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -vvvv
+2014-11-24 13:35:10,124 p=3215 u=patrick |   
+2014-11-24 13:35:10,131 p=3215 u=patrick |  ERROR: hosts declaration is required
+2014-11-24 13:35:40,347 p=3219 u=patrick |   
+2014-11-24 13:35:40,347 p=3219 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -vvvv
+2014-11-24 13:35:40,347 p=3219 u=patrick |   
+2014-11-24 13:35:40,360 p=3219 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 13:35:40,361 p=3219 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:35:40,377 p=3219 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:35:40,378 p=3219 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:35:40,380 p=3219 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416825340.38-132404384406807 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416825340.38-132404384406807 && echo $HOME/.ansible/tmp/ansible-tmp-1416825340.38-132404384406807'"]
+2014-11-24 13:35:41,824 p=3219 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpuRjixO TO /home/patrick/.ansible/tmp/ansible-tmp-1416825340.38-132404384406807/setup
+2014-11-24 13:35:41,850 p=3219 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416825340.38-132404384406807/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416825340.38-132404384406807/ >/dev/null 2>&1'"]
+2014-11-24 13:35:42,237 p=3219 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:35:42,238 p=3219 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:35:42,239 p=3219 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:35:42,247 p=3219 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:35:42,247 p=3219 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE setup
+2014-11-24 13:35:42,249 p=3219 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416825342.25-4787374649694 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416825342.25-4787374649694 && echo $HOME/.ansible/tmp/ansible-tmp-1416825342.25-4787374649694'"]
+2014-11-24 13:35:42,267 p=3219 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpou0geI TO /home/patrick/.ansible/tmp/ansible-tmp-1416825342.25-4787374649694/setup
+2014-11-24 13:35:42,296 p=3219 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u"/bin/sh -c 'LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416825342.25-4787374649694/setup; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416825342.25-4787374649694/ >/dev/null 2>&1'"]
+2014-11-24 13:35:42,682 p=3219 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:35:42,683 p=3219 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-24 13:35:42,691 p=3219 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 13:35:42,692 p=3219 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE apt name=python-pip state=present
+2014-11-24 13:35:42,694 p=3219 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416825342.69-22781673080720 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416825342.69-22781673080720 && echo $HOME/.ansible/tmp/ansible-tmp-1416825342.69-22781673080720'"]
+2014-11-24 13:35:42,711 p=3219 u=patrick |  <patrick@192.168.56.11> PUT /tmp/tmpdv_Kho TO /home/patrick/.ansible/tmp/ansible-tmp-1416825342.69-22781673080720/apt
+2014-11-24 13:35:42,735 p=3219 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', u'/bin/sh -c \'sudo -k && sudo -H -S -p "[sudo via ansible, key=nkdkfjyuctifqdvppobmvnlqfosdflwl] password: " -u root /bin/sh -c \'"\'"\'echo SUDO-SUCCESS-nkdkfjyuctifqdvppobmvnlqfosdflwl; LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 /usr/bin/python /home/patrick/.ansible/tmp/ansible-tmp-1416825342.69-22781673080720/apt; rm -rf /home/patrick/.ansible/tmp/ansible-tmp-1416825342.69-22781673080720/ >/dev/null 2>&1\'"\'"\'\'']
+2014-11-24 13:35:58,477 p=3219 u=patrick |  ERROR: interrupted
+2014-11-24 13:36:03,777 p=3240 u=patrick |   
+2014-11-24 13:36:03,777 p=3240 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-11-24 13:36:03,777 p=3240 u=patrick |   
+2014-11-24 13:36:03,790 p=3240 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 13:36:03,791 p=3240 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:36:04,238 p=3240 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:36:04,239 p=3240 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:36:04,240 p=3240 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:36:04,673 p=3240 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:36:04,674 p=3240 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-24 13:40:36,805 p=3240 u=patrick |  ERROR: interrupted
+2014-11-24 13:41:18,982 p=3339 u=patrick |   
+2014-11-24 13:41:18,983 p=3339 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-11-24 13:41:18,983 p=3339 u=patrick |   
+2014-11-24 13:41:18,995 p=3339 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 13:41:18,995 p=3339 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:41:19,435 p=3339 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:41:19,437 p=3339 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:41:19,437 p=3339 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:41:19,878 p=3339 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:41:19,878 p=3339 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-24 13:41:25,264 p=3339 u=patrick |  ERROR: interrupted
+2014-11-24 13:45:49,793 p=6247 u=patrick |   
+2014-11-24 13:45:49,793 p=6247 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-11-24 13:45:49,794 p=6247 u=patrick |   
+2014-11-24 13:45:49,806 p=6247 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 13:45:49,806 p=6247 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:45:51,681 p=6247 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:45:51,681 p=6247 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:45:51,682 p=6247 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:45:52,121 p=6247 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:45:52,122 p=6247 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-24 13:49:22,469 p=6247 u=patrick |  ERROR: interrupted
+2014-11-24 13:52:31,364 p=6371 u=patrick |   
+2014-11-24 13:52:31,364 p=6371 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-11-24 13:52:31,364 p=6371 u=patrick |   
+2014-11-24 13:52:31,377 p=6371 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 13:52:31,378 p=6371 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:52:35,688 p=6371 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:52:35,689 p=6371 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:52:35,690 p=6371 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:52:36,158 p=6371 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:52:36,159 p=6371 u=patrick |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:52:36,846 p=6371 u=patrick |  failed: [patrick@192.168.56.11] => {"failed": true}
+2014-11-24 13:52:36,846 p=6371 u=patrick |  msg: Failed to lock apt for exclusive operation
+2014-11-24 13:52:36,847 p=6371 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-24 13:52:36,848 p=6371 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-24 13:52:36,848 p=6371 u=patrick |  patrick@192.168.56.11      : ok=2    changed=0    unreachable=0    failed=1   
+2014-11-24 13:53:57,406 p=6393 u=patrick |   
+2014-11-24 13:53:57,406 p=6393 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-11-24 13:53:57,406 p=6393 u=patrick |   
+2014-11-24 13:53:57,418 p=6393 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 13:53:57,418 p=6393 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:53:59,288 p=6393 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:53:59,289 p=6393 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 13:53:59,290 p=6393 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 13:53:59,726 p=6393 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 13:53:59,727 p=6393 u=patrick |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 13:58:11,590 p=6393 u=patrick |  ERROR: interrupted
+2014-11-24 14:02:20,201 p=6491 u=patrick |   
+2014-11-24 14:02:20,202 p=6491 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml
+2014-11-24 14:02:20,202 p=6491 u=patrick |   
+2014-11-24 14:02:20,213 p=6491 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-24 14:02:20,214 p=6491 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 14:02:22,107 p=6491 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 14:02:22,108 p=6491 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-24 14:02:22,109 p=6491 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-24 14:02:22,538 p=6491 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-24 14:02:22,539 p=6491 u=patrick |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-24 14:06:51,747 p=6491 u=patrick |  ERROR: interrupted
+2014-11-24 14:07:11,537 p=6512 u=patrick |  
+2014-11-24 14:07:11,537 p=6512 u=patrick |  /usr/bin/ansible dbserver -i host ping
+2014-11-24 14:07:11,538 p=6512 u=patrick |  
+2014-11-24 14:07:21,652 p=6513 u=patrick |  
+2014-11-24 14:07:21,653 p=6513 u=patrick |  /usr/bin/ansible dbserver -i host -m ping
+2014-11-24 14:07:21,653 p=6513 u=patrick |  
+2014-11-24 14:07:21,654 p=6513 u=patrick |  ERROR: Unable to find an inventory file, specify one with -i ?
+2014-11-24 14:07:26,891 p=6514 u=patrick |  
+2014-11-24 14:07:26,891 p=6514 u=patrick |  /usr/bin/ansible dbserver -i hosts -m ping
+2014-11-24 14:07:26,891 p=6514 u=patrick |  
+2014-11-24 14:07:27,006 p=6514 u=patrick |  patrick@192.168.56.11 | success >> {
+    "changed": false, 
+    "ping": "pong"
+}
+
+2014-11-24 14:07:33,121 p=6520 u=patrick |  
+2014-11-24 14:07:33,121 p=6520 u=patrick |  /usr/bin/ansible -h
+2014-11-24 14:07:33,121 p=6520 u=patrick |  
+2014-11-24 14:13:14,453 p=6573 u=patrick |  
+2014-11-24 14:13:14,454 p=6573 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes
+2014-11-24 14:13:14,454 p=6573 u=patrick |  
+2014-11-24 14:13:14,581 p=6573 u=patrick |  patrick@192.168.56.11 | FAILED => SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue
+2014-11-24 14:13:33,954 p=6576 u=patrick |  
+2014-11-24 14:13:33,955 p=6576 u=patrick |  /usr/bin/ansible dbserver -i hosts -m ping
+2014-11-24 14:13:33,955 p=6576 u=patrick |  
+2014-11-24 14:13:34,079 p=6576 u=patrick |  patrick@192.168.56.11 | FAILED => SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue
+2014-11-24 14:14:50,539 p=6630 u=patrick |  
+2014-11-24 14:14:50,539 p=6630 u=patrick |  /usr/bin/ansible dbserver -i hosts -m ping
+2014-11-24 14:14:50,539 p=6630 u=patrick |  
+2014-11-24 14:14:50,668 p=6630 u=patrick |  patrick@192.168.56.11 | FAILED => SSH encountered an unknown error during the connection. We recommend you re-run the command using -vvvv, which will enable SSH debugging output to help diagnose the issue
+2014-11-24 14:14:55,919 p=6633 u=patrick |  
+2014-11-24 14:14:55,919 p=6633 u=patrick |  /usr/bin/ansible dbserver -i hosts -m ping -vvvv
+2014-11-24 14:14:55,919 p=6633 u=patrick |  
+2014-11-24 14:14:55,938 p=6633 u=patrick |  <patrick@192.168.56.11> ESTABLISH CONNECTION FOR USER: patrick
+2014-11-24 14:14:55,938 p=6633 u=patrick |  <patrick@192.168.56.11> REMOTE_MODULE ping
+2014-11-24 14:14:55,940 p=6633 u=patrick |  <patrick@192.168.56.11> EXEC ['ssh', '-C', '-tt', '-vvv', '-o', 'ControlMaster=auto', '-o', 'ControlPersist=60s', '-o', 'ControlPath=/home/patrick/.ansible/cp/ansible-ssh-%h-%p-%r', '-o', 'KbdInteractiveAuthentication=no', '-o', 'PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey', '-o', 'PasswordAuthentication=no', '-o', 'ConnectTimeout=10', 'patrick@192.168.56.11', "/bin/sh -c 'mkdir -p $HOME/.ansible/tmp/ansible-tmp-1416827695.94-139006476549176 && chmod a+rx $HOME/.ansible/tmp/ansible-tmp-1416827695.94-139006476549176 && echo $HOME/.ansible/tmp/ansible-tmp-1416827695.94-139006476549176'"]
+2014-11-24 14:14:56,049 p=6633 u=patrick |  patrick@192.168.56.11 | FAILED => SSH encountered an unknown error. The output was:
+OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: Control socket "/home/patrick/.ansible/cp/ansible-ssh-192.168.56.11-22-patrick" does not exist
+debug2: ssh_connect: needpriv 0
+debug1: Connecting to 192.168.56.11 [192.168.56.11] port 22.
+debug2: fd 3 setting O_NONBLOCK
+debug1: fd 3 clearing O_NONBLOCK
+debug1: Connection established.
+debug3: timeout: 9999 ms remain after connect
+debug3: Incorrect RSA1 identifier
+debug3: Could not load "/home/patrick/.ssh/id_rsa" as a RSA1 public key
+debug1: identity file /home/patrick/.ssh/id_rsa type 1
+debug1: identity file /home/patrick/.ssh/id_rsa-cert type -1
+debug1: identity file /home/patrick/.ssh/id_dsa type -1
+debug1: identity file /home/patrick/.ssh/id_dsa-cert type -1
+debug1: identity file /home/patrick/.ssh/id_ecdsa type -1
+debug1: identity file /home/patrick/.ssh/id_ecdsa-cert type -1
+debug1: identity file /home/patrick/.ssh/id_ed25519 type -1
+debug1: identity file /home/patrick/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+debug1: match: OpenSSH_6.6.1p1 Ubuntu-2ubuntu2 pat OpenSSH_6.6.1* compat 0x04000000
+debug2: fd 3 setting O_NONBLOCK
+debug3: load_hostkeys: loading entries for host "192.168.56.11" from file "/home/patrick/.ssh/known_hosts"
+debug3: load_hostkeys: found key type ECDSA in file /home/patrick/.ssh/known_hosts:7
+debug3: load_hostkeys: loaded 1 keys
+debug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug2: kex_parse_kexinit: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: kex_parse_kexinit: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-dss-cert-v01@openssh.com,ssh-rsa-cert-v00@openssh.com,ssh-dss-cert-v00@openssh.com,ssh-ed25519,ssh-rsa,ssh-dss
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: zlib@openssh.com,zlib,none
+debug2: kex_parse_kexinit: zlib@openssh.com,zlib,none
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: first_kex_follows 0 
+debug2: kex_parse_kexinit: reserved 0 
+debug2: kex_parse_kexinit: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: kex_parse_kexinit: ssh-rsa,ssh-dss,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: kex_parse_kexinit: none,zlib@openssh.com
+debug2: kex_parse_kexinit: none,zlib@openssh.com
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: 
+debug2: kex_parse_kexinit: first_kex_follows 0 
+debug2: kex_parse_kexinit: reserved 0 
+debug2: mac_setup: setup hmac-md5-etm@openssh.com
+debug1: kex: server->client aes128-ctr hmac-md5-etm@openssh.com zlib@openssh.com
+debug2: mac_setup: setup hmac-md5-etm@openssh.com
+debug1: kex: client->server aes128-ctr hmac-md5-etm@openssh.com zlib@openssh.com
+debug1: sending SSH2_MSG_KEX_ECDH_INIT
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ECDSA c8:84:60:26:29:a9:ab:3a:89:f2:b6:f0:ef:3e:e0:7e
+debug3: load_hostkeys: loading entries for host "192.168.56.11" from file "/home/patrick/.ssh/known_hosts"
+debug3: load_hostkeys: found key type ECDSA in file /home/patrick/.ssh/known_hosts:7
+debug3: load_hostkeys: loaded 1 keys
+debug1: Host '192.168.56.11' is known and matches the ECDSA host key.
+debug1: Found key in /home/patrick/.ssh/known_hosts:7
+debug1: ssh_ecdsa_verify: signature correct
+debug2: kex_derive_keys
+debug2: set_newkeys: mode 1
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug2: set_newkeys: mode 0
+debug1: SSH2_MSG_NEWKEYS received
+debug1: Roaming not allowed by server
+debug1: SSH2_MSG_SERVICE_REQUEST sent
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug2: key: /home/patrick/.ssh/id_rsa (0x7fac9fa7f1c0),
+debug2: key: /home/patrick/.ssh/id_dsa ((nil)),
+debug2: key: /home/patrick/.ssh/id_ecdsa ((nil)),
+debug2: key: /home/patrick/.ssh/id_ed25519 ((nil)),
+debug1: Authentications that can continue: publickey,password
+debug3: start over, passed a different list publickey,password
+debug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: ,gssapi-keyex,hostbased,publickey
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+debug1: Offering RSA public key: /home/patrick/.ssh/id_rsa
+debug3: send_pubkey_test
+debug2: we sent a publickey packet, wait for reply
+debug1: Authentications that can continue: publickey,password
+debug1: Trying private key: /home/patrick/.ssh/id_dsa
+debug3: no such identity: /home/patrick/.ssh/id_dsa: No such file or directory
+debug1: Trying private key: /home/patrick/.ssh/id_ecdsa
+debug3: no such identity: /home/patrick/.ssh/id_ecdsa: No such file or directory
+debug1: Trying private key: /home/patrick/.ssh/id_ed25519
+debug3: no such identity: /home/patrick/.ssh/id_ed25519: No such file or directory
+debug2: we did not send a packet, disable method
+debug1: No more authentication methods to try.
+Permission denied (publickey,password).
+
+2014-11-24 14:17:37,642 p=6830 u=patrick |  
+2014-11-24 14:17:37,642 p=6830 u=patrick |  /usr/bin/ansible dbserver -i hosts -m ping
+2014-11-24 14:17:37,642 p=6830 u=patrick |  
+2014-11-24 14:17:39,228 p=6830 u=patrick |  patrick@192.168.56.11 | success >> {
+    "changed": false, 
+    "ping": "pong"
+}
+
+2014-11-24 14:17:54,199 p=6839 u=patrick |  
+2014-11-24 14:17:54,199 p=6839 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt update_cache=yes
+2014-11-24 14:17:54,199 p=6839 u=patrick |  
+2014-11-24 14:18:02,852 p=6840 u=patrick |  
+2014-11-24 14:18:02,852 p=6840 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes
+2014-11-24 14:18:02,852 p=6840 u=patrick |  
+2014-11-24 14:18:03,511 p=6840 u=patrick |  patrick@192.168.56.11 | FAILED >> {
+    "failed": true, 
+    "msg": "Failed to lock apt for exclusive operation"
+}
+
+2014-11-24 14:18:40,885 p=6847 u=patrick |  
+2014-11-24 14:18:40,885 p=6847 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes --sudo
+2014-11-24 14:18:40,885 p=6847 u=patrick |  
+2014-11-26 01:10:41,934 p=7210 u=patrick |  
+2014-11-26 01:10:41,934 p=7210 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes --sudo
+2014-11-26 01:10:41,935 p=7210 u=patrick |  
+2014-11-26 01:11:04,962 p=7219 u=patrick |  
+2014-11-26 01:11:04,962 p=7219 u=patrick |  /usr/bin/ansible dbserver -i hosts -m ping
+2014-11-26 01:11:04,962 p=7219 u=patrick |  
+2014-11-26 01:11:05,076 p=7219 u=patrick |  patrick@192.168.56.11 | success >> {
+    "changed": false, 
+    "ping": "pong"
+}
+
+2014-11-26 01:11:17,528 p=7225 u=patrick |  
+2014-11-26 01:11:17,528 p=7225 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes
+2014-11-26 01:11:17,528 p=7225 u=patrick |  
+2014-11-26 01:11:18,200 p=7225 u=patrick |  patrick@192.168.56.11 | FAILED >> {
+    "failed": true, 
+    "msg": "Failed to lock apt for exclusive operation"
+}
+
+2014-11-26 01:11:26,332 p=7231 u=patrick |  
+2014-11-26 01:11:26,332 p=7231 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes --sudo -U patrick
+2014-11-26 01:11:26,332 p=7231 u=patrick |  
+2014-11-26 01:11:27,055 p=7231 u=patrick |  patrick@192.168.56.11 | FAILED >> {
+    "failed": true, 
+    "msg": "Failed to lock apt for exclusive operation"
+}
+
+2014-11-26 01:11:33,532 p=7239 u=patrick |  
+2014-11-26 01:11:33,532 p=7239 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes --sudo -u patrick
+2014-11-26 01:11:33,533 p=7239 u=patrick |  
+2014-11-26 01:18:43,365 p=7379 u=patrick |  
+2014-11-26 01:18:43,365 p=7379 u=patrick |  /usr/bin/ansible dbserver -i hosts -m ping
+2014-11-26 01:18:43,365 p=7379 u=patrick |  
+2014-11-26 01:18:44,916 p=7379 u=patrick |  patrick@192.168.56.11 | success >> {
+    "changed": false, 
+    "ping": "pong"
+}
+
+2014-11-26 01:18:54,524 p=7388 u=patrick |  
+2014-11-26 01:18:54,525 p=7388 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes --sudo
+2014-11-26 01:18:54,525 p=7388 u=patrick |  
+2014-11-26 01:22:31,810 p=7394 u=patrick |  
+2014-11-26 01:22:31,810 p=7394 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes --sudo -K
+2014-11-26 01:22:31,810 p=7394 u=patrick |  
+2014-11-26 01:25:03,908 p=7400 u=patrick |  
+2014-11-26 01:25:03,908 p=7400 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes --sudo -K
+2014-11-26 01:25:03,908 p=7400 u=patrick |  
+2014-11-26 01:26:15,470 p=7400 u=patrick |  patrick@192.168.56.11 | success >> {
+    "changed": false
+}
+
+2014-11-26 01:29:03,312 p=7409 u=patrick |  
+2014-11-26 01:29:03,312 p=7409 u=patrick |  /usr/bin/ansible dbserver -i hosts -m apt -a update_cache=yes --sudo
+2014-11-26 01:29:03,313 p=7409 u=patrick |  
+2014-11-26 01:35:05,426 p=7422 u=patrick |   
+2014-11-26 01:35:05,426 p=7422 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -K
+2014-11-26 01:35:05,426 p=7422 u=patrick |   
+2014-11-26 01:35:09,113 p=7422 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 01:35:09,114 p=7422 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 01:35:09,580 p=7422 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 01:35:09,581 p=7422 u=patrick |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-26 01:35:50,357 p=7422 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 01:35:50,358 p=7422 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 01:35:50,358 p=7422 u=patrick |  patrick@192.168.56.11      : ok=2    changed=0    unreachable=0    failed=0   
+2014-11-26 01:36:46,109 p=7449 u=patrick |   
+2014-11-26 01:36:46,109 p=7449 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -K
+2014-11-26 01:36:46,109 p=7449 u=patrick |   
+2014-11-26 01:36:48,869 p=7449 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 01:36:48,870 p=7449 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 01:36:49,314 p=7449 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 01:36:49,316 p=7449 u=patrick |  TASK: [redis | update Ubuntu repo cache] ************************************** 
+2014-11-26 01:37:26,753 p=7449 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 01:37:26,754 p=7449 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 01:37:42,914 p=7449 u=patrick |  changed: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 01:37:42,914 p=7449 u=patrick |  TASK: [redis | install pip mongo packages] ************************************ 
+2014-11-26 01:37:43,059 p=7449 u=patrick |  failed: [patrick@192.168.56.11] => (item=redis) => {"failed": true, "item": "redis"}
+2014-11-26 01:37:43,059 p=7449 u=patrick |  msg: this module requires key=value arguments (['name=', 'redis', 'state=present'])
+2014-11-26 01:37:43,060 p=7449 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-26 01:37:43,061 p=7449 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 01:37:43,061 p=7449 u=patrick |  patrick@192.168.56.11      : ok=3    changed=1    unreachable=0    failed=1   
+2014-11-26 01:43:12,562 p=7609 u=patrick |   
+2014-11-26 01:43:12,562 p=7609 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -K
+2014-11-26 01:43:12,562 p=7609 u=patrick |   
+2014-11-26 01:43:15,384 p=7609 u=patrick |  ERROR: Syntax Error while loading YAML script, /home/patrick/ansibles/compute/roles/common/tasks/main.yml
+Note: The error may actually appear before this position: line 6, column 7
+
+- name: install pip
+   apt: name=python-pip state=present
+      ^
+2014-11-26 01:44:06,954 p=7669 u=patrick |   
+2014-11-26 01:44:06,954 p=7669 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -K
+2014-11-26 01:44:06,954 p=7669 u=patrick |   
+2014-11-26 01:44:09,595 p=7669 u=patrick |  ERROR: Syntax Error while loading YAML script, /home/patrick/ansibles/compute/roles/common/tasks/main.yml
+Note: The error may actually appear before this position: line 3, column 7
+
+- name: update Ubuntu repo cache
+   apt: update_cache=yes
+      ^
+2014-11-26 01:45:13,902 p=7682 u=patrick |   
+2014-11-26 01:45:13,903 p=7682 u=patrick |  /usr/bin/ansible-playbook -i hosts dbservers.yml -K
+2014-11-26 01:45:13,903 p=7682 u=patrick |   
+2014-11-26 01:45:16,447 p=7682 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 01:45:16,448 p=7682 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 01:45:20,060 p=7682 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 01:45:20,062 p=7682 u=patrick |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-26 01:46:01,437 p=7682 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 01:46:01,438 p=7682 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 01:48:32,281 p=7682 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 01:48:32,282 p=7682 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 01:49:12,752 p=7682 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 01:49:12,753 p=7682 u=patrick |  TASK: [redis | update Ubuntu repo cache] ************************************** 
+2014-11-26 01:49:53,180 p=7682 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 01:49:53,181 p=7682 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 01:49:53,903 p=7682 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 01:49:53,904 p=7682 u=patrick |  TASK: [redis | install pip mongo packages] ************************************ 
+2014-11-26 01:49:54,032 p=7682 u=patrick |  failed: [patrick@192.168.56.11] => (item=redis) => {"failed": true, "item": "redis"}
+2014-11-26 01:49:54,032 p=7682 u=patrick |  msg: this module requires key=value arguments (['name=', 'redis', 'state=present'])
+2014-11-26 01:49:54,033 p=7682 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-26 01:49:54,033 p=7682 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 01:49:54,034 p=7682 u=patrick |  patrick@192.168.56.11      : ok=6    changed=2    unreachable=0    failed=1   
+2014-11-26 02:18:49,116 p=7834 u=patrick |   
+2014-11-26 02:18:49,117 p=7834 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K
+2014-11-26 02:18:49,117 p=7834 u=patrick |   
+2014-11-26 02:18:52,149 p=7834 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 02:18:52,150 p=7834 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 02:18:55,720 p=7834 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:18:55,721 p=7834 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 02:18:55,721 p=7834 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 02:18:56,194 p=7834 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:18:56,197 p=7834 u=patrick |  TASK: [common | update Ubuntu repo cache] ************************************* 
+2014-11-26 02:19:45,196 p=7834 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:19:45,196 p=7834 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 02:19:45,903 p=7834 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:19:45,904 p=7834 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 02:19:46,620 p=7834 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:19:46,621 p=7834 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 02:19:47,309 p=7834 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 02:19:47,309 p=7834 u=patrick |  TASK: [redis | install pip redis packages] ************************************ 
+2014-11-26 02:19:47,438 p=7834 u=patrick |  failed: [patrick@192.168.56.11] => (item=redis) => {"failed": true, "item": "redis"}
+2014-11-26 02:19:47,439 p=7834 u=patrick |  msg: this module requires key=value arguments (['name=', 'redis', 'state=present'])
+2014-11-26 02:19:47,440 p=7834 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-26 02:19:47,440 p=7834 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 02:19:47,441 p=7834 u=patrick |  patrick@192.168.56.11      : ok=6    changed=0    unreachable=0    failed=1   
+2014-11-26 02:21:00,381 p=7941 u=patrick |   
+2014-11-26 02:21:00,382 p=7941 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K
+2014-11-26 02:21:00,382 p=7941 u=patrick |   
+2014-11-26 02:21:03,729 p=7941 u=patrick |  ERROR: interrupted
+2014-11-26 02:22:54,626 p=7958 u=patrick |   
+2014-11-26 02:22:54,626 p=7958 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 02:22:54,626 p=7958 u=patrick |   
+2014-11-26 02:22:58,251 p=7958 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 02:22:58,252 p=7958 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 02:23:01,790 p=7958 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:23:01,790 p=7958 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 02:23:01,791 p=7958 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 02:23:02,254 p=7958 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:23:02,257 p=7958 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 02:23:02,951 p=7958 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:23:02,952 p=7958 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 02:23:03,668 p=7958 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:23:03,669 p=7958 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 02:23:04,355 p=7958 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 02:23:04,356 p=7958 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 02:23:51,820 p=7958 u=patrick |  changed: [patrick@192.168.56.11] => (item=postgresql,libpq-dev,python-sqlalchemy)
+2014-11-26 02:23:51,821 p=7958 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 02:23:51,822 p=7958 u=patrick |  patrick@192.168.56.11      : ok=6    changed=1    unreachable=0    failed=0   
+2014-11-26 02:40:06,583 p=8052 u=patrick |   
+2014-11-26 02:40:06,583 p=8052 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 02:40:06,584 p=8052 u=patrick |   
+2014-11-26 02:40:09,899 p=8052 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 02:40:09,900 p=8052 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 02:40:13,526 p=8052 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:40:13,527 p=8052 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 02:40:13,527 p=8052 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 02:40:13,993 p=8052 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:40:13,996 p=8052 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 02:40:14,693 p=8052 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:40:14,694 p=8052 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 02:40:15,383 p=8052 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 02:40:15,384 p=8052 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 02:40:16,104 p=8052 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 02:40:16,105 p=8052 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 02:41:32,033 p=8052 u=patrick |  changed: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,postgresql,libpq-dev,python-sqlalchemy)
+2014-11-26 02:41:32,036 p=8052 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 02:41:32,037 p=8052 u=patrick |  patrick@192.168.56.11      : ok=6    changed=1    unreachable=0    failed=0   
+2014-11-26 04:44:34,817 p=8097 u=patrick |   
+2014-11-26 04:44:34,817 p=8097 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 04:44:34,817 p=8097 u=patrick |   
+2014-11-26 04:44:37,791 p=8097 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 04:44:37,792 p=8097 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:44:42,108 p=8097 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:44:42,109 p=8097 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 04:44:42,110 p=8097 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:44:42,572 p=8097 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:44:42,575 p=8097 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 04:44:43,340 p=8097 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:44:43,341 p=8097 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 04:44:44,037 p=8097 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:44:44,038 p=8097 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 04:44:44,724 p=8097 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 04:44:44,725 p=8097 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 04:44:45,408 p=8097 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy)
+2014-11-26 04:44:45,409 p=8097 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 04:44:45,416 p=8097 u=patrick |  fatal: [patrick@192.168.56.11] => One or more undefined variables: 'dbname' is undefined
+2014-11-26 04:44:45,417 p=8097 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-26 04:44:45,418 p=8097 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 04:44:45,418 p=8097 u=patrick |  patrick@192.168.56.11      : ok=6    changed=0    unreachable=1    failed=0   
+2014-11-26 04:47:30,249 p=8144 u=patrick |   
+2014-11-26 04:47:30,249 p=8144 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 04:47:30,249 p=8144 u=patrick |   
+2014-11-26 04:47:32,988 p=8144 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 04:47:32,989 p=8144 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:47:36,545 p=8144 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:47:36,546 p=8144 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 04:47:36,547 p=8144 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:47:37,006 p=8144 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:47:37,009 p=8144 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 04:47:37,686 p=8144 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:47:37,687 p=8144 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 04:47:38,383 p=8144 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:47:38,383 p=8144 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 04:47:39,062 p=8144 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 04:47:39,063 p=8144 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 04:47:39,746 p=8144 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy)
+2014-11-26 04:47:39,747 p=8144 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 04:47:39,927 p=8144 u=patrick |  failed: [patrick@192.168.56.11] => {"failed": true}
+2014-11-26 04:47:39,927 p=8144 u=patrick |  msg: the python psycopg2 module is required
+2014-11-26 04:47:39,928 p=8144 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-26 04:47:39,929 p=8144 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 04:47:39,929 p=8144 u=patrick |  patrick@192.168.56.11      : ok=6    changed=0    unreachable=0    failed=1   
+2014-11-26 04:48:37,842 p=8187 u=patrick |   
+2014-11-26 04:48:37,842 p=8187 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 04:48:37,842 p=8187 u=patrick |   
+2014-11-26 04:48:40,695 p=8187 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 04:48:40,696 p=8187 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:48:44,301 p=8187 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:48:44,302 p=8187 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 04:48:44,302 p=8187 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:48:44,779 p=8187 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:48:44,782 p=8187 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 04:48:45,477 p=8187 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:48:45,478 p=8187 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 04:48:46,166 p=8187 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:48:46,166 p=8187 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 04:48:46,843 p=8187 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 04:48:46,844 p=8187 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 04:48:56,525 p=8187 u=patrick |  changed: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 04:48:56,525 p=8187 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 04:48:56,683 p=8187 u=patrick |  failed: [patrick@192.168.56.11] => {"failed": true}
+2014-11-26 04:48:56,684 p=8187 u=patrick |  msg: unable to connect to database: FATAL:  Peer authentication failed for user "postgres"
+
+2014-11-26 04:48:56,685 p=8187 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-26 04:48:56,685 p=8187 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 04:48:56,686 p=8187 u=patrick |  patrick@192.168.56.11      : ok=6    changed=1    unreachable=0    failed=1   
+2014-11-26 04:52:08,106 p=8230 u=patrick |   
+2014-11-26 04:52:08,106 p=8230 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 04:52:08,106 p=8230 u=patrick |   
+2014-11-26 04:52:11,086 p=8230 u=patrick |  ERROR: interrupted
+2014-11-26 04:52:11,984 p=8233 u=patrick |   
+2014-11-26 04:52:11,984 p=8233 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 04:52:11,984 p=8233 u=patrick |   
+2014-11-26 04:52:15,169 p=8233 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 04:52:15,170 p=8233 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:52:18,706 p=8233 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:52:18,707 p=8233 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 04:52:18,708 p=8233 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:52:19,169 p=8233 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:52:19,171 p=8233 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 04:52:19,862 p=8233 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:52:19,863 p=8233 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 04:52:20,550 p=8233 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:52:20,551 p=8233 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 04:52:21,241 p=8233 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 04:52:21,242 p=8233 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 04:52:21,930 p=8233 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 04:52:21,931 p=8233 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 04:52:22,081 p=8233 u=patrick |  failed: [patrick@192.168.56.11] => {"failed": true}
+2014-11-26 04:52:22,082 p=8233 u=patrick |  msg: unable to connect to database: FATAL:  Peer authentication failed for user "postgres"
+
+2014-11-26 04:52:22,083 p=8233 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-26 04:52:22,083 p=8233 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 04:52:22,084 p=8233 u=patrick |  patrick@192.168.56.11      : ok=6    changed=0    unreachable=0    failed=1   
+2014-11-26 04:53:39,158 p=8274 u=patrick |   
+2014-11-26 04:53:39,158 p=8274 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 04:53:39,158 p=8274 u=patrick |   
+2014-11-26 04:53:42,407 p=8274 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 04:53:42,408 p=8274 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:53:46,007 p=8274 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:53:46,008 p=8274 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 04:53:46,008 p=8274 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:53:46,464 p=8274 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:53:46,467 p=8274 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 04:53:47,138 p=8274 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:53:47,139 p=8274 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 04:53:47,817 p=8274 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:53:47,818 p=8274 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 04:53:48,501 p=8274 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 04:53:48,502 p=8274 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 04:53:49,213 p=8274 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 04:53:49,214 p=8274 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 04:53:49,362 p=8274 u=patrick |  failed: [patrick@192.168.56.11] => {"failed": true}
+2014-11-26 04:53:49,363 p=8274 u=patrick |  msg: unable to connect to database: FATAL:  Peer authentication failed for user "postgres"
+
+2014-11-26 04:53:49,364 p=8274 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-26 04:53:49,364 p=8274 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 04:53:49,365 p=8274 u=patrick |  patrick@192.168.56.11      : ok=6    changed=0    unreachable=0    failed=1   
+2014-11-26 04:54:48,941 p=8315 u=patrick |   
+2014-11-26 04:54:48,941 p=8315 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 04:54:48,941 p=8315 u=patrick |   
+2014-11-26 04:54:50,333 p=8315 u=patrick |  ERROR: interrupted
+2014-11-26 04:55:36,035 p=8319 u=patrick |   
+2014-11-26 04:55:36,035 p=8319 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 04:55:36,035 p=8319 u=patrick |   
+2014-11-26 04:55:39,434 p=8319 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 04:55:39,435 p=8319 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:55:42,992 p=8319 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:55:42,993 p=8319 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 04:55:42,993 p=8319 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:55:43,463 p=8319 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:55:43,466 p=8319 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 04:55:44,156 p=8319 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:55:44,157 p=8319 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 04:55:44,842 p=8319 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:55:44,844 p=8319 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 04:55:45,523 p=8319 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 04:55:45,524 p=8319 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 04:55:46,223 p=8319 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 04:55:46,224 p=8319 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 04:55:47,539 p=8319 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 04:55:47,541 p=8319 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 04:55:47,712 p=8319 u=patrick |  failed: [patrick@192.168.56.11] => {"failed": true}
+2014-11-26 04:55:47,712 p=8319 u=patrick |  msg: unable to connect to database: FATAL:  Peer authentication failed for user "postgres"
+
+2014-11-26 04:55:47,713 p=8319 u=patrick |  FATAL: all hosts have already failed -- aborting
+2014-11-26 04:55:47,714 p=8319 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 04:55:47,714 p=8319 u=patrick |  patrick@192.168.56.11      : ok=7    changed=1    unreachable=0    failed=1   
+2014-11-26 04:59:04,387 p=8368 u=patrick |   
+2014-11-26 04:59:04,387 p=8368 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 04:59:04,387 p=8368 u=patrick |   
+2014-11-26 04:59:07,479 p=8368 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 04:59:07,480 p=8368 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:59:11,024 p=8368 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:59:11,025 p=8368 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 04:59:11,025 p=8368 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 04:59:11,503 p=8368 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:59:11,507 p=8368 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 04:59:12,194 p=8368 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:59:12,195 p=8368 u=patrick |  TASK: [common | install libpq-dev to get pg_config] *************************** 
+2014-11-26 04:59:12,881 p=8368 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:59:12,882 p=8368 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 04:59:13,568 p=8368 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 04:59:13,569 p=8368 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 04:59:14,254 p=8368 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 04:59:14,254 p=8368 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 04:59:14,439 p=8368 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:59:14,440 p=8368 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 04:59:14,735 p=8368 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 04:59:14,736 p=8368 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 04:59:14,926 p=8368 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 04:59:14,927 p=8368 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 04:59:14,927 p=8368 u=patrick |  patrick@192.168.56.11      : ok=9    changed=1    unreachable=0    failed=0   

@@ -1,6 +1,6 @@
 ---
 - name: this is top level playbook 
-  hosts: all
+  hosts: dbserver 
   remote_user: patrick 
 
 # - include: computeservers.yml

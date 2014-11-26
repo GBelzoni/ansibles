@@ -2,6 +2,7 @@
 - name: update Ubuntu repo cache
   apt: update_cache=yes
   sudo: yes
+  tags: update_cache
 - name: install pip
   apt: name=python-pip state=present
   sudo: yes
