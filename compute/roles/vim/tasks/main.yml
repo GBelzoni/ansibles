@@ -1,0 +1,26 @@
+---
+#####
+# Using Vundle to manage vim bundle, need to do some manual config
+# 1) Clone Vundle github repo
+####
+- name: update Ubuntu repo cache
+  apt: update_cache=yes
+  sudo: yes
+  tags: update_cache
+- name: name Create directory for vim bundles
+  file: path=/home/patrick/.vim/bundle/Vundle.vim state=directory
+- name: clone vundle repo
+  git: repo=https://github.com/gmarik/Vundle.vim.git
+      dest=/home/patrick/.vim/bundle/Vundle.vim
+#Have to add .vimrc file, so far doing this manually
+- name: copy vimrc
+  copy: src=.vimrc dest=/home/patrick/.vimrc
+#Have to run :BundleInstall to install bundles in .vimrc file, Look in Vundle github repo for example
+- name: packages for YouCompleteMe
+  apt: name={{item}} state=present
+  with_items:
+    - build-essential
+    - cmake
+    - python-dev 
+  sudo: yes
+#Have to compile the YCM libs using instructions

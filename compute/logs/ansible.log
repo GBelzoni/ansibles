@@ -41949,3 +41949,354 @@ Note: The error may actually appear before this position: line 3, column 7
 2014-11-26 04:59:14,926 p=8368 u=patrick |  ok: [patrick@192.168.56.11]
 2014-11-26 04:59:14,927 p=8368 u=patrick |  PLAY RECAP ******************************************************************** 
 2014-11-26 04:59:14,927 p=8368 u=patrick |  patrick@192.168.56.11      : ok=9    changed=1    unreachable=0    failed=0   
+2014-11-26 05:29:23,387 p=8507 u=patrick |   
+2014-11-26 05:29:23,387 p=8507 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 05:29:23,387 p=8507 u=patrick |   
+2014-11-26 05:29:26,629 p=8507 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 05:29:26,629 p=8507 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 05:29:30,160 p=8507 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 05:29:30,161 p=8507 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 05:29:30,161 p=8507 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 05:29:30,639 p=8507 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 05:29:30,641 p=8507 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 05:29:31,341 p=8507 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 05:29:31,341 p=8507 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 05:29:51,288 p=8507 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 05:29:51,288 p=8507 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 05:29:52,083 p=8507 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 05:29:52,083 p=8507 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 05:29:52,777 p=8507 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 05:29:52,777 p=8507 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 05:29:52,998 p=8507 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 05:29:52,999 p=8507 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 05:29:53,185 p=8507 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 05:29:53,186 p=8507 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 05:29:53,371 p=8507 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 05:29:53,371 p=8507 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 05:29:53,372 p=8507 u=patrick |  patrick@192.168.56.11      : ok=9    changed=1    unreachable=0    failed=0   
+2014-11-26 13:14:12,694 p=1368 u=patrick |   
+2014-11-26 13:14:12,731 p=1368 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 13:14:12,731 p=1368 u=patrick |   
+2014-11-26 13:14:16,719 p=1368 u=patrick |  ERROR: value of 'roles:' must be a list
+2014-11-26 13:14:48,431 p=1381 u=patrick |   
+2014-11-26 13:14:48,431 p=1381 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 13:14:48,431 p=1381 u=patrick |   
+2014-11-26 13:14:51,050 p=1381 u=patrick |  ERROR: hosts declaration is required
+2014-11-26 13:15:27,770 p=1394 u=patrick |   
+2014-11-26 13:15:27,770 p=1394 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 13:15:27,770 p=1394 u=patrick |   
+2014-11-26 13:15:30,746 p=1394 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 13:15:30,746 p=1394 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 13:15:33,650 p=1394 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:15:33,651 p=1394 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 13:15:33,651 p=1394 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 13:15:34,231 p=1394 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:15:34,234 p=1394 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 13:15:35,338 p=1394 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:15:35,339 p=1394 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 13:15:36,063 p=1394 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:15:36,065 p=1394 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 13:15:36,875 p=1394 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 13:15:36,876 p=1394 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 13:15:37,706 p=1394 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 13:15:37,707 p=1394 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 13:15:38,394 p=1394 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:15:38,395 p=1394 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 13:15:38,811 p=1394 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:15:38,812 p=1394 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 13:15:39,166 p=1394 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:15:39,168 p=1394 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 13:15:49,603 p=1394 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 13:15:49,604 p=1394 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 13:15:49,604 p=1394 u=patrick |  patrick@192.168.56.11      : ok=10   changed=1    unreachable=0    failed=0   
+2014-11-26 13:19:43,636 p=1469 u=patrick |   
+2014-11-26 13:19:43,637 p=1469 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 13:19:43,637 p=1469 u=patrick |   
+2014-11-26 13:19:46,407 p=1469 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 13:19:46,408 p=1469 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 13:19:48,353 p=1469 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:19:48,353 p=1469 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 13:19:48,354 p=1469 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 13:19:48,812 p=1469 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:19:48,815 p=1469 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 13:19:49,507 p=1469 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:19:49,507 p=1469 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 13:19:50,187 p=1469 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:19:50,188 p=1469 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 13:19:50,870 p=1469 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 13:19:50,870 p=1469 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 13:19:51,554 p=1469 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 13:19:51,555 p=1469 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 13:19:51,735 p=1469 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:19:51,737 p=1469 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 13:19:51,914 p=1469 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:19:51,915 p=1469 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 13:19:52,092 p=1469 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:19:52,093 p=1469 u=patrick |  TASK: [vim | name Create directory for vim bundles] *************************** 
+2014-11-26 13:19:52,257 p=1469 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:19:52,258 p=1469 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 13:19:56,313 p=1469 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:19:56,315 p=1469 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 13:19:56,316 p=1469 u=patrick |  patrick@192.168.56.11      : ok=11   changed=0    unreachable=0    failed=0   
+2014-11-26 13:21:29,841 p=1537 u=patrick |   
+2014-11-26 13:21:29,841 p=1537 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 13:21:29,841 p=1537 u=patrick |   
+2014-11-26 13:21:33,210 p=1537 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 13:21:33,210 p=1537 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 13:21:35,046 p=1537 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:21:35,047 p=1537 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 13:21:35,048 p=1537 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 13:21:35,503 p=1537 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:21:35,507 p=1537 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 13:21:36,172 p=1537 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:21:36,172 p=1537 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 13:21:36,845 p=1537 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:21:36,846 p=1537 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 13:21:37,520 p=1537 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 13:21:37,521 p=1537 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 13:21:38,207 p=1537 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 13:21:38,208 p=1537 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 13:21:38,392 p=1537 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:21:38,393 p=1537 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 13:21:38,578 p=1537 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:21:38,579 p=1537 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 13:21:38,760 p=1537 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:21:38,761 p=1537 u=patrick |  TASK: [vim | name Create directory for vim bundles] *************************** 
+2014-11-26 13:21:38,886 p=1537 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 13:21:38,887 p=1537 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 13:21:48,644 p=1537 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 13:21:48,645 p=1537 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 13:21:48,645 p=1537 u=patrick |  patrick@192.168.56.11      : ok=11   changed=2    unreachable=0    failed=0   
+2014-11-26 13:41:40,702 p=1732 u=patrick |   
+2014-11-26 13:41:40,702 p=1732 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 13:41:40,703 p=1732 u=patrick |   
+2014-11-26 13:41:44,830 p=1732 u=patrick |  ERROR: interrupted
+2014-11-26 13:41:45,883 p=1735 u=patrick |   
+2014-11-26 13:41:45,883 p=1735 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 13:41:45,883 p=1735 u=patrick |   
+2014-11-26 13:41:48,480 p=1735 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 13:41:48,481 p=1735 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 13:41:50,390 p=1735 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:41:50,390 p=1735 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 13:41:50,391 p=1735 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 13:41:50,861 p=1735 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:41:50,864 p=1735 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 13:41:51,551 p=1735 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:41:51,552 p=1735 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 13:41:52,254 p=1735 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:41:52,255 p=1735 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 13:41:52,949 p=1735 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 13:41:52,950 p=1735 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 13:41:53,637 p=1735 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 13:41:53,638 p=1735 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 13:41:53,816 p=1735 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:41:53,816 p=1735 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 13:41:53,996 p=1735 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:41:53,997 p=1735 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 13:41:54,178 p=1735 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:41:54,179 p=1735 u=patrick |  TASK: [vim | name Create directory for vim bundles] *************************** 
+2014-11-26 13:41:54,305 p=1735 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:41:54,306 p=1735 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 13:41:58,271 p=1735 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 13:41:58,273 p=1735 u=patrick |  TASK: [vim | packages for YouCompleteMe] ************************************** 
+2014-11-26 13:43:23,144 p=1735 u=patrick |  changed: [patrick@192.168.56.11] => (item=build-essential,cmake,python-dev)
+2014-11-26 13:43:23,145 p=1735 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 13:43:23,145 p=1735 u=patrick |  patrick@192.168.56.11      : ok=12   changed=1    unreachable=0    failed=0   
+2014-11-26 14:17:37,367 p=1903 u=patrick |   
+2014-11-26 14:17:37,367 p=1903 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 14:17:37,367 p=1903 u=patrick |   
+2014-11-26 14:17:40,613 p=1903 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 14:17:40,614 p=1903 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:17:43,413 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:17:43,413 p=1903 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 14:17:43,414 p=1903 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:17:44,005 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:17:44,008 p=1903 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 14:17:50,937 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:17:50,938 p=1903 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 14:17:51,744 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:17:51,745 p=1903 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 14:17:52,530 p=1903 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 14:17:52,531 p=1903 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 14:17:53,415 p=1903 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 14:17:53,416 p=1903 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 14:17:54,272 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:17:54,273 p=1903 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 14:17:54,637 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:17:54,638 p=1903 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 14:17:54,973 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:17:54,974 p=1903 u=patrick |  TASK: [vim | name Create directory for vim bundles] *************************** 
+2014-11-26 14:17:55,102 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:17:55,103 p=1903 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 14:17:59,866 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:17:59,867 p=1903 u=patrick |  TASK: [vim | copy vimrc] ****************************************************** 
+2014-11-26 14:18:00,086 p=1903 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:18:00,087 p=1903 u=patrick |  TASK: [vim | packages for YouCompleteMe] ************************************** 
+2014-11-26 14:18:00,877 p=1903 u=patrick |  ok: [patrick@192.168.56.11] => (item=build-essential,cmake,python-dev)
+2014-11-26 14:18:00,878 p=1903 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 14:18:00,878 p=1903 u=patrick |  patrick@192.168.56.11      : ok=13   changed=0    unreachable=0    failed=0   
+2014-11-26 14:18:51,336 p=2015 u=patrick |   
+2014-11-26 14:18:51,336 p=2015 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 14:18:51,336 p=2015 u=patrick |   
+2014-11-26 14:18:54,503 p=2015 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 14:18:54,504 p=2015 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:18:54,950 p=2015 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:18:54,950 p=2015 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 14:18:54,951 p=2015 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:18:55,419 p=2015 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:18:55,422 p=2015 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 14:18:56,123 p=2015 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:18:56,124 p=2015 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 14:18:56,833 p=2015 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:18:56,834 p=2015 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 14:18:57,545 p=2015 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 14:18:57,546 p=2015 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 14:18:58,247 p=2015 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 14:18:58,248 p=2015 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 14:18:58,425 p=2015 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:18:58,426 p=2015 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 14:18:58,611 p=2015 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:18:58,612 p=2015 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 14:18:58,790 p=2015 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:18:58,791 p=2015 u=patrick |  TASK: [vim | name Create directory for vim bundles] *************************** 
+2014-11-26 14:18:58,915 p=2015 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:18:58,916 p=2015 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 14:19:02,979 p=2015 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:19:02,980 p=2015 u=patrick |  TASK: [vim | copy vimrc] ****************************************************** 
+2014-11-26 14:19:03,177 p=2015 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 14:19:03,178 p=2015 u=patrick |  TASK: [vim | packages for YouCompleteMe] ************************************** 
+2014-11-26 14:19:03,867 p=2015 u=patrick |  ok: [patrick@192.168.56.11] => (item=build-essential,cmake,python-dev)
+2014-11-26 14:19:03,868 p=2015 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 14:19:03,868 p=2015 u=patrick |  patrick@192.168.56.11      : ok=13   changed=1    unreachable=0    failed=0   
+2014-11-26 14:27:31,766 p=2103 u=patrick |   
+2014-11-26 14:27:31,766 p=2103 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 14:27:31,766 p=2103 u=patrick |   
+2014-11-26 14:27:34,438 p=2103 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 14:27:34,438 p=2103 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:27:36,642 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:36,643 p=2103 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 14:27:36,644 p=2103 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:27:37,110 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:37,114 p=2103 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 14:27:37,813 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:37,814 p=2103 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 14:27:38,507 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:38,508 p=2103 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 14:27:39,204 p=2103 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 14:27:39,205 p=2103 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 14:27:39,898 p=2103 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 14:27:39,898 p=2103 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 14:27:40,079 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:40,080 p=2103 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 14:27:40,262 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:40,263 p=2103 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 14:27:40,445 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:40,446 p=2103 u=patrick |  TASK: [vim | name Create directory for vim bundles] *************************** 
+2014-11-26 14:27:40,572 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:40,573 p=2103 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 14:27:44,690 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:44,691 p=2103 u=patrick |  TASK: [vim | copy vimrc] ****************************************************** 
+2014-11-26 14:27:44,862 p=2103 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:27:44,863 p=2103 u=patrick |  TASK: [vim | packages for YouCompleteMe] ************************************** 
+2014-11-26 14:27:45,581 p=2103 u=patrick |  ok: [patrick@192.168.56.11] => (item=build-essential,cmake,python-dev)
+2014-11-26 14:27:45,582 p=2103 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 14:27:45,582 p=2103 u=patrick |  patrick@192.168.56.11      : ok=13   changed=0    unreachable=0    failed=0   
+2014-11-26 14:29:43,916 p=2215 u=patrick |   
+2014-11-26 14:29:43,916 p=2215 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 14:29:43,916 p=2215 u=patrick |   
+2014-11-26 14:29:46,717 p=2215 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 14:29:46,718 p=2215 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:29:48,609 p=2215 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:29:48,610 p=2215 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 14:29:48,610 p=2215 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:29:49,069 p=2215 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:29:49,073 p=2215 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 14:29:49,775 p=2215 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:29:49,776 p=2215 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 14:29:50,498 p=2215 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:29:50,499 p=2215 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 14:29:51,215 p=2215 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 14:29:51,215 p=2215 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 14:29:51,904 p=2215 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 14:29:51,905 p=2215 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 14:29:52,085 p=2215 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:29:52,085 p=2215 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 14:29:52,269 p=2215 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:29:52,269 p=2215 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 14:29:52,450 p=2215 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:29:52,451 p=2215 u=patrick |  TASK: [vim | name Create directory for vim bundles] *************************** 
+2014-11-26 14:29:52,574 p=2215 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:29:52,575 p=2215 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 14:29:56,580 p=2215 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:29:56,580 p=2215 u=patrick |  TASK: [vim | copy vimrc] ****************************************************** 
+2014-11-26 14:29:56,759 p=2215 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 14:29:56,760 p=2215 u=patrick |  TASK: [vim | packages for YouCompleteMe] ************************************** 
+2014-11-26 14:29:57,444 p=2215 u=patrick |  ok: [patrick@192.168.56.11] => (item=build-essential,cmake,python-dev)
+2014-11-26 14:29:57,445 p=2215 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 14:29:57,445 p=2215 u=patrick |  patrick@192.168.56.11      : ok=13   changed=1    unreachable=0    failed=0   
+2014-11-26 14:34:41,357 p=2297 u=patrick |   
+2014-11-26 14:34:41,357 p=2297 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 14:34:41,357 p=2297 u=patrick |   
+2014-11-26 14:34:44,481 p=2297 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 14:34:44,481 p=2297 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:34:46,422 p=2297 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:34:46,423 p=2297 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 14:34:46,424 p=2297 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:34:46,892 p=2297 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:34:46,895 p=2297 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 14:34:47,590 p=2297 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:34:47,591 p=2297 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 14:34:48,298 p=2297 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:34:48,299 p=2297 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 14:34:48,984 p=2297 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 14:34:48,985 p=2297 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 14:34:49,681 p=2297 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 14:34:49,682 p=2297 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 14:34:49,870 p=2297 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:34:49,870 p=2297 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 14:34:50,132 p=2297 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:34:50,133 p=2297 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 14:34:50,315 p=2297 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:34:50,316 p=2297 u=patrick |  TASK: [vim | name Create directory for vim bundles] *************************** 
+2014-11-26 14:34:50,457 p=2297 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:34:50,457 p=2297 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 14:34:54,626 p=2297 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:34:54,630 p=2297 u=patrick |  TASK: [vim | copy vimrc] ****************************************************** 
+2014-11-26 14:34:54,867 p=2297 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 14:34:54,868 p=2297 u=patrick |  TASK: [vim | packages for YouCompleteMe] ************************************** 
+2014-11-26 14:34:55,565 p=2297 u=patrick |  ok: [patrick@192.168.56.11] => (item=build-essential,cmake,python-dev)
+2014-11-26 14:34:55,566 p=2297 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 14:34:55,567 p=2297 u=patrick |  patrick@192.168.56.11      : ok=13   changed=1    unreachable=0    failed=0   
+2014-11-26 14:48:15,297 p=2517 u=patrick |   
+2014-11-26 14:48:15,297 p=2517 u=patrick |  /usr/bin/ansible-playbook -i hosts site.yml -K --skip-tags update_cache
+2014-11-26 14:48:15,297 p=2517 u=patrick |   
+2014-11-26 14:48:18,157 p=2517 u=patrick |  PLAY [this is top level playbook] ********************************************* 
+2014-11-26 14:48:18,157 p=2517 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:48:20,102 p=2517 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:48:20,103 p=2517 u=patrick |  PLAY [dbserver] *************************************************************** 
+2014-11-26 14:48:20,103 p=2517 u=patrick |  GATHERING FACTS *************************************************************** 
+2014-11-26 14:48:20,624 p=2517 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:48:20,628 p=2517 u=patrick |  TASK: [common | install pip] ************************************************** 
+2014-11-26 14:48:21,341 p=2517 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:48:21,342 p=2517 u=patrick |  TASK: [common | install git] ************************************************** 
+2014-11-26 14:48:22,054 p=2517 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:48:22,054 p=2517 u=patrick |  TASK: [redis | install ubuntu system] ***************************************** 
+2014-11-26 14:48:22,747 p=2517 u=patrick |  ok: [patrick@192.168.56.11] => (item=redis-server)
+2014-11-26 14:48:22,747 p=2517 u=patrick |  TASK: [postgres | install postgres packages] ********************************** 
+2014-11-26 14:48:23,443 p=2517 u=patrick |  ok: [patrick@192.168.56.11] => (item=postgresql,postgresql-contrib,phppgadmin,libpq-dev,python-sqlalchemy,python-psycopg2)
+2014-11-26 14:48:23,444 p=2517 u=patrick |  TASK: [postgres | create postgres db] ***************************************** 
+2014-11-26 14:48:23,633 p=2517 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:48:23,634 p=2517 u=patrick |  TASK: [postgres | create postgres user] *************************************** 
+2014-11-26 14:48:23,823 p=2517 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:48:23,823 p=2517 u=patrick |  TASK: [postgres | ensure user does not have unnecessary privileges] *********** 
+2014-11-26 14:48:24,007 p=2517 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:48:24,008 p=2517 u=patrick |  TASK: [vim | name Create directory for vim bundles] *************************** 
+2014-11-26 14:48:24,136 p=2517 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:48:24,137 p=2517 u=patrick |  TASK: [vim | clone vundle repo] *********************************************** 
+2014-11-26 14:48:27,901 p=2517 u=patrick |  ok: [patrick@192.168.56.11]
+2014-11-26 14:48:27,902 p=2517 u=patrick |  TASK: [vim | copy vimrc] ****************************************************** 
+2014-11-26 14:48:28,089 p=2517 u=patrick |  changed: [patrick@192.168.56.11]
+2014-11-26 14:48:28,090 p=2517 u=patrick |  TASK: [vim | packages for YouCompleteMe] ************************************** 
+2014-11-26 14:48:28,787 p=2517 u=patrick |  ok: [patrick@192.168.56.11] => (item=build-essential,cmake,python-dev)
+2014-11-26 14:48:28,788 p=2517 u=patrick |  PLAY RECAP ******************************************************************** 
+2014-11-26 14:48:28,789 p=2517 u=patrick |  patrick@192.168.56.11      : ok=13   changed=1    unreachable=0    failed=0   
